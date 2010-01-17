@@ -1,0 +1,98 @@
+%\documentclass[12pt]{llncs}
+%\documentclass{jktr}
+\documentclass{book}
+\usepackage{sunil}
+\usepackage{multicol}                   
+
+\usepackage {mathpartir}
+\usepackage{bcprules}
+%\usepackage{listings}
+                       
+\usepackage{graphicx} 
+%\usepackage[margins=2.5cm,nohead,nofoot]{geometry}
+%\usepackage{geometry}
+\usepackage{amsfonts}
+\usepackage{amstext}
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{fancybox}
+
+
+%\include{myPreamble}
+\include{scale.local} 
+
+%\ifpdf
+%\usepackage[pdftex]{graphicx}
+%\else
+%\usepackage{graphicx}
+%\fi
+
+ % \ifpdf
+%  \usepackage{pdfsync}
+%  \if
+
+
+%\pagestyle{empty}
+
+
+\begin{document}
+
+\input{scale.front}
+
+% section front matter (end)
+
+\input{scale.intro} 
+
+% section intro (end)
+
+\input{scale.summary.contributions}
+
+\input{scale.functional.history}
+
+\input{scale.process.calculi} 
+
+% subsection basic_interpretation (end)
+
+\input{scale.pi.presentation}
+ 
+% section notation (end)
+
+% section concurrent_process_calculi (end)
+
+\input{scale.comm}
+
+% section comm (end)
+
+\input{scale.rho.presentation} 
+
+% section rho (end)
+
+\input{scale.logic}
+
+% section logix (end)
+
+\input{scale.holOgram}
+
+% section parallelogram (end)
+
+\input{scale.conclusion}
+
+% section conclusion (end)
+
+\input{scale.ack} 
+
+% section acknowledgments (end)
+
+\newpage
+
+
+\bibliographystyle{plain}   
+\bibliography{main.bib}
+
+% \newpage
+
+% \input{scale.bayes}
+
+\end{document}
+

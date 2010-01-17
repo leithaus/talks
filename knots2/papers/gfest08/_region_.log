@@ -1,0 +1,168 @@
+This is pdfeTeX, Version 3.141592-1.21a-2.2 (Web2C 7.5.4) (format=prv_qm2pi 2008.11.22)  23 NOV 2008 09:30
+entering extended mode
+**&prv_qm2pi _region_.tex
+(./_region_.tex
+LaTeX2e <2003/12/01>
+Babel <v3.8d> and hyphenation patterns for american, french, german, ngerman, b
+ahasa, basque, bulgarian, catalan, croatian, czech, danish, dutch, esperanto, e
+stonian, finnish, greek, icelandic, irish, italian, latin, magyar, norsk, polis
+h, portuges, romanian, russian, serbian, slovak, slovene, spanish, swedish, tur
+kish, ukrainian, nohyphenation, loaded.
+CUSTOMISED FORMAT. Preloaded files:
+        .
+   llncs.cls    2000/05/16 v2.8 
+LaTeX document class for Lecture Notes in Computer Science
+ article.cls    2004/02/16 v1.4f Standard LaTeX document class
+  size12.clo    2004/02/16 v1.4f Standard LaTeX file (size option)
+multicol.sty    2004/02/14 v1.6e multicolumn formatting (FMi)
+hyperref.sty    2003/11/30 v6.74m Hypertext links for LaTeX
+  keyval.sty    1999/03/16 v1.13 key=value parser (DPC)
+  pd1enc.def    2003/11/30 v6.74m Hyperref: PDFDocEncoding definition (HO)
+hyperref.cfg    2002/06/06 v1.2 hyperref configuration of TeXLive and teTeX
+     url.sty    2004/03/15  ver 3.1  Verb mode for urls, etc.
+ hpdftex.def    2003/11/30 v6.74m Hyperref driver for pdfTeX
+  pifont.sty    2004/09/15 PSNFSS-v9.2 Pi font support (SPQR) 
+    upzd.fd    2001/06/04 font definitions for U/pzd.
+    upsy.fd    2001/06/04 font definitions for U/psy.
+listings.sty    2004/10/17 1.3b (Carsten Heinz)
+lstpatch.sty    2004/10/17 1.3b (Carsten Heinz)
+ lstmisc.sty    2004/09/07 1.3 (Carsten Heinz)
+listings.cfg    2004/09/05 1.3 listings configuration
+mathpartir.sty    2003/07/10 version 1.1.1 Math Paragraph for Typesetting Infer
+ence Rules
+bcprules.sty    
+graphicx.sty    1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+graphics.sty    2001/07/07 v1.0n Standard LaTeX Graphics (DPC,SPQR)
+    trig.sty    1999/03/16 v1.09 sin cos tan (DPC)
+graphics.cfg    2005/02/03 v1.3 graphics configuration of teTeX/TeXLive
+  pdftex.def    2002/06/19 v0.03k graphics/color for pdftex
+amsfonts.sty    2001/10/25 v2.2f
+ amstext.sty    2000/06/29 v2.01
+  amsgen.sty    1999/11/30 v2.0
+latexsym.sty    1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+ amssymb.sty    2002/01/22 v2.2d
+   color.sty    1999/02/16 v1.0i Standard LaTeX Color (DPC)
+   color.cfg    2005/02/03 v1.3 color configuration of teTeX/TeXLive
+   qm2pi.local.tex
+    umsa.fd    2002/01/19 v2.2g AMS font definitions
+    umsb.fd    2002/01/19 v2.2g AMS font definitions
+   ulasy.fd    1998/08/17 v2.2e LaTeX symbol font definitions
+        .
+(./_region_.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+
+(/Applications/Emacs.app/Contents/Resources/site-lisp/auctex/latex/preview.sty
+Package: preview 2008/02/03 11.85 (AUCTeX/preview-latex)
+
+(/Applications/Emacs.app/Contents/Resources/site-lisp/auctex/latex/prtightpage.
+def
+\PreviewBorder=\dimen139
+)
+(/Applications/Emacs.app/Contents/Resources/site-lisp/auctex/latex/prauctex.def
+No auxiliary output files.
+
+
+\hbadness=\count131
+\hfuzz=\dimen140
+
+(/Applications/Emacs.app/Contents/Resources/site-lisp/auctex/latex/prauctex.cfg
+))
+(/Applications/Emacs.app/Contents/Resources/site-lisp/auctex/latex/prfootnotes.
+def)
+\pr@snippet=\count132
+\pr@box=\box61
+\pr@output=\toks26
+
+Preview: Fontsize 12pt
+Preview: PDFoutput 1
+)
+Package hyperref Info: Link coloring OFF on input line 43.
+ (/opt/local/share/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2003/12/03 v2.21 Cross-referencing by name of section
+\c@section@level=\count133
+)
+LaTeX Info: Redefining \ref on input line 43.
+LaTeX Info: Redefining \pageref on input line 43.
+ (./_region_.out) (./_region_.out) (/opt/local/share/texmf-dist/tex/context/bas
+e/supp-pdf.tex
+(/opt/local/share/texmf-dist/tex/context/base/supp-mis.tex
+loading : Context Support Macros / Miscellaneous (2004.10.26)
+\protectiondepth=\count134
+\scratchcounter=\count135
+\scratchtoks=\toks27
+\scratchdimen=\dimen141
+\scratchskip=\skip53
+\scratchmuskip=\muskip11
+\scratchbox=\box62
+\scratchread=\read1
+\scratchwrite=\write4
+\zeropoint=\dimen142
+\onepoint=\dimen143
+\onebasepoint=\dimen144
+\minusone=\count136
+\thousandpoint=\dimen145
+\onerealpoint=\dimen146
+\emptytoks=\toks28
+\nextbox=\box63
+\nextdepth=\dimen147
+\everyline=\toks29
+\!!counta=\count137
+\!!countb=\count138
+\recursecounter=\count139
+)
+loading : Context Support Macros / PDF (2004.03.26)
+\nofMPsegments=\count140
+\nofMParguments=\count141
+\MPscratchCnt=\count142
+\MPscratchDim=\dimen148
+\MPnumerator=\count143
+\everyMPtoPDFconversion=\toks30
+)  !name(qm2pi.tex) !offset(373) 
+! Preview: Snippet 1 started.
+<-><->
+      
+l.47   \inferrule
+                 *[lab=Out-barb]{x \nameeq y}{{y}!\langle{Q}\rangle \vdash x}
+Not a real error.
+
+Preview: Tightpage -32891 -32891 32891 32891
+! Preview: Snippet 1 ended.(2677784+0x22749088).
+<-><->
+      
+l.50 \end{mathpar}
+                  
+Not a real error.
+
+[1{/opt/local/share/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+ !name(qm2pi.tex) !offset(567)  ) 
+Here is how much of TeX's memory you used:
+ 581 strings out of 90085
+ 8100 string characters out of 1116243
+ 121329 words of memory out of 1000000
+ 8075 multiletter control sequences out of 10000+50000
+ 11689 words of font info for 45 fonts, out of 500000 for 2000
+ 580 hyphenation exceptions out of 1000
+ 22i,17n,22p,235b,259s stack positions out of 1500i,500n,5000p,200000b,5000s
+PDF statistics:
+ 20 PDF objects out of 300000
+ 0 named destinations out of 131072
+ 1 words of extra memory for PDF output out of 65536
+</opt/local/share/texmf-dist/fonts/type1/blues
+ky/cm/cmr12.pfb></opt/local/share/texmf-dist/fonts/type1/bluesky/cm/cmmi8.pfb><
+/opt/local/share/texmf-dist/fonts/type1/bluesky/cm/cmsy10.pfb></opt/local/share
+/texmf-dist/fonts/type1/bluesky/cm/cmmi12.pfb></opt/local/share/texmf-dist/font
+s/type1/bluesky/cm/cmcsc10.pfb>
+Output written on _region_.pdf (1 page, 16750 bytes).

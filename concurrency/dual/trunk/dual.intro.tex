@@ -1,0 +1,119 @@
+\section{Introduction}\label{sec:introduction} % (fold)
+
+At the heart of this paper is an attempt to tease out the content of
+the intuition that scale and composition are somehow related. Any
+engineer will tell you, you build ``bigger'' components out of
+``smaller'' ones. The question is how this notion of bigger, in the
+sense of system complexity, is related to bigger in the sense of
+physical scale. To tell this story properly, it needs to be told in
+installments because the technical apparatus, while not particularly
+large or unwieldy, is sufficiently complex that it is impossible to
+unpack it properly and simultaneously provide convincingly detailed
+examples. Part of the complexity is the build up of an enormous
+backlog of conceptual context informing operational
+knowledge. Therefore, the primary aim of this paper is to lay out the
+necessary technical apparatus together with a more explicit account of
+its context to provide a base rationale for a subsequent detailed
+treatment of examples of processes involving interaction across scale
+(which, in its turn provides the justification for the development of
+the technical apparatus).
+
+What is at stake, what makes this sort of investigation worth the
+effort, in absence of concrete, detailed examples, is the dream of a
+compositional account of physical dynamics. To date, the most
+successful mathematical apparatus for specifying and reasoning about
+physical dynamical systems (as opposed to symbolic dynamical systems)
+is Newton's calculus. Both as a body of mathematics and as a language
+in which to express physical theories it is impressive, and literally
+unrivalled -- in the sense that there is no serious competitor in
+which to express, reason about, simulate or otherwise calculate
+dynamical aspects of physical systems, despite what we have learned
+about computational dynamices over the last 40 years. And, both the
+predominant application and the apparatus itself \emph{fails} to be
+compositional. 
+
+To bring this into sharp relief imagine the standard specification,
+via ODEs, of the dynamics of some physical system, for example the
+dynamics of some gene regulatory network, like the p53-Mdm2 feedback
+cycle in the cell \cite{Lahav2004}. Now imagine the standard
+specification, via ODEs, of the dynamics of some ``nearby'' physical
+system, for example another gene regulatory network, or a cytoplasmic
+process in the same cell (type). It is not possible to compose the two
+models (as proxies for the physical subsystems they represent) to get
+some understanding of the global system behavior. Even in the cases
+where a more global account of the dynamics is possible, the systems
+of ODEs has to be reworked from the ground up, not built from the
+component system of equations. More often than not, however, for
+example in the case of cytoplasmic processes interacting with
+processes in the nucleus, issues of spatio-temporal scale represent
+significant obstacles in obtaining more global accounts of dynamics
+from more local ones. Not to put too fine a point on it, if we widen
+the scope a bit, though Newton's wonderful machinery is used in
+reasoning about chemical processes, and in reasoning about nuclear
+ones, there is a great divide between these processes from the
+perspective of modeling their dynamics within Newton's calculus. Thus,
+while the Gecko has made a survival strategy, at least in part,
+exploiting VanDerWaal's forces \cite{Gecko}, we are still a long way
+from a similarly practical and \emph{reductive} account of physical
+dynamics.
+
+This facet of Newton's calculus needs to be contrasted with
+compositional accounts of symbolic dynamics, as may be seen in systems
+like the $\lambda$-calculus, or the $\pi$-calculus where the way to
+get at global system behavior -- the primary means, in fact -- is
+through composition of the dynamics of the components. Like
+``experiments'' in ``laboratory'', one mixes components, via
+application, in the case of $\lambda$, or parallel composition, in the
+case of $\pi$, to find the behavior of the composite. Like Newton's
+framework, but unlike purely empirical methods, these systems are
+genuine mathematical theories equipped with powerful tools for
+analysis, such as bisimulation
+\cite{DBLP:conf/lics/Sangiorgi04}. Moreover, these systems, via a
+precise, algebraic treatment of \emph{context}, blithely dispatch huge
+disparities in scale -- in the sense of system complexity -- as we
+will make clear in the sequel. For the computer scientist who is both
+trained in these techniques and concerned with the issues facing the
+modeling of physical systems it is natural to ask whether there might
+be a way to export or exploit these methods of addressing symbolic
+dynamics to address physical dynamics. This question is made all the
+more vivid in the light of the work by Cardelli, Priami, Regev, and
+others who have used such compositional systems (like the
+$\pi$-calculus and the ambient calculus) to give direct, quantitative
+and predictive accounts of physical processes such as gene regulatory
+networks, as well as signaling and metabolic processes in the
+cell \cite{Cardelli04} \cite{DanosL03} \cite{RegevS03}
+\cite{PriamiRSS01}.
+
+\subsection{Summary of contributions and overview}
+
+We propose to lay out a conceptual framework, realizable in a wide
+variety of mobile process calculi, in which to relate interaction and
+scale. To do this we will review some of the development of the
+paradigmatic mobile process calculus, Milner's $\pi$-calculus,
+summarizing the essential points of the theory and comparing and
+contrasting these with standard accounts of physical dynamics. In the
+process we will uncover some of the less well-known subtleties of
+Milner's design choices in presenting the calculus. Careful analysis
+of these choices exposes a set of principles and ontological
+commitments that imply a precise characterization of the relationship
+between interaction and scale. Following this analysis, we will
+exhibit a series of mild extensions of Milner's original calculus,
+resulting in a technical apparatus for expressing interaction across
+scale. Unfortunately, to really make good on the claim we need to
+illustrate it with example processes and these must be deferred to a
+forthcoming paper.
+
+\paragraph{Warning: the appearance of Newton-bashing}
+The arguments that follow may appear to be heavily slanted in favor of
+the computational account of dynamics over the Newtonian account. Part
+of this is due to the author's clear affinity for computation and
+concurrency theory. However, it is now 320 years since Philosophiae
+Naturalis Principia Mathematica was published. The mathematical
+apparatus and what it engendered dominates the field, without
+question. Because this framework is so pervasive in modern scientific
+and mathematical culture is not necessary to recount its approach to
+dynamics or its successes, but it is necessary to stress the core
+features of alternative view. This leads to a greater appearance of
+bias than there actually is. 
+
+% section introduction (end)

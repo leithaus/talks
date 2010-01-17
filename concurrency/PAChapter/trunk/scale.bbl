@@ -1,0 +1,244 @@
+\begin{thebibliography}{10}
+
+\bibitem{AbadiB02}
+Mart\'{\i}n Abadi and Bruno Blanchet.
+\newblock Analyzing security protocols with secrecy types and logic programs.
+\newblock In {\em POPL}, pages 33--44, 2002.
+
+\bibitem{AbadiB03}
+Mart\'{\i}n Abadi and Bruno Blanchet.
+\newblock Secrecy types for asymmetric communication.
+\newblock {\em Theor. Comput. Sci.}, 3(298):387--415, 2003.
+
+\bibitem{DBLP:journals/tcs/Abramsky93}
+Samson Abramsky.
+\newblock Computational interpretations of linear logic.
+\newblock {\em Theor. Comput. Sci.}, 111(1{\&}2):3--57, 1993.
+
+\bibitem{Abramsky2005Algorithmic-Gam}
+Samson Abramsky.
+\newblock Algorithmic game semantics and static analysis.
+\newblock In {\em SAS}, page~1, 2005.
+
+\bibitem{Barendregt84}
+Hendrik~Pieter Barendregt.
+\newblock {\em {The Lambda Calculus -- Its Syntax and Semantics}}, volume 103
+  of {\em Studies in Logic and the Foundations of Mathematics}.
+\newblock North-Holland, 1984.
+
+\bibitem{CSP1}
+S.~D. Brookes, C.~A.~R. Hoare, and A.~W. Roscoe.
+\newblock A theory of communicating sequential processes.
+\newblock {\em J. Assoc. Comput. Mach.}, 31(3):560--599, 1984.
+
+\bibitem{Caires04}
+Lu\'{\i}s Caires.
+\newblock Behavioral and spatial observations in a logic for the pi-calculus.
+\newblock In {\em FoSSaCS}, pages 72--89, 2004.
+
+\bibitem{CairesC03}
+Lu\'{\i}s Caires and Luca Cardelli.
+\newblock A spatial logic for concurrency (part i).
+\newblock {\em Inf. Comput.}, 186(2):194--235, 2003.
+
+\bibitem{CairesC04}
+Lu\'{\i}s Caires and Luca Cardelli.
+\newblock A spatial logic for concurrency - ii.
+\newblock {\em Theor. Comput. Sci.}, 322(3):517--565, 2004.
+
+\bibitem{Cardelli04}
+Luca Cardelli.
+\newblock Brane calculi.
+\newblock In {\em CMSB}, pages 257--278, 2004.
+
+\bibitem{DanosL03}
+Vincent Danos and Cosimo Laneve.
+\newblock Core formal molecular biology.
+\newblock In Pierpaolo Degano, editor, {\em ESOP}, volume 2618 of {\em Lecture
+  Notes in Computer Science}, pages 302--318. Springer, 2003.
+
+\bibitem{Fokkink}
+Wan Fokkink, Rob van Glabbeek, and Paulien de~Wind.
+\newblock Compositionality of {H}ennessy-{M}ilner logic through structural
+  operational semantics.
+\newblock In {\em Fundamentals of computation theory}, volume 2751 of {\em
+  Lecture Notes in Comput. Sci.}, pages 412--422. Springer, Berlin, 2003.
+
+\bibitem{JoCaml}
+C{\'e}dric Fournet, Fabrice~Le Fessant, Luc Maranget, and Alan Schmitt.
+\newblock Jocaml: A language for concurrent distributed and mobile programming.
+\newblock In {\em Advanced Functional Programming}, pages 129--158, 2002.
+
+\bibitem{djoin}
+C{\'e}dric Fournet, Georges Gontheir, Jean-Jacques L{\'e}vy, Luc Maranget, and
+  Didier R{\'e}my.
+\newblock A calculus of mobile agents.
+\newblock In Ugo Montanari and Vladimiro Sassone, editors, {\em CONCUR 1996},
+  volume 1119 of {\em Lecture Notes in Computer Science}, pages 406--421.
+  Springer-Verlag, 1996.
+
+\bibitem{CSP}
+C.~A.~R. Hoare.
+\newblock {\em Communicating sequential processes}.
+\newblock Prentice Hall International Series in Computer Science. Prentice Hall
+  International, Englewood Cliffs, NJ, 1985.
+\newblock With a foreword by Edsger W. Dijkstra.
+
+\bibitem{CSP3}
+C.~A.~R. Hoare.
+\newblock Notes on communicating sequential systems.
+\newblock In {\em Control flow and data flow: concepts of distributed
+  programming (Marktoberdorf, 1984)}, volume~14 of {\em NATO Adv. Sci. Inst.
+  Ser. F Comput. Systems Sci.}, pages 123--204. Springer, Berlin, 1985.
+
+\bibitem{CSP2}
+C.~A.~R. Hoare.
+\newblock Algebraic specifications and proofs for communicating sequential
+  processes.
+\newblock In {\em Logic of programming and calculi of discrete design
+  (Marktoberdorf, 1986)}, volume~36 of {\em NATO Adv. Sci. Inst. Ser. F Comput.
+  Systems Sci.}, pages 277--300. Springer, Berlin, 1987.
+
+\bibitem{DBLP:conf/popl/JensenM03}
+Ole~H{\o}gh Jensen and Robin Milner.
+\newblock Bigraphs and transitions.
+\newblock In {\em POPL}, pages 38--49, 2003.
+
+\bibitem{BrownLM05}
+Allen L.~Brown Jr., Cosimo Laneve, and L.~Gregory Meredith.
+\newblock Piduce: A process calculus with native xml datatypes.
+\newblock In Mario Bravetti, Le\"{\i}la Kloul, and Gianluigi Zavattaro,
+  editors, {\em EPEW/WS-FM}, volume 3670 of {\em Lecture Notes in Computer
+  Science}, pages 18--34. Springer, 2005.
+
+\bibitem{Krivine-TheCurryHowardCorre}
+Jean-Louis Krivine.
+\newblock The curry-howard correspondence in set theory.
+\newblock In Martin Abadi, editor, {\em Proceedings of the Fifteenth Annual
+  IEEE Symp. on Logic in Computer Science, {LICS} 2000}. IEEE Computer Society
+  Press, June 2000.
+
+\bibitem{LaneveZ05}
+Cosimo Laneve and Gianluigi Zavattaro.
+\newblock Foundations of web transactions.
+\newblock In {\em FoSSaCS}, pages 282--298, 2005.
+
+\bibitem{MeredithB03}
+Greg Meredith and Steve Bjorg.
+\newblock Contracts and types.
+\newblock {\em Commun. ACM}, 46(10):41--47, 2003.
+
+\bibitem{MeredithR05}
+L.~Gregory Meredith and Matthias Radestock.
+\newblock A reflective higher-order calculus.
+\newblock {\em Electr. Notes Theor. Comput. Sci.}, 141(5):49--67, 2005.
+
+\bibitem{meredith2005rho}
+L.G. Meredith and Matthias Radestock.
+\newblock A reflective higher-order calculus.
+\newblock In Mirko Viroli, editor, {\em ETAPS 2005 Satellites}.
+  Springer-Verlag, 2005.
+
+\bibitem{milner92techniques}
+R.~Milner and D.~Sangiorgi.
+\newblock Techniques of weak bisimulation up-to, 1992.
+
+\bibitem{MilnerCCS80}
+Robin Milner.
+\newblock {\em A Calculus of Communicating Systems}.
+\newblock Springer Verlag, 1980.
+
+\bibitem{Milner83SCCS}
+Robin Milner.
+\newblock Calculi for synchrony and asynchrony.
+\newblock {\em Journal of Theoretical Computer Science}, 25:267--310, 1983.
+
+\bibitem{FunctionsAsProcesses}
+Robin Milner.
+\newblock Functions as processes.
+\newblock {\em MSCS}, 2(2):119--141, 1992.
+
+\bibitem{Milner93}
+Robin Milner.
+\newblock Elements of interaction - turing award lecture.
+\newblock {\em Commun. ACM}, 36(1):78--89, 1993.
+
+\bibitem{milner91polyadicpi}
+Robin Milner.
+\newblock The polyadic $\pi$-calculus: A tutorial.
+\newblock {\em Logic and Algebra of Specification}, Springer-Verlag, 1993.
+
+\bibitem{ParrowWalker}
+Robin Milner, Joachim Parrow, and David Walker.
+\newblock A calculus of mobile processes. {I}, {II}.
+\newblock {\em Inform. and Comput.}, 100(1):1--40, 41--77, 1992.
+
+\bibitem{MilnerS92}
+Robin Milner and Davide Sangiorgi.
+\newblock Barbed bisimulation.
+\newblock In Werner Kuich, editor, {\em ICALP}, volume 623 of {\em Lecture
+  Notes in Computer Science}, pages 685--695. Springer, 1992.
+
+\bibitem{Phillips-Cardelli-Bioconcur04}
+Andrew Phillips and Luca Cardelli.
+\newblock A correct abstract machine for the stochastic pi-calculus.
+\newblock In {\em Bioconcur'04}. ENTCS, August 2004.
+
+\bibitem{DBLP:conf/concur/Pous06}
+Damien Pous.
+\newblock Weak bisimulation up to elaboration.
+\newblock In Christel Baier and Holger Hermanns, editors, {\em CONCUR}, volume
+  4137 of {\em Lecture Notes in Computer Science}, pages 390--405. Springer,
+  2006.
+
+\bibitem{DBLP:journals/cj/Priami95}
+Corrado Priami.
+\newblock Stochastic pi-calculus.
+\newblock {\em Comput. J.}, 38(7):578--589, 1995.
+
+\bibitem{PriamiRSS01}
+Corrado Priami, Aviv Regev, Ehud~Y. Shapiro, and William Silverman.
+\newblock Application of a stochastic name-passing calculus to representation
+  and simulation of molecular processes.
+\newblock {\em Inf. Process. Lett.}, 80(1):25--31, 2001.
+
+\bibitem{RegevS03}
+Amitai Regev and Ehud~Y. Shapiro.
+\newblock Cells as computation.
+\newblock In Corrado Priami, editor, {\em CMSB}, volume 2602 of {\em Lecture
+  Notes in Computer Science}, pages 1--3. Springer, 2003.
+
+\bibitem{SangiorgiWalker}
+David Sangiorgi and David Walker.
+\newblock {\em The $\pi$-Calculus: A Theory of Mobile Processes}.
+\newblock Cambridge University Press, 2001.
+
+\bibitem{Sangiorgi95}
+Davide Sangiorgi.
+\newblock On the proof method for bisimulation (extended abstract).
+\newblock In Jir\'{\i} Wiedermann and Petr H{\'a}jek, editors, {\em MFCS},
+  volume 969 of {\em Lecture Notes in Computer Science}, pages 479--488.
+  Springer, 1995.
+
+\bibitem{hop}
+Davide Sangiorgi.
+\newblock Bisimulation in higher-order process calculi.
+\newblock {\em Information and Computation}, 131:141--178, 1996.
+
+\bibitem{DBLP:conf/lics/Sangiorgi04}
+Davide Sangiorgi.
+\newblock Bisimulation: From the origins to today.
+\newblock In {\em LICS}, pages 298--302. IEEE Computer Society, 2004.
+
+\bibitem{DBLP:conf/concur/SangiorgiM92}
+Davide Sangiorgi and Robin Milner.
+\newblock The problem of ``weak bisimulation up to''.
+\newblock In Rance Cleaveland, editor, {\em CONCUR}, volume 630 of {\em Lecture
+  Notes in Computer Science}, pages 32--46. Springer, 1992.
+
+\bibitem{WojciechowskiS99}
+Pawel~T. Wojciechowski and Peter Sewell.
+\newblock Nomadic pict: Language and infrastructure design for mobile agents.
+\newblock In {\em ASA/MA}, pages 2--12, 1999.
+
+\end{thebibliography}

@@ -1,0 +1,782 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>FileContexts</key>
+	<dict>
+		<key>.</key>
+		<dict>
+			<key>Inspector Variants</key>
+			<dict>
+				<key>Default</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Default Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>Files</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>LaTeX</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Project Subdocuments Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>TeX</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Terminal</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Terminal Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>texp</key>
+				<dict>
+					<key>mode</key>
+					<string>Default Mode</string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+			</dict>
+			<key>Open Documents</key>
+			<array>
+				<string>1</string>
+				<string>0</string>
+			</array>
+			<key>Open Inspectors</key>
+			<array>
+				<dict>
+					<key>mode</key>
+					<string>Project Subdocuments Mode</string>
+					<key>type</key>
+					<string>TeX Project Type</string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+				<dict>
+					<key>mode</key>
+					<string>Terminal Mode</string>
+					<key>type</key>
+					<string>TeX Project Type</string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+				<dict>
+					<key>mode</key>
+					<string>Default Mode</string>
+					<key>type</key>
+					<string></string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+			</array>
+			<key>Window Frame Current Task Window:{1280, 854}</key>
+			<string>620 103 592 535 0 0 1280 832 </string>
+			<key>Window Frame Current TeX Project Files:{1280, 854}</key>
+			<string>74 359 319 287 0 0 1280 832 </string>
+			<key>iTM2ProjectAbsolutePath</key>
+			<string>/Users/ds08/knots/knots/lgmHeader.texp</string>
+			<key>iTM2ProjectFileKey</key>
+			<string>.</string>
+			<key>iTM2ProjectRelativePath</key>
+			<string>lgmHeader.texp</string>
+			<key>iTM2ShouldCascadeWindows</key>
+			<false/>
+			<key>iTM2TeXPTaskInspectorSplitViewFactors</key>
+			<string>0.000000:0.525907:0.000000</string>
+		</dict>
+		<key>0</key>
+		<dict>
+			<key>Inspector Variants</key>
+			<dict>
+				<key>Default</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Files</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>LaTeX</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>TeX</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>TeX Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>tex</key>
+				<dict>
+					<key>mode</key>
+					<string>TeX Mode</string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+			</dict>
+			<key>Open Inspectors</key>
+			<array>
+				<dict>
+					<key>mode</key>
+					<string>TeX Mode</string>
+					<key>type</key>
+					<string>text</string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+			</array>
+			<key>Window Frame Current Text Window:{1280, 854}</key>
+			<string>440 -43 535 756 0 0 1280 832 </string>
+			<key>iTM2ProjectAbsolutePath</key>
+			<string>/Users/ds08/knots/knots/lgmHeader.texp</string>
+			<key>iTM2ProjectFileKey</key>
+			<string>0</string>
+			<key>iTM2ProjectRelativePath</key>
+			<string>lgmHeader.texp</string>
+			<key>iTM2ShouldCascadeWindows</key>
+			<false/>
+			<key>iTM2StringEncodingOpen</key>
+			<integer>30</integer>
+			<key>iTM2TextKeyWindow</key>
+			<false/>
+			<key>iTM2TextScaleFactor</key>
+			<real>1.2599210739135742</real>
+			<key>iTM2TextSelectedRange</key>
+			<string>{4249, 11}</string>
+			<key>iTM2TextStyle</key>
+			<string>LaTeX</string>
+			<key>iTM2TextSyntaxParserVariant</key>
+			<string>default</string>
+			<key>iTM2TextVisibleRange</key>
+			<string>{0, 1061}</string>
+		</dict>
+		<key>1</key>
+		<dict>
+			<key>Inspector Variants</key>
+			<dict>
+				<key>Default</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Default Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>Files</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>LaTeX</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Project Subdocuments Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>TeX</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>TeX Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>Terminal</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Terminal Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>Wildcard Document</key>
+				<dict>
+					<key>mode</key>
+					<string>TeX Mode</string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+				<key>texp</key>
+				<dict>
+					<key>mode</key>
+					<string>Default Mode</string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+			</dict>
+			<key>Open Inspectors</key>
+			<array>
+				<dict>
+					<key>mode</key>
+					<string>TeX Mode</string>
+					<key>type</key>
+					<string>text</string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+			</array>
+			<key>Window Frame Current Text Window:{1280, 854}</key>
+			<string>440 -43 535 756 0 0 1280 832 </string>
+			<key>iTM2ProjectAbsolutePath</key>
+			<string>/Users/ds08/knots/knots/lgmHeader.texp</string>
+			<key>iTM2ProjectFileKey</key>
+			<string>1</string>
+			<key>iTM2ProjectRelativePath</key>
+			<string>knots/lgmHeader.texp</string>
+			<key>iTM2ShouldCascadeWindows</key>
+			<false/>
+			<key>iTM2StringEncodingOpen</key>
+			<integer>30</integer>
+			<key>iTM2TextKeyWindow</key>
+			<false/>
+			<key>iTM2TextScaleFactor</key>
+			<real>1.2599210739135742</real>
+			<key>iTM2TextSelectedRange</key>
+			<string>{0, 0}</string>
+			<key>iTM2TextStyle</key>
+			<string>LaTeX</string>
+			<key>iTM2TextSyntaxParserVariant</key>
+			<string>default</string>
+			<key>iTM2TextVisibleRange</key>
+			<string>{0, 0}</string>
+		</dict>
+	</dict>
+	<key>SpellContextModes</key>
+	<dict>
+		<key>Modes</key>
+		<dict>
+			<key>default</key>
+			<dict>
+				<key>isa</key>
+				<string>spelling</string>
+				<key>language</key>
+				<string>en</string>
+				<key>words</key>
+				<array/>
+			</dict>
+		</dict>
+		<key>isa</key>
+		<string>Spelling Context Modes</string>
+	</dict>
+	<key>iTM2ContextExtensions</key>
+	<dict>
+		<key></key>
+		<dict>
+			<key>Inspector Variants</key>
+			<dict>
+				<key>Default</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Default Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>Files</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>LaTeX</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Project Subdocuments Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>TeX</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>TeX Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>Terminal</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Terminal Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>Wildcard Document</key>
+				<dict>
+					<key>mode</key>
+					<string>TeX Mode</string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+				<key>texp</key>
+				<dict>
+					<key>mode</key>
+					<string>Default Mode</string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+			</dict>
+			<key>Open Inspectors</key>
+			<array>
+				<dict>
+					<key>mode</key>
+					<string>TeX Mode</string>
+					<key>type</key>
+					<string>text</string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+			</array>
+			<key>Window Frame Current Text Window:{1280, 854}</key>
+			<string>440 -43 535 756 0 0 1280 832 </string>
+			<key>iTM2ProjectAbsolutePath</key>
+			<string>/Users/ds08/knots/knots/lgmHeader.texp</string>
+			<key>iTM2ProjectFileKey</key>
+			<string>1</string>
+			<key>iTM2ProjectRelativePath</key>
+			<string>knots/lgmHeader.texp</string>
+			<key>iTM2ShouldCascadeWindows</key>
+			<false/>
+			<key>iTM2StringEncodingOpen</key>
+			<integer>30</integer>
+			<key>iTM2TextKeyWindow</key>
+			<false/>
+			<key>iTM2TextScaleFactor</key>
+			<real>1.2599210739135742</real>
+			<key>iTM2TextSelectedRange</key>
+			<string>{0, 0}</string>
+			<key>iTM2TextStyle</key>
+			<string>LaTeX</string>
+			<key>iTM2TextSyntaxParserVariant</key>
+			<string>default</string>
+			<key>iTM2TextVisibleRange</key>
+			<string>{0, 0}</string>
+		</dict>
+		<key>tex</key>
+		<dict>
+			<key>Inspector Variants</key>
+			<dict>
+				<key>Default</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Files</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>LaTeX</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>TeX</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>TeX Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>tex</key>
+				<dict>
+					<key>mode</key>
+					<string>TeX Mode</string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+			</dict>
+			<key>Open Inspectors</key>
+			<array>
+				<dict>
+					<key>mode</key>
+					<string>TeX Mode</string>
+					<key>type</key>
+					<string>text</string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+			</array>
+			<key>Window Frame Current Text Window:{1280, 854}</key>
+			<string>440 -43 535 756 0 0 1280 832 </string>
+			<key>iTM2ProjectAbsolutePath</key>
+			<string>/Users/ds08/knots/knots/lgmHeader.texp</string>
+			<key>iTM2ProjectFileKey</key>
+			<string>0</string>
+			<key>iTM2ProjectRelativePath</key>
+			<string>lgmHeader.texp</string>
+			<key>iTM2ShouldCascadeWindows</key>
+			<false/>
+			<key>iTM2StringEncodingOpen</key>
+			<integer>30</integer>
+			<key>iTM2TextKeyWindow</key>
+			<false/>
+			<key>iTM2TextScaleFactor</key>
+			<real>1.2599210739135742</real>
+			<key>iTM2TextSelectedRange</key>
+			<string>{4249, 11}</string>
+			<key>iTM2TextStyle</key>
+			<string>LaTeX</string>
+			<key>iTM2TextSyntaxParserVariant</key>
+			<string>default</string>
+			<key>iTM2TextVisibleRange</key>
+			<string>{0, 1061}</string>
+		</dict>
+		<key>texp</key>
+		<dict>
+			<key>Inspector Variants</key>
+			<dict>
+				<key>Default</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Default Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>Files</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>LaTeX</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Project Subdocuments Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>TeX</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Terminal</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Terminal Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>texp</key>
+				<dict>
+					<key>mode</key>
+					<string>Default Mode</string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+			</dict>
+			<key>Open Documents</key>
+			<array>
+				<string>1</string>
+				<string>0</string>
+			</array>
+			<key>Open Inspectors</key>
+			<array>
+				<dict>
+					<key>mode</key>
+					<string>Project Subdocuments Mode</string>
+					<key>type</key>
+					<string>TeX Project Type</string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+				<dict>
+					<key>mode</key>
+					<string>Terminal Mode</string>
+					<key>type</key>
+					<string>TeX Project Type</string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+				<dict>
+					<key>mode</key>
+					<string>Default Mode</string>
+					<key>type</key>
+					<string></string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+			</array>
+			<key>Window Frame Current Task Window:{1280, 854}</key>
+			<string>620 103 592 535 0 0 1280 832 </string>
+			<key>Window Frame Current TeX Project Files:{1280, 854}</key>
+			<string>74 359 319 287 0 0 1280 832 </string>
+			<key>iTM2ProjectAbsolutePath</key>
+			<string>/Users/ds08/knots/knots/lgmHeader.texp</string>
+			<key>iTM2ProjectFileKey</key>
+			<string>.</string>
+			<key>iTM2ProjectRelativePath</key>
+			<string>lgmHeader.texp</string>
+			<key>iTM2ShouldCascadeWindows</key>
+			<false/>
+			<key>iTM2TeXPTaskInspectorSplitViewFactors</key>
+			<string>0.000000:0.525907:0.000000</string>
+		</dict>
+	</dict>
+	<key>iTM2ContextTypes</key>
+	<dict>
+		<key>TeX Document</key>
+		<dict>
+			<key>Inspector Variants</key>
+			<dict>
+				<key>Default</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Files</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>LaTeX</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>TeX</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>TeX Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>tex</key>
+				<dict>
+					<key>mode</key>
+					<string>TeX Mode</string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+			</dict>
+			<key>Open Inspectors</key>
+			<array>
+				<dict>
+					<key>mode</key>
+					<string>TeX Mode</string>
+					<key>type</key>
+					<string>text</string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+			</array>
+			<key>Window Frame Current Text Window:{1280, 854}</key>
+			<string>440 -43 535 756 0 0 1280 832 </string>
+			<key>iTM2ProjectAbsolutePath</key>
+			<string>/Users/ds08/knots/knots/lgmHeader.texp</string>
+			<key>iTM2ProjectFileKey</key>
+			<string>0</string>
+			<key>iTM2ProjectRelativePath</key>
+			<string>lgmHeader.texp</string>
+			<key>iTM2ShouldCascadeWindows</key>
+			<false/>
+			<key>iTM2StringEncodingOpen</key>
+			<integer>30</integer>
+			<key>iTM2TextKeyWindow</key>
+			<false/>
+			<key>iTM2TextScaleFactor</key>
+			<real>1.2599210739135742</real>
+			<key>iTM2TextSelectedRange</key>
+			<string>{4249, 11}</string>
+			<key>iTM2TextStyle</key>
+			<string>LaTeX</string>
+			<key>iTM2TextSyntaxParserVariant</key>
+			<string>default</string>
+			<key>iTM2TextVisibleRange</key>
+			<string>{0, 1061}</string>
+		</dict>
+		<key>TeX Project Document</key>
+		<dict>
+			<key>Inspector Variants</key>
+			<dict>
+				<key>Default</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Default Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>Files</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>LaTeX</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Project Subdocuments Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>TeX</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Terminal</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Terminal Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>texp</key>
+				<dict>
+					<key>mode</key>
+					<string>Default Mode</string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+			</dict>
+			<key>Open Documents</key>
+			<array>
+				<string>1</string>
+				<string>0</string>
+			</array>
+			<key>Open Inspectors</key>
+			<array>
+				<dict>
+					<key>mode</key>
+					<string>Project Subdocuments Mode</string>
+					<key>type</key>
+					<string>TeX Project Type</string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+				<dict>
+					<key>mode</key>
+					<string>Terminal Mode</string>
+					<key>type</key>
+					<string>TeX Project Type</string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+				<dict>
+					<key>mode</key>
+					<string>Default Mode</string>
+					<key>type</key>
+					<string></string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+			</array>
+			<key>Window Frame Current Task Window:{1280, 854}</key>
+			<string>620 103 592 535 0 0 1280 832 </string>
+			<key>Window Frame Current TeX Project Files:{1280, 854}</key>
+			<string>74 359 319 287 0 0 1280 832 </string>
+			<key>iTM2ProjectAbsolutePath</key>
+			<string>/Users/ds08/knots/knots/lgmHeader.texp</string>
+			<key>iTM2ProjectFileKey</key>
+			<string>.</string>
+			<key>iTM2ProjectRelativePath</key>
+			<string>lgmHeader.texp</string>
+			<key>iTM2ShouldCascadeWindows</key>
+			<false/>
+			<key>iTM2TeXPTaskInspectorSplitViewFactors</key>
+			<string>0.000000:0.525907:0.000000</string>
+		</dict>
+		<key>Wildcard Document</key>
+		<dict>
+			<key>Inspector Variants</key>
+			<dict>
+				<key>Default</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Default Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>Files</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>LaTeX</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Project Subdocuments Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>TeX</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>TeX Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>Terminal</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Terminal Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>Wildcard Document</key>
+				<dict>
+					<key>mode</key>
+					<string>TeX Mode</string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+				<key>texp</key>
+				<dict>
+					<key>mode</key>
+					<string>Default Mode</string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+			</dict>
+			<key>Open Inspectors</key>
+			<array>
+				<dict>
+					<key>mode</key>
+					<string>TeX Mode</string>
+					<key>type</key>
+					<string>text</string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+			</array>
+			<key>Window Frame Current Text Window:{1280, 854}</key>
+			<string>440 -43 535 756 0 0 1280 832 </string>
+			<key>iTM2ProjectAbsolutePath</key>
+			<string>/Users/ds08/knots/knots/lgmHeader.texp</string>
+			<key>iTM2ProjectFileKey</key>
+			<string>1</string>
+			<key>iTM2ProjectRelativePath</key>
+			<string>knots/lgmHeader.texp</string>
+			<key>iTM2ShouldCascadeWindows</key>
+			<false/>
+			<key>iTM2StringEncodingOpen</key>
+			<integer>30</integer>
+			<key>iTM2TextKeyWindow</key>
+			<false/>
+			<key>iTM2TextScaleFactor</key>
+			<real>1.2599210739135742</real>
+			<key>iTM2TextSelectedRange</key>
+			<string>{0, 0}</string>
+			<key>iTM2TextStyle</key>
+			<string>LaTeX</string>
+			<key>iTM2TextSyntaxParserVariant</key>
+			<string>default</string>
+			<key>iTM2TextVisibleRange</key>
+			<string>{0, 0}</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

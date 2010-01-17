@@ -1,0 +1,19 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{ $\pi $-calculus grammar }}{23}
+\contentsline {figure}{\numberline {1.2}{ $\pi $-calculus free name calculation }}{24}
+\contentsline {figure}{\numberline {1.3}{ $\pi $-calculus structural equivalence }}{25}
+\contentsline {figure}{\numberline {1.4}{ $\pi $-calculus reduction relation }}{25}
+\contentsline {figure}{\numberline {1.5}{ $\pi $-calculus contexts }}{27}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{ $\rho $-calculus process grammar }}{32}
+\contentsline {figure}{\numberline {2.2}{ $\rho $-calculus free name calculation }}{35}
+\contentsline {figure}{\numberline {2.3}{ $\rho $-calculus structural equivalence }}{35}
+\contentsline {figure}{\numberline {2.4}{ $\rho $-calculus name equivalence }}{35}
+\contentsline {figure}{\numberline {2.5}{ $\rho $-calculus semantic substitution }}{36}
+\contentsline {figure}{\numberline {2.6}{ $\rho $-calculus reduction relation }}{37}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{ namespace logic formulae }}{41}
+\contentsline {figure}{\numberline {3.2}{ namespace logic semantics }}{42}
+\contentsline {figure}{\numberline {3.3}{ \texttt {XML}-like schema }}{44}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{ holOgram abstract syntax }}{50}

@@ -1,0 +1,66 @@
+This is BibTeX, Version 0.99c (Web2C 7.5.5)
+The top-level auxiliary file: qm2pi.aux
+The style file: plain.bst
+Database file #1: ../../biblios/main.bib.bib
+A bad cross reference---entry "Caires04"
+refers to entry "DBLP:conf/fossacs/2004", which doesn't exist
+A bad cross reference---entry "LaneveZ05"
+refers to entry "DBLP:conf/fossacs/2005", which doesn't exist
+A bad cross reference---entry "JoCaml"
+refers to entry "DBLP:conf/afp/2002", which doesn't exist
+A bad cross reference---entry "WojciechowskiS99"
+refers to entry "DBLP:conf/ma/1999", which doesn't exist
+A bad cross reference---entry "Cardelli04"
+refers to entry "DBLP:conf/cmsb/2004", which doesn't exist
+A bad cross reference---entry "Abramsky2005Algorithmic-Gam"
+refers to entry "DBLP:conf/sas/2005", which doesn't exist
+Warning--I didn't find a database entry for "DBLP:journals/tcs/CairesC04"
+Warning--I didn't find a database entry for "DBLP:conf/fossacs/Caires04"
+Warning--I didn't find a database entry for "DBLP:conf/sas/2005"
+Warning--I didn't find a database entry for "DBLP:conf/ma/1999"
+Warning--I didn't find a database entry for "DBLP:conf/afp/2002"
+Warning--I didn't find a database entry for "DBLP:conf/fossacs/2005"
+Warning--I didn't find a database entry for "DBLP:conf/fossacs/2004"
+Warning--I didn't find a database entry for "DBLP:conf/cmsb/2004"
+You've used 32 entries,
+            2118 wiz_defined-function locations,
+            748 strings with 9738 characters,
+and the built_in function-call counts, 12008 in all, are:
+= -- 1188
+> -- 448
+< -- 25
++ -- 181
+- -- 139
+* -- 788
+:= -- 1857
+add.period$ -- 107
+call.type$ -- 32
+change.case$ -- 157
+chr.to.int$ -- 0
+cite$ -- 32
+duplicate$ -- 537
+empty$ -- 1040
+format.name$ -- 139
+if$ -- 2684
+int.to.chr$ -- 0
+int.to.str$ -- 32
+missing$ -- 34
+newline$ -- 163
+num.names$ -- 78
+pop$ -- 185
+preamble$ -- 1
+purify$ -- 128
+quote$ -- 0
+skip$ -- 402
+stack$ -- 0
+substring$ -- 769
+swap$ -- 188
+text.length$ -- 25
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 122
+warning$ -- 0
+while$ -- 120
+width$ -- 34
+write$ -- 373
+(There were 6 error messages)

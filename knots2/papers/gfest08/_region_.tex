@@ -1,0 +1,54 @@
+\message{ !name(qm2pi.tex)}\documentclass[12pt]{llncs}
+%\documentclass{jktr}
+
+\usepackage[pdftex]{hyperref}                   
+\usepackage {listings}
+\usepackage {mathpartir}
+\usepackage{bcprules}
+%\usepackage{listings}
+                       
+\usepackage{graphicx} 
+%\usepackage[margins=2.5cm,nohead,nofoot]{geometry}
+%\usepackage{geometry}
+\usepackage{amsfonts}
+\usepackage{amstext}
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{color}
+
+
+%\include{myPreamble}
+\include{qm2pi.local} 
+
+%\ifpdf
+%\usepackage[pdftex]{graphicx}
+%\else
+%\usepackage{graphicx}
+%\fi
+
+ % \ifpdf
+%  \usepackage{pdfsync}
+%  \if
+
+
+%\title{Brief Article}
+%\author{David F. Snyder}
+%\author{L.G. Meredith}
+
+%\address{Dept. of Math., Texas State University--San Marcos, San Marcos, TX 78666}
+       
+\pagestyle{empty}
+
+
+\begin{document}
+
+\message{ !name(qm2pi.tex) !offset(373) }
+\begin{mathpar}
+  \inferrule*[lab=Out-barb]{x \nameeq y}{{y}!\langle{Q}\rangle \vdash x}
+  \and
+  \inferrule*[lab=Par-barb]{\mbox{$P\vdash x$ or $Q\vdash x$}}{\binpar{P}{Q} \vdash x}
+\end{mathpar}
+\message{ !name(qm2pi.tex) !offset(567) }
+
+\end{document}
+

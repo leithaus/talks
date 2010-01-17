@@ -1,0 +1,34 @@
+8
+
+dir
+1050
+http://svn.biosimilarity.com/src/open/papers/trunk/knots2/trunk/archive
+http://svn.biosimilarity.com/src
+
+
+
+2006-11-16T16:26:34.932542Z
+122
+dfs
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+f6b30a30-2216-0410-96b7-d27828f5fae3
+
+NSFCompMathProposal
+dir
+
+legacy
+dir
+

@@ -1,0 +1,514 @@
+This is pdfeTeX, Version 3.141592-1.30.4-2.2 (Web2C 7.5.5) (format=pdflatex 2006.9.13)  2 MAY 2007 10:40
+entering extended mode
+**ex_nihilo_finco.tex
+(./ex_nihilo_finco.tex
+LaTeX2e <2003/12/01>
+Babel <v3.8d> and hyphenation patterns for american, french, german, ngerman, d
+utch, italian, norsk, portuges, spanish, swedish, nohyphenation, loaded.
+(./entcs.cls
+Document Class: entcs 1994/01/12, 2e-1.15: Elsevier Preprint
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/base/newlfont.sty
+Package: newlfont 1998/08/17 v2.2m Standard LaTeX package
+LaTeX Info: Redefining \em on input line 67.
+
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/base/latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 47.
+))
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2002/01/22 v2.2d
+
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2001/10/25 v2.2f
+\@emptytoks=\toks14
+\symAMSa=\mathgroup5
+\symAMSb=\mathgroup6
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 132.
+))
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/oberdiek/ifpdf.sty
+Package: ifpdf 2005/07/22 v1.3 Providing \ifpdf (HO)
+Package ifpdf Info: pdfTeX in pdf mode detected.
+)
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2003/11/30 v6.74m Hypertext links for LaTeX
+
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+\@linkdim=\dimen102
+\Hy@linkcounter=\count79
+\Hy@pagecounter=\count80
+
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2003/11/30 v6.74m Hyperref: PDFDocEncoding definition (HO)
+)
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/hyperref/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive and teTeX
+)
+Package hyperref Info: Option `raiselinks' set `false' on input line 1830.
+Package hyperref Info: Option `colorlinks' set `true' on input line 1830.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 1830.
+Package hyperref Info: Hyper figures OFF on input line 1880.
+Package hyperref Info: Link nesting OFF on input line 1885.
+Package hyperref Info: Hyper index ON on input line 1888.
+Package hyperref Info: Plain pages ON on input line 1893.
+Package hyperref Info: Backreferencing OFF on input line 1900.
+
+Implicit mode ON; LaTeX internals redefined
+Package hyperref Info: Bookmarks ON on input line 2004.
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2004/03/15  ver 3.1  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 2143.
+\Fld@menulength=\count81
+\Field@Width=\dimen103
+\Fld@charsize=\dimen104
+\Choice@toks=\toks16
+\Field@toks=\toks17
+Package hyperref Info: Hyper figures OFF on input line 2618.
+Package hyperref Info: Link nesting OFF on input line 2623.
+Package hyperref Info: Hyper index ON on input line 2626.
+Package hyperref Info: backreferencing OFF on input line 2633.
+Package hyperref Info: Link coloring ON on input line 2636.
+\c@Item=\count82
+\c@Hfootnote=\count83
+)
+*hyperref using driver hpdftex*
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2003/11/30 v6.74m Hyperref driver for pdfTeX
+
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/psnfss/pifont.sty
+Package: pifont 2004/09/15 PSNFSS-v9.2 Pi font support (SPQR) 
+LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
+
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/psnfss/upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Try loading font information for U+psy on input line 64.
+
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/psnfss/upsy.fd
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+))
+\Fld@listcount=\count84
+\@outlinefile=\write3
+)
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/base/leqno.clo
+File: leqno.clo 1998/08/17 v1.1c Standard LaTeX option (left equation numbers)
+)
+LaTeX Info: Redefining \rm on input line 75.
+LaTeX Info: Redefining \cal on input line 76.
+LaTeX Info: Redefining \sf on input line 77.
+LaTeX Info: Redefining \tt on input line 78.
+LaTeX Info: Redefining \bf on input line 79.
+LaTeX Info: Redefining \it on input line 80.
+LaTeX Info: Redefining \sl on input line 81.
+LaTeX Info: Redefining \sc on input line 82.
+\@bls=\dimen105
+\eqntopsep=\skip41
+\eqnarraycolsep=\dimen106
+\labelwidthi=\dimen107
+\labelwidthii=\dimen108
+\labelwidthiii=\dimen109
+\labelwidthiv=\dimen110
+\@maxlistdepth=\count85
+\eqnbaselineskip=\skip42
+\eqnlineskip=\skip43
+\mathindent=\dimen111
+\c@part=\count86
+\c@section=\count87
+\c@subsection=\count88
+\c@subsubsection=\count89
+\c@paragraph=\count90
+\c@subparagraph=\count91
+\c@thm=\count92
+\c@alg=\count93
+\c@algorithm=\count94
+\c@note=\count95
+\c@summ=\count96
+\c@case=\count97
+\@tempcntc=\count98
+\c@figure=\count99
+\c@table=\count100
+\t@glob@notes=\toks18
+\t@loc@notes=\toks19
+\note@cnt=\count101
+\c@author=\count102
+\n@author=\count103
+\c@collab=\count104
+\n@collab=\count105
+\c@address=\count106
+\sv@mathsurround=\dimen112
+\sv@hyphenpenalty=\count107
+\prev@elem=\count108
+\cur@elem=\count109
+\fm@box=\box26
+\fm@size=\dimen113
+\t@abstract=\box27
+\t@keyword=\box28
+\t@xtheight=\dimen114
+\@logoheight=\dimen115
+\@pubyear=\count110
+\@copyear=\count111
+\slashbox=\box29
+LaTeX Font Info:    Try loading font information for U+lasy on input line 1123.
+
+
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 1123.
+
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2002/01/19 v2.2g AMS font definitions
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 1123.
+
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2002/01/19 v2.2g AMS font definitions
+)
+\Slashbox=\box30
+)
+(./prentcsmacro.sty) (./bigpage.sty) (./bcprules.sty
+\afterruleskip=\skip44
+\labelminsep=\skip45
+\labelcolwidth=\dimen116
+\@labelbox=\box31
+\rulebox=\box32
+\ruledim=\dimen117
+\labeldim=\dimen118
+) (./code.sty)
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/tools/multicol.sty
+Package: multicol 2004/02/14 v1.6e multicolumn formatting (FMi)
+\c@tracingmulticols=\count112
+\mult@box=\box33
+\multicol@leftmargin=\dimen119
+\c@unbalance=\count113
+\c@collectmore=\count114
+\doublecol@number=\count115
+\multicoltolerance=\count116
+\multicolpretolerance=\count117
+\full@width=\dimen120
+\page@free=\dimen121
+\premulticols=\dimen122
+\postmulticols=\dimen123
+\multicolsep=\skip46
+\multicolbaselineskip=\skip47
+\partial@page=\box34
+\last@line=\box35
+\mult@rightbox=\box36
+\mult@grightbox=\box37
+\mult@gfirstbox=\box38
+\mult@firstbox=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\@tempa=\box50
+\@tempa=\box51
+\@tempa=\box52
+\@tempa=\box53
+\@tempa=\box54
+\@tempa=\box55
+\@tempa=\box56
+\c@columnbadness=\count118
+\c@finalcolumnbadness=\count119
+\last@try=\dimen124
+\multicolovershoot=\dimen125
+\multicolundershoot=\dimen126
+\mult@nat@firstbox=\box57
+\colbreak@box=\box58
+)
+\ltext=\skip48
+\lmath=\skip49
+\cmath=\skip50
+\rmath=\skip51
+\rtext=\skip52
+
+No file ex_nihilo_finco.aux.
+\openout1 = `ex_nihilo_finco.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 253.
+LaTeX Font Info:    ... okay on input line 253.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 253.
+LaTeX Font Info:    ... okay on input line 253.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 253.
+LaTeX Font Info:    ... okay on input line 253.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 253.
+LaTeX Font Info:    ... okay on input line 253.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 253.
+LaTeX Font Info:    ... okay on input line 253.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 253.
+LaTeX Font Info:    ... okay on input line 253.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 253.
+LaTeX Font Info:    ... okay on input line 253.
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/graphics/color.sty
+Package: color 1999/02/16 v1.0i Standard LaTeX Color (DPC)
+
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/graphics/color.cfg
+File: color.cfg 2005/02/03 v1.3 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 125.
+
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/graphics/pdftex.def
+File: pdftex.def 2002/06/19 v0.03k graphics/color for pdftex
+\Gread@gobject=\count120
+
+(/usr/local/teTeX/share/texmf.tetex/tex/context/base/supp-pdf.tex
+(/usr/local/teTeX/share/texmf.tetex/tex/context/base/supp-mis.tex
+loading : Context Support Macros / Miscellaneous (2004.10.26)
+\protectiondepth=\count121
+\scratchcounter=\count122
+\scratchtoks=\toks20
+\scratchdimen=\dimen127
+\scratchskip=\skip53
+\scratchmuskip=\muskip11
+\scratchbox=\box59
+\scratchread=\read1
+\scratchwrite=\write4
+\zeropoint=\dimen128
+\onepoint=\dimen129
+\onebasepoint=\dimen130
+\minusone=\count123
+\thousandpoint=\dimen131
+\onerealpoint=\dimen132
+\emptytoks=\toks21
+\nextbox=\box60
+\nextdepth=\dimen133
+\everyline=\toks22
+\!!counta=\count124
+\!!countb=\count125
+\recursecounter=\count126
+)
+loading : Context Support Macros / PDF (2004.03.26)
+\nofMPsegments=\count127
+\nofMParguments=\count128
+\MPscratchCnt=\count129
+\MPscratchDim=\dimen134
+\MPnumerator=\count130
+\everyMPtoPDFconversion=\toks23
+)))
+Package hyperref Info: Link coloring ON on input line 253.
+ (/usr/local/teTeX/share/texmf.tetex/tex/latex/hyperref/nameref.sty
+Package: nameref 2003/12/03 v2.21 Cross-referencing by name of section
+\c@section@level=\count131
+)
+LaTeX Info: Redefining \ref on input line 253.
+LaTeX Info: Redefining \pageref on input line 253.
+\openout3 = `ex_nihilo_finco.out'.
+
+
+
+LaTeX Warning: Reference `lgmemail' on page 1 undefined on input line 258.
+
+
+LaTeX Warning: Reference `mremail' on page 1 undefined on input line 260.
+
+\c@sv@footnote=\count132
+
+LaTeX Warning: Citation `milner91polyadicpi' on page 1 undefined on input line 
+306.
+
+
+LaTeX Warning: Citation `biztalk' on page 1 undefined on input line 312.
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+
+ []
+
+
+Overfull \vbox (6.55998pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (2.43333pt too wide) has occurred while \output is active
+ []
+ []
+
+[1{/usr/local/teTeX/share/texmf.local/fonts/map/pdftex/updmap/pdftex.map}]
+
+LaTeX Warning: Citation `lisp3' on page 2 undefined on input line 364.
+
+[2]
+Overfull \hbox (26.2456pt too wide) detected at line 398
+ $ []$ 
+ []
+
+[3]
+
+LaTeX Warning: Citation `SangiorgiWalker' on page 4 undefined on input line 458
+.
+
+
+LaTeX Warning: Citation `Barendregt84' on page 4 undefined on input line 468.
+
+
+LaTeX Warning: Citation `Krivine-TheCurryHowardCorre' on page 4 undefined on in
+put line 490.
+
+
+LaTeX Warning: Citation `ONAG' on page 4 undefined on input line 492.
+
+
+Underfull \vbox (badness 1661) has occurred while \output is active []
+
+ [4]
+Overfull \hbox (1.8785pt too wide) in paragraph at lines 532--549
+[]\OT1/cmr/m/n/12 This ques-tion leads to sev-eral in-trigu-ing and ap-par-entl
+y fun-da-men-tal ques-tions. Firstly,
+ []
+
+[5]
+LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 605
+.
+LaTeX Font Info:    No file OMScmtt.fd. on input line 605.
+
+
+LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbraceleft' on input line 605.
+
+[6] [7] [8]
+Overfull \hbox (2.61108pt too wide) detected at line 811
+[]  
+ []
+
+[9]
+Overfull \hbox (2.61108pt too wide) detected at line 835
+[]  
+ []
+
+
+LaTeX Warning: Citation `SangiorgiWalker' on page 10 undefined on input line 84
+6.
+
+[10]
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 932.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\pi' on input line 932.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 932.
+
+[11]
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 954.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\pi' on input line 954.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 954.
+
+
+Overfull \hbox (26.2456pt too wide) detected at line 966
+ $ []$ 
+ []
+
+[12] [13]
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 1142.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\pi' on input line 1142.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 1142.
+
+
+LaTeX Warning: Citation `hop' on page 14 undefined on input line 1145.
+
+
+LaTeX Warning: Citation `facile' on page 14 undefined on input line 1146.
+
+[14]
+
+LaTeX Warning: Citation `DBLP:conf/tacs/Milner97' on page 15 undefined on input
+ line 1200.
+
+
+LaTeX Warning: Citation `DBLP:conf/concur/HermidaP95' on page 15 undefined on i
+nput line 1202.
+
+
+LaTeX Warning: Citation `PavlovicD:CLNA' on page 15 undefined on input line 120
+2.
+
+
+LaTeX Warning: Citation `GabbayMJ:picfm' on page 15 undefined on input line 120
+4.
+
+
+LaTeX Warning: Citation `polysync' on page 15 undefined on input line 1207.
+
+
+LaTeX Warning: Citation `Fontana' on page 15 undefined on input line 1222.
+
+[15]
+No file ex_nihilo_finco.bbl.
+[16] (./ex_nihilo_finco.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 3663 strings out of 95137
+ 46453 string characters out of 1183013
+ 2093542 words of memory out of 4548377
+ 6706 multiletter control sequences out of 10000+50000
+ 22469 words of font info for 90 fonts, out of 2000000 for 2000
+ 58 hyphenation exceptions out of 5000
+ 34i,13n,39p,325b,249s stack positions out of 5000i,500n,6000p,200000b,40000s
+PDF statistics:
+ 185 PDF objects out of 300000
+ 59 named destinations out of 131072
+ 17 words of extra memory for PDF output out of 10000
+</usr/local/teTeX/share/texmf.tetex/fonts/type1/bluesky/cm/cmitt10.pfb></usr/
+local/teTeX/share/texmf.tetex/fonts/type1/bluesky/symbols/msam7.pfb></usr/local
+/teTeX/share/texmf.tetex/fonts/type1/bluesky/cm/cmsy8.pfb></usr/local/teTeX/sha
+re/texmf.tetex/fonts/type1/bluesky/symbols/msbm10.pfb></usr/local/teTeX/share/t
+exmf.tetex/fonts/type1/bluesky/cm/cmex10.pfb></usr/local/teTeX/share/texmf.tete
+x/fonts/type1/bluesky/cm/cmmi8.pfb></usr/local/teTeX/share/texmf.tetex/fonts/ty
+pe1/bluesky/symbols/msam10.pfb></usr/local/teTeX/share/texmf.tetex/fonts/type1/
+bluesky/cm/cmtt12.pfb></usr/local/teTeX/share/texmf.tetex/fonts/type1/bluesky/c
+m/cmsy10.pfb></usr/local/teTeX/share/texmf.tetex/fonts/type1/bluesky/cm/cmti12.
+pfb></usr/local/teTeX/share/texmf.tetex/fonts/type1/bluesky/cm/cmmi12.pfb></usr
+/local/teTeX/share/texmf.tetex/fonts/type1/bluesky/cm/cmcsc10.pfb></usr/local/t
+eTeX/share/texmf.tetex/fonts/type1/bluesky/cm/cmsl10.pfb></usr/local/teTeX/shar
+e/texmf.tetex/fonts/type1/bluesky/cm/cmr7.pfb></usr/local/teTeX/share/texmf.tet
+ex/fonts/type1/bluesky/cm/cmmi10.pfb></usr/local/teTeX/share/texmf.tetex/fonts/
+type1/bluesky/cm/cmr10.pfb></usr/local/teTeX/share/texmf.tetex/fonts/type1/blue
+sky/cm/cmbx10.pfb></usr/local/teTeX/share/texmf.tetex/fonts/type1/bluesky/cm/cm
+ti10.pfb></usr/local/teTeX/share/texmf.tetex/fonts/type1/bluesky/cm/cmbx12.pfb>
+</usr/local/teTeX/share/texmf.tetex/fonts/type1/bluesky/cm/cmr12.pfb></usr/loca
+l/teTeX/share/texmf.tetex/fonts/type1/bluesky/cm/cmr17.pfb></usr/local/teTeX/sh
+are/texmf.tetex/fonts/type1/bluesky/cm/cmtt8.pfb></usr/local/teTeX/share/texmf.
+tetex/fonts/type1/bluesky/cm/cmr8.pfb>
+Output written on ex_nihilo_finco.pdf (16 pages, 204768 bytes).

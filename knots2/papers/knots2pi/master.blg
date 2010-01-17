@@ -1,0 +1,47 @@
+This is BibTeX, Version 0.99c (Web2C 7.5.5)
+The top-level auxiliary file: master.aux
+The style file: plain.bst
+Database file #1: ../../biblios/main.bib.bib
+Warning--I didn't find a database entry for "DBLP:conf/mfcs/Sangiorgi95"
+You've used 18 entries,
+            2118 wiz_defined-function locations,
+            636 strings with 7070 characters,
+and the built_in function-call counts, 5873 in all, are:
+= -- 616
+> -- 179
+< -- 7
++ -- 76
+- -- 54
+* -- 372
+:= -- 958
+add.period$ -- 59
+call.type$ -- 18
+change.case$ -- 78
+chr.to.int$ -- 0
+cite$ -- 18
+duplicate$ -- 252
+empty$ -- 502
+format.name$ -- 54
+if$ -- 1275
+int.to.chr$ -- 0
+int.to.str$ -- 18
+missing$ -- 15
+newline$ -- 93
+num.names$ -- 40
+pop$ -- 64
+preamble$ -- 1
+purify$ -- 62
+quote$ -- 0
+skip$ -- 182
+stack$ -- 0
+substring$ -- 442
+swap$ -- 67
+text.length$ -- 7
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 72
+warning$ -- 0
+while$ -- 64
+width$ -- 20
+write$ -- 208
+(There was 1 warning)

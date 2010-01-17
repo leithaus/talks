@@ -1,0 +1,123 @@
+-- -*- mode: Haskell;-*- 
+-- Filename:    holOgram.cf 
+-- Authors:     lgm                                                    
+-- Creation:    Sun Jan 20 11:23:37 2008 
+-- Copyright:   Not supplied 
+
+-- Description:
+--   Grammar for paper
+-- ------------------------------------------------------------------------
+
+-- process:
+
+Selection      . Process          ::= Case LCurly [GuardedProcess] RCurly         ;
+Composition    . Process          ::= LCurly [Process] RCurly                     ;
+Dereference    . Process          ::= At Site                                     ;
+
+-- lists of processes: 
+
+[]             . [GuardedProcess] ::=                                             ;
+(:)            . [GuardedProcess] ::= GuardedProcess ";" [GuardedProcess]         ;
+
+[]             . [Process]        ::=                                             ;
+(:)            . [Process]        ::= Process ";" [Process]                       ;
+
+-- guarded processes:
+
+Input          . GuardedProcess   ::= Site Abstraction                            ;
+Output         . GuardedProcess   ::= Site Concretion                             ;
+
+-- agents:
+
+Abstraction    . Agent            ::= Whimper LParen [Pattern] RParen Dot Process ;
+Concretion     . Agent            ::= Bang LParen [Pattern] RParen Assign LParen [Process] Rround Dot Process ;
+
+-- patterns:
+
+Value          . Pattern          ::= Code                                        ;
+QueryPattern   . Pattern          ::= Query                                       ;
+
+-- query:
+
+SumQuery       . Query            ::= Sum                                         ;
+ParQuery       . Query            ::= LCurly [Pattern] RCurly                     ;
+DropQuery      . Query            ::= At LQuote Pattern RQuote                    ;
+RecQuery       . Query            ::= Rec Identifier Dot Pattern                  ;
+
+-- sum:
+
+Variable       . Sum              ::= Variable                                    ;
+Summand        . Sum              ::= [GuardedPattern]                            ;
+
+-- guarded pattern:
+
+AbsPattern     . GuardedPattern   ::= Whimper TuplePattern Dot Query              ;
+DataPattern    . GuardedPattern   ::= Bang TuplePattern Assign TuplePattern Dot Query ;
+DerefPattern   . GuardedPattern   ::= Star Variable Dot Query                     ;
+
+-- tuple pattern:
+
+TupleVariable  . TuplePattern     ::= Variable                                    ;
+TupleList      . TuplePattern     ::= LParen [NestedTuplePattern] RParen          ;
+TupleCons      . TuplePattern     ::= Pattern Cons TuplePattern                   ;
+
+-- nested tuple pattern:
+
+Base           . NestedTuplePattern ::= Pattern                                   ;
+Nesting        . NestedTuplePattern ::= TuplePattern                              ;
+
+-- site:
+
+CodeSite       . Site             ::= Code                                        ;
+VariableSite   . Site             ::= Variable                                    ;
+
+-- code:
+
+Quotation      . Code             ::= LQuote Process RQuote                       ;
+
+-- variable:
+
+Identifier     . Variable         ::= Identifier                                  ;
+Wildcard       . Variable         ::= Underscore                                  ;
+
+-- value:
+
+Codification   . Value            ::= Code                                        ;
+Ground         . Value            ::= GroundLiteral                               ;
+
+-- ground:
+
+Boolean        . GroundLiteral    ::= BooleanLiteral                              ;
+Char           . GroundLiteral    ::= Char                                        ;
+Integer        . GroundLiteral    ::= Integer                                     ;
+Double         . GroundLiteral    ::= Double                                      ;
+String         . GroundLiteral    ::= String                                      ;
+
+BooleanTrue    . BooleanLiteral   ::= "true"                                      ;
+BooleanFalse   . BooleanLiteral   ::= "false"                                     ;
+
+
+-- Terminals
+
+ModelIt         . Models        ::= "|="                             ;
+ParIt           . Par           ::= "|"                              ;
+ZeroIt          . Zero          ::= "0"                              ;
+LParenIt        . LParen        ::= "("                              ;
+RParenIt        . RParen        ::= ")"                              ;
+LMSetIt         . LMSet         ::= "{|"                             ;
+RMSetIt         . RMSet         ::= "|}"                             ;
+LAngleIt        . LAngle        ::= "<"                              ;
+RAngleIt        . RAngle        ::= ">"                              ;
+LBrackIt        . LBrack        ::= "["                              ;
+RBrackIt        . RBrack        ::= "]"                              ;
+LCurlyIt        . LCurly        ::= "{"                              ;
+RCurlyIt        . RCurly        ::= "}"                              ;
+QuoteIt         . Quote         ::= "'"                              ;
+BangIt          . Bang          ::= "!"                              ;
+WhimperIt       . Whimper       ::= "?"                              ;
+AmpersandIt     . Ampersand     ::= "&"                              ;
+TildeIt         . Tilde         ::= "~"                              ;
+AtIt            . At            ::= "@"                              ;
+StarIt          . Star          ::= "*"                              ;
+LQuoteIt        . LQuote        ::= "<<"                             ;
+RQuoteIt        . RQuote        ::= ">>"                             ;

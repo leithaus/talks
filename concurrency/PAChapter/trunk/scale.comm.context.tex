@@ -1,0 +1,121 @@
+We
+consider three variations.
+
+\paragraph{Single-holed context-indexed pseudo-application}
+
+In the most straightforward interpretation, we may provide a single
+mediating context and make a decision about where to break symmetry
+between input and output.
+
+\begin{equation}
+  (y)P \cdot_{K} [z]Q \triangleq K[P]\{z/y\}|Q \nonumber
+\end{equation}
+
+This approach works well for processes in which there is a clear
+difference in ``layering'', as in our network example. Sometimes,
+however, processes are not cleanly layered involving communication
+events at different levels of granularity. Network monitoring
+applications, for example, may often these uneven communications
+events; leading to our second variation.
+
+\paragraph{Dual-holed context-indexed pseudo-application}
+
+In a slightly more sophisticated approach, we borrow again from Milner
+and consider multi-holed contexts, though we only need dual-holed
+contexts to restore symmetry. In this approach, the co-location
+predicate must take values in contexts of the form, $K \equiv
+K_{A}|K_{C}$, which we demand in the hypothesis to our comm rule.
+
+\begin{mathpar}
+  \inferrule* [lab=$comm_{AC^{\perp}KPar}$] {x_{src} \perp x_{trgt} = K, K \equiv
+    K_{A}|K_{C}} {x_{src}.A | x_{trgt}.C \to A \cdot_{K} C}
+\end{mathpar}
+
+The pseudo-application takes advantage of the additional information
+about the structure context to substitute the continuations of the
+communications into their appropriate holes.
+
+\begin{equation}
+  (y)P \cdot_{K \equiv K_{A}|K_{C}} [z]Q \triangleq K_{A}[P]\{z/y\}|K_{C}[Q] \nonumber
+\end{equation}
+
+\paragraph{Higher-order context-indexed pseudo-application}
+
+Further, in an age where code is regularly downloaded and executed
+across a variety of execution platforms, we may recognize that not
+every execution site is to be treated equally. In this setting it is
+natural to consider a higher-order variant of the $\pi$-calculus, in
+which the (codes of) processes are passed. Thus, we have abstractions
+of the shape, $process_{0} \times \ldots \times process_{n} \to
+process$, and concretions are simply processes.
+
+\begin{equation}
+  (y)P \cdot_{K} Q \triangleq P\{K[Q]/y\} \nonumber
+\end{equation}
+
+Fully instantiating our comm rule, we have 
+
+\begin{mathpar}
+  \inferrule* [lab=$comm_{AC^{\perp}KHO}$] {x_{src} \perp x_{trgt} = K} {x_{src}.(y)P | x_{trgt}.Q \to P\{K[Q]/y\}}
+\end{mathpar}
+
+\subsubsection{Composing algebras}
+
+The scheme of the comm rule derived above supports a natural notion of
+composition, which in turn, gives surprisingly natural notions of
+morphisms, neatly side-stepping the issues raised above regarding a
+categorical treatement of the composition of algebras. Suppose we have
+two reduction relations, $\red_{1}$ and $\red_{2}$ given in terms of
+our comm rule scheme.
+
+\begin{mathpar}
+  \inferrule* [lab=$comm_{AC^{\perp}K1}$] {x_{src} \perp_1 x_{trgt} = K} {x_{src}.A | x_{trgt}.C \to_1 A \cdot_{K}^{1} C}
+  \and
+  \inferrule* [lab=$comm_{AC^{\perp}K2}$] {x_{src} \perp_2 x_{trgt} = K} {x_{src}.A | x_{trgt}.C \to_2 A \cdot_{K}^{2} C}
+\end{mathpar}
+
+We may derive a composite comm rule
+
+\begin{mathpar}
+  \inferrule* [lab=$comm_{AC^{\perp}K1 \circ K2}$] {x_{src} \perp_1 x_{mid} = K_1, x_{mid} \perp_2 x_{trgt} = K_2} {x_{src}.A | x_{trgt}.C \to_1 A \cdot_{K_1 \circ K_2} C}
+\end{mathpar}
+
+where, as usual, we take $(K_1 \circ K_2)[P] \triangleq
+K_2[K_1[P]]$. More generally, we may lift all of the context
+constructors to constructors of algebras.
+
+\paragraph{Typed composition of algebras}
+TBD
+
+% Consider, the modern presentation of a process algebra is essentially
+% given by a triple, $\langle G, \equiv, \red \rangle$, comprised of the
+% generating structure, $G$, the structural equivalence, $\equiv$ and
+% the reduction relation, $\red$. Notions of morphisms from one such
+% triple to another are complicated by the interplay between structure
+% in $G/\equiv$ and dynamics in $\red$. We can dramatically simplify the
+% situation if we require the term structure and structural equivalence
+% to be perfectly preserved and only consider the composition of
+% $\red$'s.
+
+\subsection{From complexity scale to spatio-temporal scale}
+
+TBD
+
+% Up to this point we have primarily relied on well-established
+% applications of Milner's calculus to bootstrap intuitions about the
+% conceptual framework under discussion. Moreover, it should present no
+% conceptual challenges to think about scale qua system complexity as
+% essentially aligned with what may be captured via context. In fact,
+% even contexts based on recursive definitions are compatible with
+% identifying \emph{separation} in complexity scale with contextual
+% decomposition. That is, it is intuitively reasonable to demand $P
+% \equiv K[Q] \Rightarrow S(Q) \leq S(P)$ for any reasonable measure of
+% complexity scale, $S$.
+
+% The step from complexity to spatio-temporal scale is actually already
+% present in the process calculi literature in the form of recent work
+% on spatial and context logics. To cut to the chase, contexts are
+% essentially processes with holes in them. Spatial/contextual formulae
+% may be used to locate those holes in space and time. 
+
+% Our context-valued co-location predicate

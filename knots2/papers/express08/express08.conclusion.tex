@@ -1,0 +1,132 @@
+\section{Conclusions and future work}
+
+\subsection{Knotation system properties}\label{sub:knot_system_props_recap} % (fold)
+Rather than list the properties of section
+\ref{sub:desirable_properties_for_a_knot_notation_system_} and tick
+them off, as we may do, let us take a step back. In the end it is the
+act of calculating over knots -- tabulating, searching, making new
+ones from old -- that places demands on the notation system used to
+represent them. These are the practical considerations that give rise
+to the properties listed in
+\ref{sub:desirable_properties_for_a_knot_notation_system_}. Establishing
+the tight correspondence between processes in the image of the
+encoding and the knots they represent is ultimately in service of
+showing this is a reasonable proxy for knots because calculations on
+the representation have a correspondence to calculations on the
+domain. Moreover, the last few decades of logic in computer science
+has taught us that there is fidelity and then there is
+\emph{fidelity}. It's one thing map elements of one domain to elements
+of another, but it's another to map the procedures of one domain
+(roughly, operations on elements) to the procedures of
+another. Whether one sees a demand like this through the lens of
+``functoriality'' or through a correspondence of proofs (of say,
+ambient isotopy, in a proof system made of Reidmeister moves) and
+programs (that transform programs), the practical side of the demand
+is about making calculation \emph{tractable}, so that ``local''
+operations in one domain correspond to ``local'' operations in the
+other. This makes it possible to structure calculations in terms of
+the structure of the elements over which the calculations are being
+performed, which has far-ranging consequences on the complexity of
+calculation in the representative domain. Of note, we have been
+careful to restrict attention to the image of the encoding. We do not,
+as of yet, have an effective characterization of processes that will
+decide whether or not a process is in the image of the encoding. This
+restriction notwithstanding, the image is the only system thus far
+proposed that does enjoy all of the properties listed, including possessing (actually, being) a
+language for classifying knots via logical properties.
+
+\subsection{Knot queries}\label{sub:knot_queries} % (fold)
+The interest in knot tabulation coming from the physical sciences is a
+strong motivation to investigate the design of a specialized form of
+spatial logic tailored to reasoning about processes in the image of
+this encoding. Specifically, the current authors are in the process of
+devising an executable knot query language that runs on top of a
+translation of spatial logic predicates to XQuery, the XML query
+language \cite{W3C-XQ-2873221} \cite{W3C-XQ-5631451}. In this
+application, a member, $K$, of an isotopy class $[K]_{\sim}$ is stored
+as an XML document $\meaningof{\meaningof{K}}_{XML}$. As the notation
+indicates, the document may be calculated from the process expression,
+$\meaningof{K}$. Pleasantly, all such documents will conform to an XML
+schema \cite{Fallside:04:XSP} \cite{Mendelsohn:04:XSP}
+\cite{Biron:04:XSP} that may be formally derived from the grammar for
+processes described in section \ref{subsub:process_grammar}. Thus, the
+mathematics extends to a formal specification of the software
+implementation of a ``knot database'' and the compositional nature of
+the specification makes tractable formal verification of the
+correctness of the software with regards to the specification.
+% subsection knot_queries (end)
+
+\subsection{Braids, tangles, virtual knots, racks and quandles}\label{sub:braids_tangles_and_virtual_knots} % (fold)
+
+As may be seen from the encoding of the Reidemeister moves, nothing in
+this approach restricts it to knots. In particular, the same
+techniques may be lifted to braids and tangles. More generally,
+Kauffman posits an intriguing new member to the knot family by
+virtualizing the crossings in a knot diagram
+\cite{kauffman-2005-VKNL}. We note that while we arrived at this
+encoding before becoming aware of Kauffman's work, that line of
+investigation is very much aligned to the guiding intuitions of the
+encoding presented here. Namely, the crossing circuit \emph{a priori}
+could be any $\pi$-calculus process that respects the interface of the
+wiring circuit. We conjecture that many forms of \emph{virtualization}
+may be faithfully interpreted as \emph{simulation}.
+
+Moreover, it seems likely that the rack and quandle frameworks may be
+mirrored in the process calculus, as these structures can be used to
+model the \emph{action} of the Reidemeister moves on a knot. The
+relation between this type of action and the dynamics of the process
+calculus presented here remains to be investigated.
+
+% subsection braids_tangles_and_virtual_knots (end) 
+
+\subsection{Other calculi, other bisimulations and geometry as behavior}\label{sub:other_calculi_other_bisimulations_and_geometry_as_behavior} % (fold)
+
+
+The astute reader may have noticed that the encoding
+described here is not much more than a linear notation for a minimal
+graph-based representation of a knot diagram. In this sense, there appears to be
+nothing particularly remarkable about the representation. Though
+expressed in a seemingly idiosyncratic way, the encoding is built from the same
+information that any freely downloadable program for calculating knot
+polynomials uses routinely. What is remarkable about this
+representational framework is that it enjoys an \emph{independent}
+interpretation as the description of the behavior of concurrently
+executing processes. Moreover, the notion of the equivalence of the
+behavior of two processes (in the image of the encoding) coincides
+exactly with the notion of knot equivalence. It is the precise
+alignment of independently discovered notions that often indicates a
+phenomena worth investigating.
+
+This line of thought seems particularly strengthened when we recall
+the $\pi$-calculus is just one of many `computational calculi' ---the
+$\lambda$-calculus being another paradigmatic example--- that may be
+thought of as a \emph{computational dynamics+algebra} and that
+virtually every such calculus is susceptible to a wide range of
+bisimulation and bisimulation up-to techniques
+\cite{milner92techniques}. As such, we see the invariant discussed
+here as one of many potential such invariants drawn from these
+relatively new algebraic structures. It is in this sense that we see
+it as a new kind of invariant and is the inspiration for the other
+half of the title of this paper.
+
+Finally, if the reader will permit a brief moment of philosophical
+reflection, we  conclude by observing that such a connection fits
+into a wider historical context. There is a long-standing enquiry and
+debate into the nature of physical space. Using the now familiar
+signposts, Newton's physics ---which sees space as an absolute
+framework--- and Einstein's ---which sees it as arising from and
+shaping interaction--- we see this connection as fitting squarely
+within the Einsteinian \emph{weltanschauung}. On the other hand,  unlike the particular mathematical framework of continuity in
+which Einstein worked out his programme, behavior and its implied notions of space and time are
+entirely discrete in this setting, built out of names and acts of
+communication. In this light we look forward to revisiting the now
+well-established connection between the various knot invariants such
+as the Kauffman bracket and quantum groups. Specifically, it appears
+that the kinematic picture of loop quantum gravity derived from spin
+networks can be faithfully encoded in a manner analogous to one used
+here to encode knots, but the process structure offers an account of
+dynamics somewhat different from spin foams \cite{baez-2000-543}.
+
+% subsection other_calculi_other_bisimulations_and_geometry_as_behavior (end)
+
+

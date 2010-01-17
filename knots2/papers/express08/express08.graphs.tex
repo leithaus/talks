@@ -1,0 +1,120 @@
+\section{Graphs}
+
+\begin{definition}
+  A \emph{graph} consists of the following data $(V,E,\textsf{src},\textsf{trgt})$:
+  \begin{enumerate}
+    \item a set, $V$, of \emph{vertices} (alternately, \emph{nodes});
+    \item a set, $E$, of \emph{edges} (alternately, \emph{arrows} or \emph{links});
+    \item a map, $\textsf{src}:E \to V$, determining the \emph{source} of an edge;
+    \item a map, $\textsf{trgt}:E \to V$, determining the \emph{target} of an edge;
+  \end{enumerate}
+\end{definition}
+
+This definition is general enough to capture both directed and
+undirected graphs. In particular, nothing in the definition dictates
+that an edge is oriented from source to target. Rather, each edge,
+$e$, has two endpoints, source and target, accessed by the functions,
+$\textsf{src}$, and $\textsf{trgt}$, respectively. And, speaking of
+accessing, we will avail ourselves of standard `accessor' function
+notation. Thus, if $G = (V,E,\textsf{src},\textsf{trgt})$, then $V(G)
+= V$ and $E(G) = E$, etc.
+
+\begin{example} \label{seqex}
+  \begin{enumerate}
+  \item The \emph{discrete graph}, $G(n)$, is given by
+  $(\{0,...,n-1\},\emptyset,\bot,\bot)$ where $\bot$ is the function
+  with empty domain.
+
+  \item A \emph{chain}, $C(n)$, is given by 
+  \begin{enumerate}
+    \item $V(C(n)) = \{0,...,n-1\}$;
+    \item $E(C(n)) = \{e_0,...,e_{n-2}\}$;
+    \item $\textsf{src}(e_i)=e_{i-1}, 0 \leq i \leq n-2$;
+    \item $\textsf{trgt}(e_i)=e_{i+1},0 \leq i \leq n-2$.
+  \end{enumerate}
+
+  \item A \emph{Loop}, $L(n)$, is constructed from a chain,
+  $C(n)$, by adding an edge, $e_{n-1}$ with
+  $\textsf{src}(e_{n-1})=e_{n-2}$ and $\textsf{trgt}(e_{n-1})=e_{0}$.
+  \end{enumerate}
+\end{example}
+
+\begin{example} \label{knotex}
+  A \emph{knot} is an embedding, $K : S^0 \to \Real^3$, of the circle
+  into 3-space. A \emph{knot diagram} is a projection of a knot onto
+  the plane such that every crossing is of the form .... A \emph{knot
+    shadow} is a graph derived from a knot diagram by associating
+  vertices to crossings and edges between connected crossings. Note
+  that a knot shadow is always a tetravalent graph, i.e. for any
+  vertex, $v$, the cardinality of the cone of $v$ is $|\textsf{e}(v)|
+  = 4$.
+\end{example}
+
+\begin{example} \label{chemex}
+  \begin{eqnarray}
+    E + S \rightleftharpoons ES \rightarrow E + P
+  \end{eqnarray}
+\end{example}
+
+\begin{definition}
+  A \emph{subgraph}, $H$, of a graph, $G$, is a graph such that
+  \begin{enumerate}
+     \item $V(H) \subseteq V(G)$;
+     \item $E(H) \subseteq E(G)$;
+     \item $\textsf{src}(H) = \textsf{src}(G) \backslash E(H)$;
+     \item $\textsf{trgt}(H) = \textsf{trgt}(G) \backslash E(H)$;
+  \end{enumerate}
+  More generally, given graphs, $G, H$, a graph \emph{homomorphism},
+  $m: G \to H$, from $G$ to $H$ is a pair of functions, $m_V : V(G)
+  \to V(H)$, $m_E : E(G) \to E(H)$ such that $\textsf{src}(m_E(e)) =
+  m_V(\textsf{src}(e))$ and $\textsf{trgt}(m_E(e)) =
+  m_V(\textsf{trgt}(e))$. And a graph \emph{isomorphism} is a graph
+  homomorphism in which the vertex and edge maps are bijections.
+\end{definition}
+
+As usual, we overload $\subseteq$ for the subgraph relation. Thus,
+$G(n) \subseteq C(n) \subseteq L(n)$ holds for the examples above. We
+write $G \sim H$ when there exists a graph isomorphism between $G$ and
+$H$.
+
+\begin{definition}
+  A \emph{path}, $p$, in graph, $G$, is an ordered collection of
+  edges, $p = (e_0, ..., e_N)$, such that $\textsf{src}(e_i) =
+  \textsf{trgt}(e_{i-1})$. We use the notation $p[i]$ to access the
+  $i$th edge in the path, $p$, and $|p|$ to denote the length of the
+  path. Like an edge, a path, $p$, has a source, $\textsf{src}(p)$,
+  and a target, $\textsf{trgt}(p)$, calculated as $\textsf{src}(p) =
+  \textsf{src}(p[0])$, and $\textsf{trgt}(p) =
+  \textsf{trgt}(p[|p|-1])$.
+\end{definition}
+
+\begin{definition}
+  A \emph{connected component}, $C$, of a graph, $G$, is a subgraph of
+  $G$ such that there is a path between every distinct pair of
+  vertices. That is, for all $v_0, v_1$ such that $v_0 \neq v_1$ there
+  exists a $p$ in $C$ such that either $\textsf{src}(p) = v_0$ and
+  $\textsf{trgt}(p) = v_1$ or $\textsf{src}(p) = v_1$ and
+  $\textsf{trgt}(p) = v_0$.
+\end{definition}
+
+\begin{remark}
+  Note that while chains and loops have a single connected component
+  the discrete graph $G(n)$ enjoys $n$ connected components.
+\end{remark}
+
+\begin{definition}
+  The \emph{slice} of a vertex, $v$, in a graph, $G$, is given by
+  \begin{equation}
+    \textsf{slice}_{G}(v) \triangleq \{ e \; | \; \textsf{src}(e) = v \}
+  \end{equation}
+  and the \emph{co-slice} is given by
+  \begin{equation}
+    \textsf{co-slice}_{G}(v) \triangleq \{ e \; | \; \textsf{trgt}(e) = v \}
+  \end{equation}
+  and the \emph{cone} is given by $\textsf{e}(v) \triangleq \textsf{slice}_{G}(v) \cup \textsf{co-slice}_{G}(v)$.
+\end{definition}
+
+As usual the subscript, $G$, will be dropped when context minimizes
+the risk of confusion.
+
+

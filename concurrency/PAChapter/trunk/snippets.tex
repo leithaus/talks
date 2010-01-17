@@ -1,0 +1,136 @@
+Software development is under pressure from above and from below. From
+above we have already witnessed the profound change the
+commercialization of the Internet has had on the nature of the
+commercial software application. With few exceptions, software
+applications are now commercially uninteresting unless they are
+multiuser and able to interoperate over a wide range of communications
+protocols. From below, the end of Moore's law as we knew it is causing
+hardware vendors to "go sideways" producing multicore offerings for
+both consumer and enterprise markets. This means that parallelism,
+concurrency and distribution are the prevailing paradigms from the
+hardware up through the end-user's expectations of availability and
+responsiveness.
+
+Unfortunately, mainstream programming models have not kept up with the
+times, offering out-dated and out-moded abstractions for describing
+and implementing parallel, concurrent and distributed
+programs. Threads and locks, for example, are notoriously difficult
+abstractions with which to program because there is no syntactic
+support allowing the programmer -- or analysis programs -- to check
+syntactically important notions like "how many threads can i expect to
+run through this code simultaneously?" or "what are the actual
+boundaries of this critical section; what resources are guaranteed
+protection from simultaneous access?".
+
+However, in the last 30 years a new programming paradigm has emerged
+offering a set of abstractions aimed at description, analysis and
+execution of parallel, concurrent and distributed programs. The
+situation is akin to the development of the lambda calculus which
+provides a core set of abstractions (programs as rules) enjoying
+simultaneous status as an elegant and powerful mathematical theory and
+the basis of modern programming languages like LISP, Scheme, OCaml,
+Haskell, ... . Likewise the mobile process algebras, and especially
+Milner's \pi-calculus and Cardelli and Gordon's ambient calculus,
+offer a mathematical theory of computation as interaction. These
+notions are starting to make their way into modern programming
+languages, like Erlang, with significant footprint in commercial and
+industrial applications.
+
+In this course will will cover the basic theory of two of the major
+strands of such calculi, Milner's \pi-calculus and Cardelli and
+Gordon's ambient calculus. Additionally we will explore the theory
+through practice by way of programming in Erlang. Students will be
+expected to work on a project of some moderate level of complexity as
+a way of demonstrating their acquisition of the basic concepts and
+principles.
+
+
+Reflection, concurrency and data structures
+Abstract 	[Edit paper title, abstract, topics] 	
+
+Since the first attempts to develop functional languages from
+specifications of the lambda calculus, there has been a dream of
+essentially deriving the core semantics of a practical programming
+language from the mathematical specification of the calculus that
+embodies the computational model the language is meant to
+realize. Developments in commercial applications of computing have
+made this dream more attractive now than ever. On the one hand, with
+the widespread market adoption of parallel, concurrent and distributed
+computing platforms, solutions and offerings software development is
+under pressure from above and from below. From above we have already
+witnessed the profound change the commercialization of the Internet
+has had on the nature of the commercial software application. With few
+exceptions, software applications are now commercially uninteresting
+unless they are multiuser and able to inter-operate over a wide range
+of communications protocols. From below, the end of Moore's law as we
+knew it is causing hardware vendors to "go sideways" producing
+multi-core offerings for both consumer and enterprise markets. This
+means that parallelism, concurrency and distribution are the
+prevailing paradigms from the hardware up through the end-user's
+expectations of availability and responsiveness. On the other hand,
+unfortunately, mainstream programming models have not kept up with the
+times, offering out-dated and outmoded abstractions for describing and
+implementing parallel, concurrent and distributed programs. Threads
+and locks, for example, are notoriously difficult abstractions with
+which to program because there is no syntactic support allowing the
+programmer -- or program analysis -- to check syntactically important
+notions like "how many threads can i expect to run through this code
+simultaneously?" or "what are the actual boundaries of this critical
+section; what resources are guaranteed protection from simultaneous
+access?". Given these events and the apparent success of lambda
+calculus in parenting languages like OCaml, Haskell, Erlang and
+others, it is natural to ask whether a similar approach may be taken
+with a mathematical model of concurrent computation like the
+\pi-calculus or the ambient calculus.
+
+A careful account the relationship between the lambda calculus and
+high-performance modern functional languages, however, will reveal a
+long and difficult path to deal with issues at the core of practical
+languages for the development of commercial systems. One example, that
+is shared between the lambda calculus and mobile process calculi like
+the \pi-calculus, is that neither comes already equipped complex,
+mutable data structures. The core theory must be enriched with these
+structures and working out natural, effective ways to address such
+structures has lead to the development of a rich theory and vibrant
+research activity such as -- in the case of the functional languages
+-- monads and generic types, while in the case of the mobile calculi
+it is still very nascent. This situation is further complicated by a
+more qualitative phenomenon. A computational model rarely achieves
+widespread usability unless there is a match between its core data
+structures and data structuring primitives and its core means of
+calculating. Examples abound: Lisp and the s-expression, Java and
+"objects", strings and Perl. Typically, the measure of this match may
+be found in how well the language supports meta-programming. We submit
+that one of the key drivers in the adoption of Lisp was the
+eye-opening experience many programmers had when they saw how they
+could encode the data type supporting the lambda calculus in
+s-expressions and from there how they code turn their programs into
+data and back again. This sort of phenomena, together with the
+incredible gain in productivity enabled by meta-programming, has seen
+such explosive growth that it is now an essential part of the modern
+developers toolkit and seen modern commercial development languages
+from Java and C# to Ruby. Thus, in some qualitative sense, a general
+purpose language, whatever its parentage must support data structures
+and structuring techniques that cohere internally, relative to the
+computational model it embodies.
+
+With this in mind we illustrate a technique of deriving a fully
+reflective model of computation from any model whose basic
+computational engine is substitution (as it is in the case in both the
+lambda and \pi-calculi). We use this technique to develop reflective
+versions of a range of \pi-calculi, focusing on one rich enough to
+support modern development idioms, while at the same time expanding
+the developers toolkit with the primitives of the mobile calculi. On
+the practical side, we illustrate data structures and structuring
+techniques that derive from the reflective machinery that match
+popular mechanisms like XML. Similarly, we illustrate control patterns
+like session management and handling asynchronous requests. On the
+theoretical and program analytic side, the model is still simple
+enough that we may illustrate how to derive a program logic and
+model-checking algorithm from the core specification, allowing
+developers (and development tools) to reason about their codes. The
+aim is to develop a language rich enough to contemplate supporting and
+simplifying applications ranging from AJAX development to network and
+systems programming while at the same time amenable to automatic
+program analysis; thus, providing a programming model for modern
+times.

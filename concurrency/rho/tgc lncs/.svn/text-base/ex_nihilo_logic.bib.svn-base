@@ -1,0 +1,323 @@
+%-*- mode: BibTeX;-*-
+%Filename:    Xbib.bib
+%Authors:     salmanb
+%Creation:    Wed Aug 06 11:39:26 2003
+%Copyright:   Not supplied
+%Description:
+------------------------------------------------------------------------
+
+@ARTICLE{ milner91polyadicpi,
+    author = "Robin Milner",
+    title = "The polyadic $\pi$-calculus: A tutorial",
+    journal = "Logic and Algebra of Specification",
+    editor = "F.L. Hamer, W. Brauer, H. Schwichtenberg",
+    volume = "Springer-Verlag",
+    year = "1993",
+    url = "http://www.lfcs.informatics.ed.ac.uk/reports/91/ECS-LFCS-91-180/ECS-LFCS-91-180.ps" }
+
+@InProceedings{djoin,
+  author = "Fournet, C{\'e}dric and Gontheir, Georges and L{\'e}vy, Jean-Jacques and Maranget, Luc and R{\'e}my, Didier",
+  title  = "A Calculus of Mobile Agents",
+  booktitle = "CONCUR 1996",
+  year   = 1996,
+  editor = "Ugo Montanari and Vladimiro Sassone",
+  volume = 1119,
+  series = "Lecture Notes in Computer Science",
+  pages  = "406--421",
+  publisher = "Springer-Verlag",
+  url    = "http:// research.microsoft.com/ ~fournet/ papers/
+calculus-of-mobile-agents.ps",
+}
+
+@Article{facile,
+  author =       "B. Thomsen",
+  title =        "{A Theory of Higher Order Communication Systems}",
+  journal =      "Information and Computation",
+  year =         "1995",
+  volume =       "116",
+  number =       "1",
+  pages =        "38--57",
+}
+
+@Article{hop,
+  author =       "Davide Sangiorgi",
+  title =        "Bisimulation in Higher-Order Process Calculi",
+  journal =      "Information and Computation",
+  year =         "1996",
+  volume =       "131",
+  pages =        "141--178",
+  URL =          "http://www.inria.fr/RRRT/RR-2508.html",
+}
+
+@Article{rosette,
+  author = "Chris Tomlinson and Won Kim and Mark Scheevel and Vineet Singh and B. Will and Gul Agha",
+  title = "Rosette: An object-oriented concurrent systems architecture", 
+  journal = "SIGPLAN Notices",
+  volume = "24(4)",
+  pages = "91-93", 
+  year = "1989",
+}
+
+@Article{r5rs,
+  author = "H. Abelson and R.K. Dybvig and C.T. Haynes and G.J. Rozaz and N.I. Adams IV and D.P. Friedman and E. Kohlbecker and G.L. Steele, Jr. and D.H. Bartley and R. Halstead and D. Oxley and G.J. Sussman and G. Brooks and C. Hanson and K.M. Pitman and M. Wand",
+  editor = "Richard Kelsey and William Clinger and Jonathan Rees",
+  title = "Revised5 Report on the Algorithmic Language Scheme",
+  journal = "Higher-order and Symbolic Computation",
+  volume = "11",
+  pages ="7-105",
+  publisher = "Kluwer",
+  year = "1998",
+}
+
+@Article{polysync,
+  title = "On the Expressive Power of Polyadic Synchronisation in Pi-Calculus", 
+  author = "M.Carbone and S.Maffeis", 
+  journal = "Nordic Journal of Computing", 
+  volume = "10(2)",
+  pages = "70-98",
+  year = "2003",
+}
+
+@article{PavlovicD:CLNA,
+author = "Dusko Pavlovic",
+title = "Categorical logic of names and abstraction in action calculus",
+journal = "Math. Structures in Comp. Sci.",
+pages = "619--637",
+year = "1997",
+volume = "7",
+url = "ftp://ftp.kestrel.edu/pub/papers/pavlovic/CLNA.ps"
+}
+
+
+@InProceedings{lisp3,
+  author = "J. des Rivieres and B. C. Smith",
+  title = "The implementation of procedurally reflective languages",
+  booktitle = "ACM Symposium on Lisp and Functional Programming", 
+  pages = "331-347", 
+  year = "1984",
+}
+
+@Unpublished{globalpi,
+  author = "Lucian Wischik",
+  title  = "Old Names for Nu",
+  note   = "Submitted for publication",
+  year   = "2004",
+}
+
+@Unpublished{JavaReflection,
+  author = "Sun Microsoft Inc.",
+  title = "Java Core Reflection API and Specification",
+  note = "http://sunsite.tus.ac.jp/java/docs/jdk1.1/java-reflection.pdf"
+}
+
+@Unpublished{biztalk, 
+author = "\mbox{Microsoft} Corporation",
+title = "Microsoft BizTalk Server",
+note = "microsoft.com/biztalk/default.asp", 
+}
+
+@Unpublished{Fontana,
+  author = "Walter Fontana",
+  title  = "private conversation",
+  year   = "2004",
+}
+
+@InProceedings{meredith2005rho,
+  author = "Meredith, L.G. and Radestock, Matthias",
+  title  = "A reflective higher-order calculus",
+  booktitle = "ETAPS 2005 Satellites",
+  year   = 2005,
+  editor = "Mirko Viroli",
+  publisher = "Springer-Verlag",
+}
+
+@inproceedings{DBLP:conf/ccs/AbadiG97,
+  author    = {Mart\'{\i}n Abadi and
+               Andrew D. Gordon},
+  title     = {A Calculus for Cryptographic Protocols: The Spi Calculus.},
+  booktitle = {ACM Conference on Computer and Communications Security},
+  year      = {1997},
+  pages     = {36-47},
+  ee        = {http://doi.acm.org/10.1145/266420.266432},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/popl/AbadiB02,
+  author    = {Mart\'{\i}n Abadi and
+               Bruno Blanchet},
+  title     = {Analyzing security protocols with secrecy types and logic
+               programs.},
+  booktitle = {POPL},
+  year      = {2002},
+  pages     = {33-44},
+  ee        = {http://doi.acm.org/10.1145/503272.503277},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@article{DBLP:journals/tcs/AbadiB03,
+  author    = {Mart\'{\i}n Abadi and
+               Bruno Blanchet},
+  title     = {Secrecy types for asymmetric communication.},
+  journal   = {Theor. Comput. Sci.},
+  volume    = {3},
+  number    = {298},
+  year      = {2003},
+  pages     = {387-415},
+  ee        = {http://dx.doi.org/10.1016/S0304-3975(02)00863-0},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@article{DBLP:journals/tcs/GordonJ03,
+  author    = {Andrew D. Gordon and
+               Alan Jeffrey},
+  title     = {Typing correspondence assertions for communication protocols.},
+  journal   = {Theor. Comput. Sci.},
+  volume    = {1-3},
+  number    = {300},
+  year      = {2003},
+  pages     = {379-409},
+  ee        = {http://dx.doi.org/10.1016/S0304-3975(02)00333-X},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/fossacs/Caires04,
+  author    = {Lu\'{\i}s Caires},
+  title     = {Behavioral and Spatial Observations in a Logic for the pi-Calculus.},
+  booktitle = {FoSSaCS},
+  year      = {2004},
+  pages     = {72-89},
+  ee        = {http://springerlink.metapress.com/openurl.asp?genre=article{\&}issn=0302-9743{\&}volume=2987{\&}spage=72},
+  crossref  = {DBLP:conf/fossacs/2004},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@article{DBLP:journals/tcs/CairesC04,
+  author    = {Lu\'{\i}s Caires and
+               Luca Cardelli},
+  title     = {A spatial logic for concurrency - II.},
+  journal   = {Theor. Comput. Sci.},
+  volume    = {322},
+  number    = {3},
+  year      = {2004},
+  pages     = {517-565},
+  ee        = {http://dx.doi.org/10.1016/j.tcs.2003.10.041},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@article{DBLP:journals/iandc/CairesC03,
+  author    = {Lu\'{\i}s Caires and
+               Luca Cardelli},
+  title     = {A spatial logic for concurrency (part I).},
+  journal   = {Inf. Comput.},
+  volume    = {186},
+  number    = {2},
+  year      = {2003},
+  pages     = {194-235},
+  ee        = {http://dx.doi.org/10.1016/S0890-5401(03)00137-8},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@Book{MilnerPi,
+  ALTauthor = 	 {Milner, Robin},
+  author = "Robin Milner",
+  ALTeditor = 	 {},
+  title = 	 {Communicating and Mobile Systems: the $\pi$-Calculus},
+  publisher = 	 {Cambridge University Press},
+  year = 	 {1999},
+}
+
+@Book{SangiorgiWalker,
+  ALTauthor = 	 {D. Sangiorgi and D. Walker},
+  author = "David Sangiorgi and David Walker",
+  ALTeditor = 	 {},
+  title = 	 {The $\pi$-Calculus: A Theory of Mobile Processes},
+  publisher = 	 {Cambridge University Press},
+  year = 	 {2001},
+}
+
+@InProceedings{Krivine-TheCurryHowardCorre,
+    author =     {Jean-Louis Krivine},
+    title =      {The Curry-Howard Correspondence in Set Theory},
+    booktitle =          {Proceedings of the Fifteenth Annual IEEE Symp. on Logic in Computer Science, {LICS} 2000},
+    pages =      {},
+    year =       2000,
+    editor =     {Martin Abadi},
+    month =      {June},
+    location =   {Santa Barbara, CA, USA},
+    publisher =  {IEEE Computer Society Press}
+  }
+
+@book{Barendregt84,
+  author  = {Hendrik Pieter Barendregt},
+  title   = {{The Lambda Calculus -- Its Syntax and Semantics}},
+  publisher = {North-Holland},
+  year    = 1984,
+  volume  = {103},
+  series  = {Studies in Logic and the Foundations of Mathematics},
+  topics  = {FP - Lambda Calculi}
+}
+
+@book{ONAG,
+  author  = {John Horton Conway},
+  title   = {{On Numbers and Games}},
+  publisher = {Academic Press},
+  year    = 1976,
+}
+
+@inproceedings{W3CInfoset, 
+  author    = {John Cowan and Richard Tobin},
+  title     = {XML Information Set},
+  publisher = {W3C},
+  year      = 2004,
+  ee        = { http://www.w3.org/TR/xml-infoset/ },
+}
+
+@inproceedings{W3CXSD, 
+  author    = {Henry S. Thompson and David Beech and Murray Maloney and Noah Mendelsohn},
+  title     = {XML Schema Part I: Structures, Second Edition},
+  publisher = {W3C},
+  year      = 2004,
+  ee        = { http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/ },
+}
+
+@inproceedings{DBLP:conf/tacs/Milner97,
+  author    = {Robin Milner},
+  title     = {Strong Normalisation in Higher-Order Action Calculi.},
+  booktitle = {TACS},
+  year      = {1997},
+  pages     = {1-19},
+  crossref  = {conf/tacs/1997},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/concur/HermidaP95,
+  author    = {Claudio Hermida and
+               John Power},
+  title     = {Fibrational Control Structures.},
+  booktitle = {CONCUR},
+  year      = {1995},
+  pages     = {117-129},
+  crossref  = {conf/concur/1995},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@InCollection{GabbayMJ:picfm,
+  author = 	 {M.~J.~Gabbay},
+  title = 	 {The $\pi$-calculus in {FM}},
+  booktitle = 	 {Thirty-five years of {A}utomath},
+  publisher =    {Kluwer},
+  year = 	 {2003},
+  editor = 	 {Fairouz Kamareddine},
+  }
+
+@inproceedings{DBLP:conf/lics/GabbayC04,
+  author    = {Murdoch Gabbay and
+               James Cheney},
+  title     = {A Sequent Calculus for Nominal Logic.},
+  booktitle = {LICS},
+  year      = {2004},
+  pages     = {139-148},
+  ee        = {http://csdl.computer.org/comp/proceedings/lics/2004/2192/00/21920139abs.htm},
+  crossref  = {DBLP:conf/lics/2004},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}

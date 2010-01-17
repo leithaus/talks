@@ -1,0 +1,70 @@
+This is BibTeX, Version 0.99c (Web2C 7.5.5)
+The top-level auxiliary file: scale.aux
+The style file: plain.bst
+Database file #1: main.bib.bib
+Repeated entry---line 1730 of file main.bib.bib
+ : @article{DBLP:journals/tcs/Abramsky93
+ :                                      ,
+I'm skipping whatever remains of this entry
+A bad cross reference---entry "Caires04"
+refers to entry "DBLP:conf/fossacs/2004", which doesn't exist
+A bad cross reference---entry "LaneveZ05"
+refers to entry "DBLP:conf/fossacs/2005", which doesn't exist
+A bad cross reference---entry "JoCaml"
+refers to entry "DBLP:conf/afp/2002", which doesn't exist
+A bad cross reference---entry "WojciechowskiS99"
+refers to entry "DBLP:conf/ma/1999", which doesn't exist
+A bad cross reference---entry "Cardelli04"
+refers to entry "DBLP:conf/cmsb/2004", which doesn't exist
+A bad cross reference---entry "Abramsky2005Algorithmic-Gam"
+refers to entry "DBLP:conf/sas/2005", which doesn't exist
+Warning--I didn't find a database entry for ""
+Warning--I didn't find a database entry for "ONAG"
+Warning--I didn't find a database entry for "DBLP:conf/sas/2005"
+Warning--I didn't find a database entry for "DBLP:conf/ma/1999"
+Warning--I didn't find a database entry for "DBLP:conf/afp/2002"
+Warning--I didn't find a database entry for "DBLP:conf/fossacs/2005"
+Warning--I didn't find a database entry for "DBLP:conf/fossacs/2004"
+Warning--I didn't find a database entry for "DBLP:conf/cmsb/2004"
+You've used 43 entries,
+            2118 wiz_defined-function locations,
+            828 strings with 11612 characters,
+and the built_in function-call counts, 15697 in all, are:
+= -- 1555
+> -- 559
+< -- 32
++ -- 227
+- -- 171
+* -- 1018
+:= -- 2433
+add.period$ -- 145
+call.type$ -- 43
+change.case$ -- 203
+chr.to.int$ -- 0
+cite$ -- 43
+duplicate$ -- 712
+empty$ -- 1386
+format.name$ -- 171
+if$ -- 3515
+int.to.chr$ -- 0
+int.to.str$ -- 43
+missing$ -- 46
+newline$ -- 218
+num.names$ -- 106
+pop$ -- 240
+preamble$ -- 1
+purify$ -- 164
+quote$ -- 0
+skip$ -- 523
+stack$ -- 0
+substring$ -- 1002
+swap$ -- 243
+text.length$ -- 32
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 164
+warning$ -- 0
+while$ -- 158
+width$ -- 45
+write$ -- 499
+(There were 7 error messages)

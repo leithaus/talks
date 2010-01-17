@@ -1,0 +1,20 @@
+\BOOKMARK [1][]{section.0.1}{Introduction}{}
+\BOOKMARK [2][]{subsection.0.1.1}{Overview and contributions}{section.0.1}
+\BOOKMARK [1][]{section.0.2}{The calculus}{}
+\BOOKMARK [2][]{subsection.0.2.1}{The name game}{section.0.2}
+\BOOKMARK [2][]{subsection.0.2.2}{Free and bound names}{section.0.2}
+\BOOKMARK [2][]{subsection.0.2.3}{Structural congruence}{section.0.2}
+\BOOKMARK [2][]{subsection.0.2.4}{Name equivalence}{section.0.2}
+\BOOKMARK [2][]{subsection.0.2.5}{Syntactic substitution}{section.0.2}
+\BOOKMARK [2][]{subsection.0.2.6}{ Dynamic quote: an example }{section.0.2}
+\BOOKMARK [2][]{subsection.0.2.7}{Semantic substitution}{section.0.2}
+\BOOKMARK [2][]{subsection.0.2.8}{Operational Semantics}{section.0.2}
+\BOOKMARK [1][]{section.0.3}{Replication}{}
+\BOOKMARK [1][]{section.0.4}{Bisimulation}{}
+\BOOKMARK [1][]{section.0.5}{Interpreting -calculus}{}
+\BOOKMARK [2][]{subsection.0.5.1}{-calculus}{section.0.5}
+\BOOKMARK [2][]{subsection.0.5.2}{Structural congruence}{section.0.5}
+\BOOKMARK [2][]{subsection.0.5.3}{Operational semantics}{section.0.5}
+\BOOKMARK [2][]{subsection.0.5.4}{The translation}{section.0.5}
+\BOOKMARK [2][]{subsection.0.5.5}{Higher-order -calculus}{section.0.5}
+\BOOKMARK [1][]{section.0.6}{Conclusions and future work}{}

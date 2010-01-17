@@ -1,0 +1,645 @@
+% ------------------------------------------------------------------------
+% AMS-LaTeX Paper ********************************************************
+% ------------------------------------------------------------------------
+% Submitted:      Dec 15 2003
+% Final Version:  
+% Accepted:       
+% ------------------------------------------------------------------------
+% This is a journal top-matter template file for use with AMS-LaTeX.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\documentclass{tran-l}
+\documentclass{amsart}
+
+%\usepackage[active]{srcltx} % SRC Specials for DVI Searching
+\usepackage{url}
+
+% From Allen's stable.
+\usepackage{bigpage}
+\usepackage{bcprules}
+\usepackage{code}
+\usepackage{amsfonts}
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{caption}
+
+% SYNTAX
+\newcommand{\id}[1]{\texttt{#1}}
+\newcommand{\none}{\emptyset}
+\newcommand{\eps}{\epsilon}
+\newcommand{\set}[1]{\{#1\}}
+\newcommand{\rep}[2]{\id{\{$#1$,$#2$\}}}
+\newcommand{\elt}[2]{\id{$#1$[$#2$]}}
+\newcommand{\infinity}{$\infty$}
+\newcommand{\seq}{\mathbin{\id{,}}}
+\newcommand{\all}{\mathbin{\id{\&}}}
+\newcommand{\choice}{\mathbin{\id{|}}}
+\newcommand{\altern}{\mathbin{\id{+}}}
+\newcommand{\juxtap}{\mathbin{\id{|}}}
+\newcommand{\concat}{\mathbin{\id{.}}}
+\newcommand{\punify}{\mathbin{\id{:=:}}}
+\newcommand{\fuse}{\mathbin{\id{=}}}
+\newcommand{\entailm}{\mathbin{\vdash_{\mathfrak m}}} %matching
+\newcommand{\entailp}{\mathbin{\vdash_{\mathfrak p}}} %behavioral
+\newcommand{\entailv}{\mathbin{\vdash_{\mathfrak v}}} %validation
+\newcommand{\congd}{\mathbin{\equiv_{\mathfrak d}}}
+\newcommand{\congs}{\mathbin{\equiv_{\mathfrak s}}}
+\newcommand{\congp}{\mathbin{\equiv_{\mathfrak p}}}
+\newcommand{\scong}{\mathbin{\equiv}}
+\newcommand{\pzero}{\mathbin{0}}
+\newcommand{\typedby}{\mathbin{\:\colon}}
+\newcommand{\mixedgroup}[1]{\id{mixed($#1$)}}
+\newcommand{\cast}[2]{\id{CAST AS} \; #1 \; (#2)}
+\newcommand{\bslsh}{\mathbin{\id{\\}}}
+\newcommand{\bslshslsh}{\mathbin{\id{\\\\}}}
+\newcommand{\fslsh}{\mathbin{\id{/}}}
+\newcommand{\fslshslsh}{\mathbin{\id{//}}}
+\newcommand{\bb}[1]{\mbox{#1}}
+\newcommand{\bc}{\mathbin{\mathbf{::=}}}
+\newcommand{\bm}{\mathbin{\mathbf\mid}}
+\newcommand{\be}{\mathbin{=}}
+\newcommand{\bd}{\mathbin{\buildrel {\rm \scriptscriptstyle def} \over \be}}
+\newcommand{\category}[1]{\mbox{\bf #1}}
+% Double brackets
+\newcommand{\ldb}{[\![}
+\newcommand{\rdb}{]\!]}
+
+%GRAMMAR
+\newlength{\ltext}
+\newlength{\lmath}
+\newlength{\cmath}
+\newlength{\rmath}
+\newlength{\rtext}
+
+\settowidth{\ltext}{complex type name}
+\settowidth{\lmath}{$xxx$}
+\settowidth{\cmath}{$::=$}
+\settowidth{\rmath}{\id{attributeGroup}}
+\settowidth{\rtext}{repetition of $g$ between $m$ and $n$ times}
+
+\newenvironment{grammar}{
+  \[
+  \begin{array}{l@{\quad}rcl@{\quad}l}
+  \hspace{\ltext} & \hspace{\lmath} & \hspace{\cmath} & \hspace{\rmath} & \hspace{\rtext} \\
+}{
+  \end{array}\]
+}
+
+% Over-full v-boxes on even pages are due to the \v{c} in author's name
+\vfuzz2pt % Don't report over-full v-boxes if over-edge is small
+
+% THEOREM Environments ---------------------------------------------------
+ \newtheorem{thm}{Theorem}[subsection]
+ \newtheorem{cor}[thm]{Corollary}
+ \newtheorem{lem}[thm]{Lemma}
+ \newtheorem{prop}[thm]{Proposition}
+ \theoremstyle{definition}
+ \newtheorem{defn}[thm]{Definition}
+ \theoremstyle{remark}
+ \newtheorem{rem}[thm]{Remark}
+ \newtheorem{example}[thm]{Example}
+ \numberwithin{equation}{subsection}
+% MATH -------------------------------------------------------------------
+ \DeclareMathOperator{\RE}{Re}
+ \DeclareMathOperator{\IM}{Im}
+ \DeclareMathOperator{\ess}{ess}
+ \newcommand{\veps}{\varepsilon}
+ \newcommand{\To}{\longrightarrow}
+ \newcommand{\h}{\mathcal{H}}
+ \newcommand{\s}{\mathcal{S}}
+ \newcommand{\A}{\mathcal{A}}
+ \newcommand{\J}{\mathcal{J}}
+ \newcommand{\M}{\mathcal{M}}
+ \newcommand{\W}{\mathcal{W}}
+ \newcommand{\X}{\mathcal{X}}
+ \newcommand{\BOP}{\mathbf{B}}
+ \newcommand{\BH}{\mathbf{B}(\mathcal{H})}
+ \newcommand{\KH}{\mathcal{K}(\mathcal{H})}
+ \newcommand{\Real}{\mathbb{R}}
+ \newcommand{\Complex}{\mathbb{C}}
+ \newcommand{\Field}{\mathbb{F}}
+ \newcommand{\RPlus}{\Real^{+}}
+ \newcommand{\Polar}{\mathcal{P}_{\s}}
+ \newcommand{\Poly}{\mathcal{P}(E)}
+ \newcommand{\EssD}{\mathcal{D}}
+ \newcommand{\Lom}{\mathcal{L}}
+ \newcommand{\States}{\mathcal{T}}
+ \newcommand{\abs}[1]{\left\vert#1\right\vert}
+% \newcommand{\set}[1]{\left\{#1\right\}}
+%\newcommand{\seq}[1]{\left<#1\right>}
+ \newcommand{\norm}[1]{\left\Vert#1\right\Vert}
+ \newcommand{\essnorm}[1]{\norm{#1}_{\ess}}
+
+%%% NAMES
+\newcommand{\Names}{{\mathcal N}}
+\newcommand{\Channels}{{\sf X}}
+\newcommand{\Variables}{{\mathcal V}}
+\newcommand{\Enames}{{\mathcal E}}
+\newcommand{\Nonterminals}{{\mathcal S}}
+\newcommand{\Pnames}{{\mathcal P}}
+\newcommand{\Dnames}{{\mathcal D}}
+\newcommand{\Types}{{\mathcal T}}
+\newcommand{\lpquote}{\langle}
+\newcommand{\rpquote}{\rangle}
+
+\newcommand{\fcalc}{fusion calculus}
+\newcommand{\xcalc}{${\mathfrak x}$-calculus}
+\newcommand{\lcalc}{$\lambda$-calculus}
+\newcommand{\pic}{$\pi$-calculus}
+\newcommand{\hcalc}{highwire calculus}
+\newcommand{\dcalc}{data calculus}
+%XML should be all caps, not small caps. --cb
+%\newcommand{\xml}{\textsc{xml}}
+\newcommand{\xml}{XML} 
+
+\newcommand{\papertitle}{New, on reflection}
+% use static date to preserve date of actual publication
+ \newcommand{\paperversion}{Draft Version 0.1 - December 30, 2003}
+
+\newenvironment{toc}
+{
+\begin{list}{}{
+   \setlength{\leftmargin}{0.4in}
+   \setlength{\rightmargin}{0.6in}
+   \setlength{\parskip}{0pt}
+ } \item }
+{\end{list}}
+
+\newenvironment{narrow}
+{
+\begin{list}{}{
+   \setlength{\leftmargin}{0.4in}
+   \setlength{\rightmargin}{0.6in}
+ } \item }
+{\end{list}}
+
+%%% ----------------------------------------------------------------------
+\begin{document}
+
+%These margin values appear to be relative to the bigpage package settings. --cb
+\setlength{\topmargin}{0in}
+\setlength{\textheight}{8.5in}
+\setlength{\parskip}{6pt}
+
+\title{\huge{\papertitle}}
+
+\author{ L.G. Meredith }
+
+\author{ Allen Brown }
+
+\author{ David Richter }
+
+\author{ Lucian Wischik }
+
+%\address{Microsoft Corporation, Redmond, Washington, USA}
+
+%\email{gregmer@microsoft.com}
+
+\thanks{This work was completed under the BigTop project.}
+
+%\subjclass{Primary 47A15; Secondary 46A32, 47D20}
+
+\keywords{concurrency, distribution, message-passing, process calculus, service-oriented architecture, quality of service, service level agreement}
+
+%\date{April 6, 2002.}
+
+\dedicatory{}
+
+%\commby{Daniel J. Rudolph}
+
+%%% ----------------------------------------------------------------------
+
+\begin{abstract}
+\normalsize{ 
+
+In pursuing an account of features for a practical programming
+language based on mobile process algebras we have stumbled on a very
+general approach to name-passing calculi. The features we were
+considering, including implementation strategies for recursion; sending and
+receiving complex data; macros; and durability across transactions may
+all be related to \textit{serialization}, in the sense of producing an
+external representation of a process. Surpisingly, one construction
+provides a basis for an account for all of these features.
+
+We illustrate the construction by applying it to the pure asynchronous
+\pic-calculus, to arrive at a variant we dub the $\rho$-calculus. The
+calculus is Turing-complete and yet is free of any explicit construct
+for recursion or replication. Moreover, it endures no explicit
+operator for the construction and binding of fresh names. Instead, it
+introduces a reflective mechanism allowing for turning processes into
+names and names into processes. This suffices to recapitulate all of
+the functionality normally found in non-reflective process algebras
+and also treat the phenomena mentioned afore..
+
+}
+
+\end{abstract}
+
+\noindent
+{\large \textbf{
+Concur submission draft}}\\
+\rule{6.25in}{0.75pt}\\\\\\
+
+%%% ----------------------------------------------------------------------
+\maketitle
+%%% ----------------------------------------------------------------------
+
+% \begin{center}
+% \paperversion\\
+% \end{center}
+
+% \begin{toc}
+% \tableofcontents
+% \end{toc}
+
+% \newpage
+% ------------------------------------------------------------------------
+
+\section{Introduction}
+
+In pursuing an account of features for a practical programming
+language based on mobile process algebras we have stumbled on a very
+general approach to name-passing calculi. The features we were
+considering are all related to \textit{serialization}, in the sense of
+producing an external representation of a process. For example, one of
+the key points of transaction semantics in systems like \texttt{Biztalk} is
+\textit{durability}. A running process restarts from the last known
+transacted outcome in the event of failure and restart. Such
+durability requires (upon entering a transacted context) to be able to
+serialize a representation of the state of the process and commit it
+to durable store, like a database management system. It also requires
+being able to deserialize that representation into an executing
+process on restart.
+ 
+Another example comes in the form of macros. A sophisticated macro
+capability, such as one sees in implementations of the language
+\texttt{scheme}, works by being able to turn program source into data,
+operate on the data, and turn the modified data back into program
+source. What unifies these two examples, in the mobile process algebra
+setting, is that program source \textit{contains} program state in the
+sense that there is no hidden virtual machine state that also needs to
+be captured. Thus, having a solution to one means, effectively having
+a solution for the other.
+
+These two features also distinguished from each other by a certain
+characteristic. In the case of recovery, program state may very well
+be inspected by the recovering program to make decisions regarding
+what branch to execute. That is, application level logic makes use of
+reified process state. Even in the most sophisticated a macro systems,
+on the other hand, the program logic is insulated from the
+macro-expansion process. But, it is still the case, in the
+sophisticated macro system, that the programming language in which
+macros as expressed is the language in which program source is
+expressed. In this sense, macros are 'meta-programs', or programs that
+calculate programs, while the durability feature of systems like
+\texttt{Biztalk} make some application programs also be meta-programs.
+ 
+By way of introducing a nomenclature for discussing the results of the
+paper we observe that-- although the usage is a bit stretched-- in
+common parlance, a structured way of turning program into data and
+data into program has been dubbed \textit{reflection}. In point of
+fact there are several forms of reflection that may be distinguished
+from one another.
+
+\begin{itemize}
+	\item structural;
+	\item procedural;
+	\item lexical;
+\end{itemize}
+
+Structural reflection is best exemplified in a language like
+\texttt{Java}. Program elements, e.g. classes, may be turned into
+program manipulable data structures. But, it is not the case that the
+state of a virtual machine executing a \texttt{Java} program is
+manipulable by a program running in that virtual machine. This is to
+be contrasted with languages like \texttt{3-Lisp} and \texttt{Rosette}
+where the state of the executing machinery is also made available as
+program-manipulable data.
+
+In lexical reflection, every element of the \textit{syntax} of the
+language has a representation as a manipulable program data
+structure. This is not the case in languages like \texttt{Java} or
+\texttt{C\#}. But, it is found in \texttt{Rosette} and
+\texttt{3-Lisp}. Note that while this is not generally recognized
+under this term under in the literature, the phenomenon is real. Among
+other things, this feature forms the basis of an architecture for
+parser generation.
+
+The approach to name-passing calculi that we have discovered
+effectively allows a treatment of all three types of reflection within
+the theory. 
+
+In a similar vein, it is really beyond human capability to do
+significant calculation with the \pic-calculus as it stands. Without
+the ability to send and receive complex data, calculation quickly
+becomes incomprehensible. One needs a higher level abstraction, for
+example, to carry out any sort of ordinary arithmetic. Providing a
+higher level language for data manipulation begs the question: how
+does the data language relate to the control language? Why isn't there
+only one language? Our approach to adding reflection to name-passing
+calculi achieves a unification by making the program constructors of
+the language \textit{be} the data constructors. Of course, it doesn't
+specify which process constructors represent the data abstractions.
+
+Surprisingly, it also has consequences for practical issues of space
+management and the implementation of recursive features, like
+$!P$. For example, if the $(\nu \; x)-$ operator is interpreted as an
+operation involving memory allocation then there is a problem
+satisfying the structural equivalence
+
+\begin{equation*}
+	(\nu \; x)(\nu \; x)P \scong (\nu \; x)P
+\end{equation*}
+
+The left hand side may cause a memory fault while the right hand side
+does not. If, on the other hand, the operator is not interpreted as an
+operation involving memory allocation, then what is the
+interpretation? In point of fact, it says that the $\nu$-binder must
+be \textit{lazily} related to memory allocation. Considering these
+implementation strategies is at level of detail too rich for
+name-passing process algebras presented to date.
+
+Lucian Wischik was motivated by this problem (and others) with the
+implementation of the $(\nu \; x)-$ operator to develop the \textit{global
+\pic-calculus}. We were very much surprised to see how similar our
+behavioral rules were to his when we developed this calculus. Of
+course, there is a difference. The difference is that we say exactly
+which set of names are the global names and provide a rationale for
+picking this set: the names are the reified processes.
+
+Another point that bears mentioning is the treatment of recursive
+constructs, like $!P$. In most practical implementations this is
+achieved by making program source (at some level of representation)
+multiply instantiable. The mobile process algebras provide only a
+specification of this behavior (in the form of the structural
+congruence rules for $!P$, or in some presentations, in the
+dynamics). They steadfastly remain silent on implementation
+strategies, and rightly so. 
+
+Our approach leads to a theory that at a sufficiently rich detail to
+describe implementation strategies for this specification. In some
+sense, the situation is analogous to the difference between the
+$\lambda$-calculus and the \pic-calculus. The latter is a theory with
+a richer, or more intensional structure, allowing a finer grain of
+distinctions to be made. Likewise, the calculus at which we arrive is
+a calculus that allows a more intensional characterization of the
+features the name-passing calculi take for granted.
+
+In this paper we illustrate the construction for a pure asynchronous
+calculus. But, we stress that this construction works for name-passing
+calculi, in general. 
+
+%%% ----------------------------------------------------------------------
+
+\section{The calculus}
+
+By way of motivation we wish to make an observation about the
+asynchronous \pic-calculus: it is a theory parametric in a theory of
+\textit{names}. Standard presentations assume a supply of names and a
+theory of equality on them. This point is made abundantly clear in
+such presentations by the grammar describing terms of the language:
+there is no production for names. Names are taken to be terminals in
+the grammar. (Ed note: put in footnote about how \texttt{Biztalk} takes
+advantage of this.)
+
+We will adopt a different tac by closing the theory processes, making
+processes serve as their own theory of names. So, the first point of
+departure from a standard presentation of the asynchronous
+\pic-calculus is a production for names in the grammar. A name will
+be a \textit{quoted} process, $\lpquote \category{P} \rpquote$. 
+
+Of course, if a name is a quoted process, it would be very handy to
+have a way of \textit{evaluating} such an entity. Thus, one of term
+constructors for processes takes a name, say $x$, and extracts the
+process from it, $\rpquote x \lpquote$. 
+
+Note that name construction is not process construction. So, if one
+wants to be able to generate a name from a given process, there must
+be an operator in the term language that creates a name from a
+process. This is the motivation for the production $\texttt{lift} ; x \concat \category{P}$. This turns out to play a role analogous to
+$(\nu \; x)P$. As such, it turns out not to be necessary to provide
+the $\nu$-binder. We will illustrate the implementation of $\nu$ in
+the sequel. 
+
+On the basis of responses to talks about this material at this point
+we issue a warning to the reader: it will turn out that quoted
+processes are opaque to substitutions. But, this operator is not. This
+will provide a key difference between $\texttt{lift} \; x \concat \category{P}$ and outputing a process.
+
+It is part of folklore that replication is not required in a
+higher-order process algebra. While our algebra is \textit{not}
+higher-order in the traditional sense (there are not formal process
+variables of a different type from names) it has all the features of a
+higher-order process algebra. Thus, it turns out that there is no need
+for a term for recursion. To illustrate this we present an
+implementation of $!P$ in this calculus.
+
+In standard presentations of the asynchronous \pic-calculus, the
+statement of the communications rule critically depends on the
+equality that comes with the theory of names. The situation is the
+same here. For output and input processes to communicate it is
+important to know how to determine whether the subject guards are the
+same. But, another interesting point of departure between the calculi
+is reflected in the fact that in the former, the theory of equality of
+names is opaque. It must be give apriori, and this determination is
+deemed independent of the theory of processes. In the latter, the
+equality between names is not opaque, but given explicitly, and is
+determined by the structure of processes. More about this point later,
+though.
+
+\begin{grammar}
+\mbox{$\rho$-calculus}		& \category{P}			& \bc	& \pzero \\
+				&					& \bm	& \category{x}\id{[}\category{x}\id{]} \\
+				&					& \bm	& \category{x}\id{(}\category{x}\id{)} \concat \category{P} \\
+				&					& \bm	& \id{lift} \; \category{x} \concat \category{P} \\
+				&					& \bm	& \category{P} \juxtap \category{P} \\
+				&					& \bm	& \rpquote \category{x} \lpquote \\
+				& \category{x}  		& \bc	& \lpquote \category{P} \rpquote
+\end{grammar}
+
+\subsection{Substitution}
+
+As is standard we use $\category{P}\id{\{}\vec{\category{x}_1} /
+\vec{\category{x}_0} \id{\}}$ to denote capture-avoiding substitution
+of the names $\vec{\category{x}_1}$ for the names
+$\vec{\category{x}_0}$. But, some care must be taken regarding
+substitutions and quoted processes, i.e. $\lpquote \category{P}
+\rpquote$. Specifically, we must first equip out names with a theory
+of equality. We take this to be the smallest equivalence relation
+generated by the following equation.
+
+\begin{eqnarray*}
+\lpquote\rpquote\category{x}\lpquote\rpquote	& \scong & \category{x} \\
+\end{eqnarray*}
+
+Now, let $Proc$ denote the set of processes and
+$\lpquote Proc \rpquote$ denote the set of names. Then, substitutions
+are defined as maps, $s :\lpquote Proc \rpquote \rightarrow \lpquote
+Proc \rpquote$. These lift, uniquely, to maps $\rpquote s \lpquote :
+Proc \rightarrow Proc$ by the following equations.
+
+\begin{eqnarray*}
+(\category{0}) \rpquote \id{\{}\lpquote \category{Q} \rpquote / \lpquote \category{P} \rpquote \id{\}} \lpquote         & = &    0 \\
+(\category{R} \juxtap \category{S}) \rpquote \id{\{} \lpquote \category{Q} \rpquote / \lpquote \category{P} \rpquote \id{\}} \lpquote      
+		& = &    
+		(\category{R})\rpquote \id{\{} \lpquote \category{Q} \rpquote / \lpquote \category{P} \rpquote \id{\}} \lpquote \juxtap (\category{S})\rpquote \id{\{} \lpquote \category{Q} \rpquote / \lpquote \category{P} \rpquote \id{\}} \lpquote \\
+(\category{x} \id{(} \category{y}\id{)}\concat\category{R}) \rpquote \id{\{} \lpquote \category{Q} \rpquote / \lpquote \category{P} \rpquote \id{\}} \lpquote    
+		& = &    
+		(\category{x})\id{\{} \lpquote \category{Q} \rpquote / \lpquote \category{P} \rpquote \id{\}} \id{(}\category{y}\id{)}\concat( (\category{R}) \rpquote \id{\{} \lpquote \category{Q} \rpquote / \lpquote \category{P} \rpquote \id{\}} \lpquote ) \\
+(\category{x}\id{[}\category{y}\id{]}) \rpquote \id{\{} \lpquote \category{Q} \rpquote / \lpquote \category{P} \rpquote \id{\}} \lpquote
+		& = &    
+		(\category{x})\id{\{} \lpquote \category{Q} \rpquote / \lpquote \category{P} \rpquote \id{\}} \id{[}(\category{y})\id{\{} \lpquote \category{Q} \rpquote / \lpquote \category{P} \rpquote \id{\}} \id{]} \\
+(\id{lift} \; \category{x}\concat\category{R}) \rpquote \id{\{} \lpquote \category{Q} \rpquote / \lpquote \category{P} \rpquote \id{\}} \lpquote  
+		& = &    
+		\id{lift} \; (\category{x})\id{\{} \lpquote \category{Q} \rpquote / \lpquote \category{P} \rpquote \id{\}}\concat( (\category{R} ) \rpquote \id{\{} \lpquote \category{Q} \rpquote / \lpquote \category{P} \rpquote \id{\}} \lpquote ) \\
+(\rpquote \category{x} \lpquote) \rpquote \id{\{} \lpquote \category{Q} \rpquote / \lpquote \category{P} \rpquote \id{\}} \lpquote       
+		& = & 
+		\left\{ 
+			\begin{array}{ccc} 
+				\category{Q} & & \category{x} \scong \lpquote \category{P} \rpquote \\
+                              	\rpquote \category{x} \lpquote & & otherwise \\
+			\end{array}
+		\right.
+\end{eqnarray*}
+ 
+
+where
+
+\begin{equation*}
+(\category{x})\id{\{} \lpquote \category{Q} \rpquote / \lpquote \category{P} \rpquote \id{\}}            = 
+		\left\{ 
+			\begin{array}{ccc}
+				\lpquote \category{Q} \rpquote & & \category{x} \scong \lpquote \category{P} \rpquote \\
+                                \category{x} & & otherwise \\
+			\end{array}
+		\right.
+\end{equation*}
+
+Anticipating something of what's to come, these definitions should
+make it clear that there is a significant difference between
+$\id{lift} \; \category{x} \concat \category{P}$ and
+$\category{x}\id{[}\lpquote\category{P}\rpquote\id{]}$. Specifically, consider the following pair of processes:
+
+\begin{eqnarray*}
+	\id{lift} \; w \concat y \id{[}z\id{]} \rpquote \id{\{}u / z \id{\}} \lpquote
+		& = &
+		\id{lift} \; w \concat y \id{[}u\id{]} \\
+	w\id{[} \lpquote y\id{[}z\id{]} \rpquote \id{]} \rpquote \id{\{}u / z \id{\}} \lpquote
+		& = &
+		w\id{[} \lpquote y\id{[}z\id{]} \rpquote \id{]}
+\end{eqnarray*}
+
+Thus, the $\id{lift}$ operator will be seen as a way to dynamically
+construct processes before reifying them as names.
+
+\subsection{Operational Semantics}
+The {\em structural congruence} of processes, noted $\scong$, is the least congruence that satisfies the following laws:
+\begin{eqnarray*}
+\category{P} \juxtap \pzero	&  \scong \; \category{P} \; \scong & \pzero \juxtap \category{P} \\
+\category{P}_0 \juxtap \category{P}_1	& \scong & \category{P}_1 \juxtap \category{P}_0 \\
+(\category{P}_0 \juxtap \category{P}_1) \juxtap \category{P}_2	& \scong & \category{P}_0 \juxtap (\category{P}_1 \juxtap \category{P}_2) \\
+\end{eqnarray*}
+\\
+The reduction rules for $\rho$-calculus are
+\infrule[Comm]
+{  }
+{{{\category{x}_{0}\id{[}\category{x}_{2}\id{]}}} \juxtap {\category{x}_{0}\id{(}\category{x}_{1}\id{)} \concat \category{P}}
+\longrightarrow \category{P}\id{\{}\category{x}_{2} \id{/} \category{x}_{1} \id{\}}}
+
+\infrule[Lift]
+{  }
+{{\id{lift} \; \category{x} \concat \category{P}}
+\longrightarrow \category{x}\id{[}\lpquote\category{P}\rpquote\id{]}}
+
+In addition, we have the following context rules:
+
+\infrule[Par]{\category{P}_0 \longrightarrow \category{P}_1}{{\category{P}_0 \juxtap \category{P}_2} \longrightarrow {\category{P}_1 \juxtap \category{P}_2}}
+
+\infrule[Equiv]{{\category{P}_2 \scong \category{P}_0} \andalso {\category{P}_0 \longrightarrow \category{P}_1} \andalso {\category{P}_1 \scong \category{P}_3}}{\category{P}_2 \longrightarrow \category{P}_3}
+
+\section{Replication}
+
+It is actually a part of folklore that recursion can be implemented in a higher-order process algebra. Here we give the construction explicitly for the $\rho$-calculus.
+
+\begin{equation*}
+!P \triangleq \id{lift} \; x \concat (x\id{(}y\id{)}\concat(\rpquote y\lpquote \juxtap x\id{[}y\id{]}) \juxtap P) \juxtap x\id{(}z\id{)}\concat(\rpquote z\lpquote \juxtap x\id{[}z\id{]})
+\end{equation*}
+
+\section{Name services}
+
+The way the name service below works (it is possible to define other more
+efficient ones) is to let the process that wants to use it give it a
+list of names. The first one is sent on the port $i$; the rest or port
+$x$; and then the client process signals it's done by sending a
+message on $f$ with a callback port $b$ to receive the answer. The
+service, $N$, hands back a name guaranteed to be distinct from all of
+those it has received.
+
+ 
+\begin{eqnarray*}
+N(i,x,f,r)	& = &	f\id{(}b\id{)}\concat r\id{(}s\id{)} \concat \id{lift} \; b \concat \lpquote \pzero \rpquote\id{[}\lpquote \pzero \rpquote \id{]} \juxtap s\id{[}\lpquote \pzero \rpquote \id{]} \\
+		&   &	\altern x\id{(}y\id{)} \concat r \id{(} s \id{)} \concat (\id{lift} \; r \concat(y\id{[}\lpquote \pzero \rpquote \id{]} \juxtap s \id{[} \lpquote \pzero \rpquote \id{]}) \juxtap N(i,x,f,r) )\\
+		&   &	\altern i\id{(} y \id{)} \concat (\id{lift} \; r \concat y\id{[} \lpquote \pzero \rpquote \id{]} \juxtap N(i,x,f,r) )
+\end{eqnarray*}
+ 
+
+Remember, $!\category{P}$ and recursion are inter-definable. Recursion is used here
+because it is slightly more readable. The calculus doesn't have
+choice, to implement the choice one needs to add one more port to the
+parameter list of $N$. This has elided that because it is an unimportant
+complication. 
+
+Notice that $N$ counts and remembers. Thus, implementing $N$ is tantamount
+to showing that the calculus is Turing complete.
+
+\section{Docs-as-procs}
+
+
+We can now state specifically, how data becomes typed processes. Modifying the grammar like this
+
+\begin{grammar}
+\mbox{$\rho$-calculus}		& \category{P}			& \bc	& \pzero \\
+				&					& \bm	& \category{x}\id{[}\category{y}\id{]} \\
+				&					& \bm	& \category{x}\id{(}\category{z}\id{)} \concat \category{P} \\
+				&					& \bm	& \id{lift} \; \category{x} \concat \category{P} \\
+				&					& \bm	& \category{P} \juxtap \category{P} \\
+				&					& \bm	& \rpquote \category{x} \lpquote \\
+				& \category{x}  		& \bc	& \lpquote \category{P} \rpquote \\
+				& \category{y}  		& \bc	& \lpquote \category{P} \rpquote, \category{P} \id{:} \category{T} \\
+				& \category{z}  		& \bc	& \lpquote \category{P} \rpquote, \category{P} \id{:} \category{U}
+\end{grammar}
+ 
+
+where $\category{T}$ is required to be a type in a system that selects processes that are
+pattern recognizers and $\category{U}$ is required to be a type in a system that
+selects processes that represent values.
+
+ 
+\section{Durability across transactions}
+
+Consider the following program transformation which takes a channel, $z$, and turns the 
+
+\begin{eqnarray*}
+	x \id{(} y \id{)} \concat P 
+		& = &
+		 x \id{(} y \id{)} \concat \id{(} \id{lift} \; z \concat P \juxtap z \id{(}w \id{)}. \rpquote w \lpquote \id{)} \\
+\end{eqnarray*}
+
+This provides the basis for storing
+
+\section{Conclusions and future work}
+
+Quite enough done.
+
+% ------------------------------------------------------------------------
+%GATHER{Xbib.bib}   % For Gather Purpose Only
+%GATHER{Paper.bbl}  % For Gather Purpose Only
+\bibliographystyle{amsplain}
+\bibliography{altofilo}
+
+% ------------------------------------------------------------------------
+
+% ------------------------------------------------------------------------
+
+\end{document}
+% ------------------------------------------------------------------------

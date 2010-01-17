@@ -1,0 +1,145 @@
+-- -*- mode: Haskell;-*- 
+-- Filename:    holOgram.cf 
+-- Authors:     lgm                                                    
+-- Creation:    Sun Jan 20 11:23:37 2008 
+-- Copyright:   Not supplied 
+
+-- Description:
+--   Grammar for paper
+-- ------------------------------------------------------------------------
+
+-- process:
+
+Selection      . Process          ::= "case" "{" [GuardedProcess] "}"             ;
+Composition    . Process          ::= "{" [Process] "}"                           ;
+Dereference    . Process          ::= "@" Site                                    ;
+
+-- lists of processes: 
+
+[]             . [GuardedProcess] ::=                                             ;
+(:)            . [GuardedProcess] ::= GuardedProcess ";" [GuardedProcess]         ;
+
+[]             . [Process]        ::=                                             ;
+(:)            . [Process]        ::= Process ";" [Process]                       ;
+
+-- guarded processes:
+
+Input          . GuardedProcess   ::= Site Abstraction                            ;
+Output         . GuardedProcess   ::= Site Concretion                             ;
+
+-- agents:
+
+AgentIn        . Abstraction      ::= "?" "(" [Pattern] ")" "." Process ;
+AgentOut       . Concretion       ::= "!" "(" [Pattern] ")" ":=" "(" [Process] ")" "." Process ;
+
+-- pattern lists:
+
+[]             . [Pattern]        ::=                                             ;
+(:)            . [Pattern]        ::= Pattern "," [Pattern]                       ;
+
+-- patterns:
+
+Value          . Pattern          ::= Code                                        ;
+QueryPattern   . Pattern          ::= Query                                       ;
+
+-- query:
+
+SumQuery       . Query            ::= Sum                                         ;
+ParQuery       . Query            ::= "{" [Pattern] "}"                     ;
+DropQuery      . Query            ::= "@" "<<" Pattern ">>"                    ;
+RecQuery       . Query            ::= "rec" Ident "." Pattern                       ;
+
+-- sum:
+
+Variable       . Sum              ::= Variable                                    ;
+Summand        . Sum              ::= [GuardedPattern]                            ;
+
+-- lists of guarded patterns:
+
+[]             . [GuardedPattern] ::=                                             ;
+(:)            . [GuardedPattern] ::= GuardedPattern "+" [GuardedPattern]         ;
+
+-- guarded pattern:
+
+AbsPattern     . GuardedPattern   ::= "?" TuplePattern "." Query                  ;
+DataPattern    . GuardedPattern   ::= "!" TuplePattern ":=" TuplePattern "." Query ;
+DerefPattern   . GuardedPattern   ::= "*" Variable "." Query                     ;
+
+-- tuple pattern:
+
+TupleVariable  . TuplePattern     ::= Variable                                    ;
+TupleList      . TuplePattern     ::= "(" [NestedTuplePattern] ")"                ;
+TupleCons      . TuplePattern     ::= Pattern "::" TuplePattern                   ;
+
+-- lists of nested tuple patterns:
+
+[]             . [NestedTuplePattern] ::=                                         ;
+(:)            . [NestedTuplePattern] ::= NestedTuplePattern "," [NestedTuplePattern] ;
+
+-- nested tuple pattern:
+
+Base           . NestedTuplePattern ::= Pattern                                   ;
+Nesting        . NestedTuplePattern ::= TuplePattern                              ;
+
+-- site:
+
+CodeSite       . Site             ::= Code                                        ;
+VariableSite   . Site             ::= Variable                                    ;
+
+-- code:
+
+Quotation      . Code             ::= "<<" Process ">>"                       ;
+
+-- variable:
+
+Identifier     . Variable         ::= Ident                                       ;
+Wildcard       . Variable         ::= Underscore                                  ;
+
+-- value:
+
+Codification   . Value            ::= Code                                        ;
+Ground         . Value            ::= GroundLiteral                               ;
+
+-- ground:
+
+Boolean        . GroundLiteral    ::= BooleanLiteral                              ;
+Char           . GroundLiteral    ::= Char                                        ;
+Integer        . GroundLiteral    ::= Integer                                     ;
+Double         . GroundLiteral    ::= Double                                      ;
+String         . GroundLiteral    ::= String                                      ;
+
+BooleanTrue    . BooleanLiteral   ::= "true"                                      ;
+BooleanFalse   . BooleanLiteral   ::= "false"                                     ;
+
+
+-- Terminals
+
+CaseIt          . Case          ::= "case"                           ;
+RecIt           . Rec           ::= "rec"                            ;
+
+ModelIt         . Models        ::= "|="                             ;
+ParIt           . Par           ::= "|"                              ;
+ZeroIt          . Zero          ::= "0"                              ;
+LParenIt        . LParen        ::= "("                              ;
+RParenIt        . RParen        ::= ")"                              ;
+LMSetIt         . LMSet         ::= "{|"                             ;
+RMSetIt         . RMSet         ::= "|}"                             ;
+LAngleIt        . LAngle        ::= "<"                              ;
+RAngleIt        . RAngle        ::= ">"                              ;
+LBrackIt        . LBrack        ::= "["                              ;
+RBrackIt        . RBrack        ::= "]"                              ;
+LCurlyIt        . LCurly        ::= "{"                              ;
+RCurlyIt        . RCurly        ::= "}"                              ;
+QuoteIt         . Quote         ::= "'"                              ;
+BangIt          . Bang          ::= "!"                              ;
+WhimperIt       . Whimper       ::= "?"                              ;
+AmpersandIt     . Ampersand     ::= "&"                              ;
+TildeIt         . Tilde         ::= "~"                              ;
+AtIt            . At            ::= "@"                              ;
+StarIt          . Star          ::= "*"                              ;
+DotIt           . Dot           ::= "."                              ;
+UnderscoreIt    . Underscore    ::= "_"                              ;
+AssignIt        . Assign        ::= ":="                             ;
+ConsIt          . Cons          ::= "::"                             ;
+LQuoteIt        . LQuote        ::= "<<"                             ;
+RQuoteIt        . RQuote        ::= ">>"                             ;

@@ -1,0 +1,55 @@
+\begin{thebibliography}{1}
+
+\bibitem{DBLP:journals/mscs/Goubault00a}
+Eric Goubault.
+\newblock Geometry and concurrency: a user's guide.
+\newblock {\em Mathematical Structures in Computer Science}, 10(4):411--425,
+  2000.
+
+\bibitem{DBLP:conf/concur/GoubaultJ92}
+Eric Goubault and Thomas~P. Jensen.
+\newblock Homology of higher dimensional automata.
+\newblock In Rance Cleaveland, editor, {\em CONCUR}, volume 630 of {\em Lecture
+  Notes in Computer Science}, pages 254--268. Springer, 1992.
+
+\bibitem{DBLP:journals/entcs/HerlihyRT02}
+Maurice Herlihy, Sergio Rajsbaum, and Mark~R. Tuttle.
+\newblock An overview of synchronous message-passing and topology.
+\newblock {\em Electr. Notes Theor. Comput. Sci.}, 39(2), 2001.
+
+\bibitem{LivingstonText}
+Charles Livingston.
+\newblock {\em Knot Theory}.
+\newblock Carus Mathematical Monographs. MAA, 1993.
+
+\bibitem{FunctionsAsProcesses}
+Robin Milner.
+\newblock Functions as processes.
+\newblock {\em MSCS}, 2(2):119--141, 1992.
+
+\bibitem{milner91polyadicpi}
+Robin Milner.
+\newblock The polyadic $\pi$-calculus: A tutorial.
+\newblock {\em Logic and Algebra of Specification}, Springer-Verlag, 1993.
+
+\bibitem{sossinskyknotsandbraids}
+V.~V. Prasolov and A.~B. Sossinsky.
+\newblock {\em Knots, links, braids and 3-manifolds}, volume 154 of {\em
+  Translations of Mathematical Monographs}.
+\newblock American Mathematical Society, Providence, RI, 1997.
+\newblock An introduction to the new invariants in low-dimensional topology,
+  Translated from the Russian manuscript by Sossinsky [Sosinski\u\i].
+
+\bibitem{DBLP:conf/mfcs/Sangiorgi95}
+Davide Sangiorgi.
+\newblock On the proof method for bisimulation (extended abstract).
+\newblock In Jir\'{\i} Wiedermann and Petr H{\'a}jek, editors, {\em MFCS},
+  volume 969 of {\em Lecture Notes in Computer Science}, pages 479--488.
+  Springer, 1995.
+
+\bibitem{DBLP:conf/lics/Sangiorgi04}
+Davide Sangiorgi.
+\newblock Bisimulation: From the origins to today.
+\newblock In {\em LICS}, pages 298--302. IEEE Computer Society, 2004.
+
+\end{thebibliography}

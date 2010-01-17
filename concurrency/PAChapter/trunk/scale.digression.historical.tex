@@ -1,0 +1,44 @@
+Before delineating the core set of features for the treatment of data
+that has gradually become standard across the dominant functional
+languages we take a moment to discuss some of the early historical
+development of the theory because it provides illuminating perspective
+on the issues at play. In fact, we want to observe that the passage
+from Church's $\lambda$-calculus to something as simple as PCF
+($\lambda$-calculus with builtin naturals and booleans) \cite{}
+constituted a signficant challenge to the theory at the time. A fully
+abstract semantics for PCF was something like 25 years from the
+statement of the problem to a solution \cite{}. We stress, relatively
+satisfactory \emph{encodings} of data structures as behaviors followed
+fairly closely on the heels of the development the $\lambda$-calculus
+(respectively, the $\pi$-calculus). In the case of the
+$\lambda$-calculus the obvious \emph{embeddings} of the booleans and
+natural numbers took 25 years to give satisfactory semantic accounts
+of. Moreover, the solution involved no less than two
+\emph{revolutionary} ideas: linear logic and games semantics \cite{}.
+
+We submit that this was not an accident, but rather strong evidence
+that the programme of embedding a notion of data in a decidedly
+operational theory is deceptively \emph{radical}, requiring a
+\emph{dual} views of data as an ``entity'' upon which to operate fully
+reconcilable with data as behavior. The synergetic applications of
+linear logic and games semantics provided, we submit, just the right
+mix of logical and operational perspectives into a finer-grained, more
+intensional account of program structure that enabled the construction
+of reconcilable versions of these two views of data.
+
+Additionally, we note that the operations of the ``entity'' view have
+to have a clear and natural mapping to some traditional (read
+\texttt{ADT}-like) view of the data type while also observing the
+operational semantics of the ambient calculus in which they have been
+embedded. In the case of $\lambda$-calculus and the natural numbers,
+to use the standard example, a Peano-like presentation provides the
+mediating view. More generally, a generators-and-relations-style
+presentation of data structures -- which just happens to align with an
+\texttt{ADT}-like presentation -- provides an acceptable mediating
+view.
+
+Fortuitously, the majority of commercial developers have much more
+exposure to treatments of data types that more closely resemble
+something like \texttt{ADT}s. Even the transition between
+object-oriented views of rich data types and \texttt{ADT}s is not
+difficult for a competent commercial developer to make.

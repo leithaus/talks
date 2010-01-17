@@ -1,0 +1,1241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>FileContexts</key>
+	<dict>
+		<key>.</key>
+		<dict>
+			<key>Inspector Variants</key>
+			<dict>
+				<key>Default</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Default Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>Files</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>LaTeX</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Project Subdocuments Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>TeX</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Terminal</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Terminal Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>texp</key>
+				<dict>
+					<key>mode</key>
+					<string>Default Mode</string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+			</dict>
+			<key>Open Documents</key>
+			<array>
+				<string>0</string>
+				<string>1</string>
+			</array>
+			<key>Open Inspectors</key>
+			<array>
+				<dict>
+					<key>mode</key>
+					<string>Project Subdocuments Mode</string>
+					<key>type</key>
+					<string>TeX Project Type</string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+				<dict>
+					<key>mode</key>
+					<string>Terminal Mode</string>
+					<key>type</key>
+					<string>TeX Project Type</string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+				<dict>
+					<key>mode</key>
+					<string>Default Mode</string>
+					<key>type</key>
+					<string></string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+			</array>
+			<key>Print Info Data</key>
+			<data>
+			BAt0eXBlZHN0cmVhbYED6IQBQISEhBNOU011dGFibGVEaWN0aW9u
+			YXJ5AISEDE5TRGljdGlvbmFyeQCEhAhOU09iamVjdACFhAFpG5KE
+			hIQITlNTdHJpbmcBlYQBKxBOU0pvYkRpc3Bvc2l0aW9uhpKEl5gP
+			TlNQcmludFNwb29sSm9ihpKEl5gLTlNQYXBlclNpemWGkoSEhAdO
+			U1ZhbHVlAJWEASqEhAx7X05TU2l6ZT1mZn2bgQJkgQMYhpKEl5gN
+			TlNNdXN0Q29sbGF0ZYaShISECE5TTnVtYmVyAJuahIQBY50BhpKE
+			l5gUTlNWZXJ0aWNhbFBhZ2luYXRpb26GkoSfmoSWlgCGkoSXmA1O
+			U1ByaW50ZXJOYW1lhpKEl5gKMTAuMTAuMC4yOYaShJeYC05TUHJp
+			bnRUaW1lhpKEhIQGTlNEYXRlAJWEAWSDwi1jwNwAAACGkoSXmA1O
+			U1BhZ2VzQWNyb3NzhpKEn5qjlgGGkoSXmBROU1ZlcnRpY2FsbHlD
+			ZW50ZXJlZIaSnpKEl5gPTlNQcmludEFsbFBhZ2VzhpKekoSXmAtO
+			U1BhcGVyTmFtZYaShJeYBkxldHRlcoaShJeYD05TU2NhbGluZ0Zh
+			Y3RvcoaShJ+ahIQBZqABhpKEl5gITlNDb3BpZXOGkqqShJeYCU5T
+			UHJpbnRlcoaShISECU5TUHJpbnRlcgCVkqWGkoSXmBBOU1ByaW50
+			UHJvdGVjdGVkhpKEn5qgnQCGkoSXmBVOU0hvcml6b25hbFBhZ2lu
+			YXRpb26GkoSfmqOWAoaShJeYFk5TSG9yaXpvbnRhbGx5Q2VudGVy
+			ZWSGkp6ShJeYC05TRmF4TnVtYmVyhpKEl5gAhpKEl5gOTlNCb3R0
+			b21NYXJnaW6GkoSfmrGgWoaShJeYC05TVG9wTWFyZ2luhpKEn5qx
+			oFqGkoSXmAtOU0ZpcnN0UGFnZYaSqpKEl5gKTlNMYXN0UGFnZYaS
+			hJ+ao5aCf////4aShJeYDE5TTGVmdE1hcmdpboaShJ+asaBIhpKE
+			l5gYTlNEZXRhaWxlZEVycm9yUmVwb3J0aW5nhpK3koSXmA1OU1Jp
+			Z2h0TWFyZ2luhpKEn5qxoEiGkoSXmApOU1NhdmVQYXRohpK8koSX
+			mAtOU1BhZ2VzRG93boaSqpKEl5gNTlNPcmllbnRhdGlvboaSooY=
+			</data>
+			<key>Window Frame Current Task Window:{1280, 854}</key>
+			<string>620 103 592 535 0 0 1280 832 </string>
+			<key>Window Frame Current TeX Project Files:{1280, 854}</key>
+			<string>74 359 319 287 0 0 1280 832 </string>
+			<key>iTM2ProjectAbsolutePath</key>
+			<string>/Users/ds08/knots/knots/dfsmain.texp</string>
+			<key>iTM2ProjectFileKey</key>
+			<string>.</string>
+			<key>iTM2ProjectRelativePath</key>
+			<string>dfsmain.texp</string>
+			<key>iTM2ShouldCascadeWindows</key>
+			<false/>
+			<key>iTM2TeXPTaskInspectorSplitViewFactors</key>
+			<string>0.000000:0.525907:0.000000</string>
+			<key>iTM2TeXProjectLastCommandName</key>
+			<string>Bibliography</string>
+		</dict>
+		<key>0</key>
+		<dict>
+			<key>Inspector Variants</key>
+			<dict>
+				<key>Default</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Files</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>LaTeX</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>TeX</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>TeX Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>tex</key>
+				<dict>
+					<key>mode</key>
+					<string>TeX Mode</string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+			</dict>
+			<key>Open Inspectors</key>
+			<array>
+				<dict>
+					<key>mode</key>
+					<string>TeX Mode</string>
+					<key>type</key>
+					<string>text</string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+			</array>
+			<key>Window Frame Current Text Window:{1280, 854}</key>
+			<string>440 -43 535 756 0 0 1280 832 </string>
+			<key>iTM2ProjectAbsolutePath</key>
+			<string>/Users/ds08/knots/knots/dfsmain.texp</string>
+			<key>iTM2ProjectFileKey</key>
+			<string>0</string>
+			<key>iTM2ProjectRelativePath</key>
+			<string>dfsmain.texp</string>
+			<key>iTM2ShouldCascadeWindows</key>
+			<false/>
+			<key>iTM2StringEncodingOpen</key>
+			<integer>30</integer>
+			<key>iTM2TextKeyWindow</key>
+			<false/>
+			<key>iTM2TextScaleFactor</key>
+			<real>1.2599210739135742</real>
+			<key>iTM2TextSelectedRange</key>
+			<string>{4249, 11}</string>
+			<key>iTM2TextStyle</key>
+			<string>LaTeX</string>
+			<key>iTM2TextSyntaxParserVariant</key>
+			<string>default</string>
+			<key>iTM2TextVisibleRange</key>
+			<string>{3793, 1187}</string>
+		</dict>
+		<key>1</key>
+		<dict>
+			<key>Inspector Variants</key>
+			<dict>
+				<key>Default</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Default Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>Files</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>LaTeX</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Project Subdocuments Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>TeX</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>TeX Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>Terminal</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Terminal Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>Wildcard Document</key>
+				<dict>
+					<key>mode</key>
+					<string>TeX Mode</string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+				<key>texp</key>
+				<dict>
+					<key>mode</key>
+					<string>Default Mode</string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+			</dict>
+			<key>Open Inspectors</key>
+			<array>
+				<dict>
+					<key>mode</key>
+					<string>TeX Mode</string>
+					<key>type</key>
+					<string>text</string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+			</array>
+			<key>Window Frame Current Text Window:{1280, 854}</key>
+			<string>440 -43 535 756 0 0 1280 832 </string>
+			<key>iTM2ProjectAbsolutePath</key>
+			<string>/Users/ds08/knots/knots/dfsmain.texp</string>
+			<key>iTM2ProjectFileKey</key>
+			<string>1</string>
+			<key>iTM2ProjectRelativePath</key>
+			<string>knots/dfsmain.texp</string>
+			<key>iTM2ShouldCascadeWindows</key>
+			<false/>
+			<key>iTM2StringEncodingOpen</key>
+			<integer>30</integer>
+			<key>iTM2TextKeyWindow</key>
+			<false/>
+			<key>iTM2TextScaleFactor</key>
+			<real>1.2599210739135742</real>
+			<key>iTM2TextSelectedRange</key>
+			<string>{0, 0}</string>
+			<key>iTM2TextStyle</key>
+			<string>LaTeX</string>
+			<key>iTM2TextSyntaxParserVariant</key>
+			<string>default</string>
+			<key>iTM2TextVisibleRange</key>
+			<string>{0, 0}</string>
+		</dict>
+		<key>2</key>
+		<dict>
+			<key>Inspector Variants</key>
+			<dict>
+				<key>Default</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Default Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>Files</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>LaTeX</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Project Subdocuments Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>TeX</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Terminal</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Terminal Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>Tiger</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>pdf</key>
+				<dict>
+					<key>mode</key>
+					<string>Tiger</string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+				<key>texp</key>
+				<dict>
+					<key>mode</key>
+					<string>Default Mode</string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+			</dict>
+			<key>NSToolbar Configuration iTM2PDFKit For Tiger</key>
+			<dict>
+				<key>TB Display Mode</key>
+				<integer>1</integer>
+				<key>TB Icon Size Mode</key>
+				<integer>1</integer>
+				<key>TB Is Shown</key>
+				<integer>1</integer>
+				<key>TB Item Identifiers</key>
+				<array>
+					<string>toggleDrawer</string>
+					<string>NSToolbarSeparatorItem</string>
+					<string>goToPreviousPage</string>
+					<string>goToNextPage</string>
+					<string>takePageFrom</string>
+					<string>goBackForward</string>
+					<string>NSToolbarSpaceItem</string>
+					<string>zoomIn</string>
+					<string>zoomOut</string>
+					<string>takeScaleFrom</string>
+					<string>NSToolbarFlexibleSpaceItem</string>
+					<string>rotateLeft</string>
+					<string>rotateRight</string>
+					<string>takeToolModeFromSegment</string>
+				</array>
+				<key>TB Size Mode</key>
+				<integer>1</integer>
+				<key>TB Visibility Priority Values</key>
+				<dict/>
+			</dict>
+			<key>Open Inspectors</key>
+			<array/>
+			<key>Window Frame Current PDF Graphics.Tiger.Default Variant:{1280, 854}</key>
+			<string>410 117 628 704 0 0 1280 832 </string>
+			<key>iTM2PDFKit</key>
+			<dict>
+				<key>AutoScales</key>
+				<false/>
+				<key>BackgroundColor</key>
+				<data>
+				BAt0eXBlZHN0cmVhbYED6IQBQISEhAdOU0NvbG9yAISE
+				CE5TT2JqZWN0AIWEAWMChARmZmZmgz8AAACDPwAAAIM/
+				AAAAAYY=
+				</data>
+				<key>DisplayBox</key>
+				<integer>1</integer>
+				<key>DisplayMode</key>
+				<integer>1</integer>
+				<key>DisplaysAsBook</key>
+				<false/>
+				<key>DocumentViewVisiblePageNumber</key>
+				<integer>0</integer>
+				<key>DocumentViewVisibleRect</key>
+				<string>{{0, 12081}, {613, 682}}</string>
+				<key>GreekingThreshold</key>
+				<real>3</real>
+				<key>ScaleFactor</key>
+				<real>1</real>
+				<key>ShouldAntiAlias</key>
+				<true/>
+			</dict>
+			<key>iTM2ProjectAbsolutePath</key>
+			<string>/Users/ds08/knots/knots/dfsmain.texp</string>
+			<key>iTM2ProjectFileKey</key>
+			<string>2</string>
+			<key>iTM2ProjectRelativePath</key>
+			<string>dfsmain.texp</string>
+			<key>iTM2ShouldCascadeWindows</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SpellContextModes</key>
+	<dict>
+		<key>Modes</key>
+		<dict>
+			<key>default</key>
+			<dict>
+				<key>isa</key>
+				<string>spelling</string>
+				<key>language</key>
+				<string>en</string>
+				<key>words</key>
+				<array/>
+			</dict>
+		</dict>
+		<key>isa</key>
+		<string>Spelling Context Modes</string>
+	</dict>
+	<key>iTM2ContextExtensions</key>
+	<dict>
+		<key></key>
+		<dict>
+			<key>Inspector Variants</key>
+			<dict>
+				<key>Default</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Default Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>Files</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>LaTeX</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Project Subdocuments Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>TeX</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>TeX Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>Terminal</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Terminal Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>Wildcard Document</key>
+				<dict>
+					<key>mode</key>
+					<string>TeX Mode</string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+				<key>texp</key>
+				<dict>
+					<key>mode</key>
+					<string>Default Mode</string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+			</dict>
+			<key>Open Inspectors</key>
+			<array>
+				<dict>
+					<key>mode</key>
+					<string>TeX Mode</string>
+					<key>type</key>
+					<string>text</string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+			</array>
+			<key>Window Frame Current Text Window:{1280, 854}</key>
+			<string>440 -43 535 756 0 0 1280 832 </string>
+			<key>iTM2ProjectAbsolutePath</key>
+			<string>/Users/ds08/knots/knots/dfsmain.texp</string>
+			<key>iTM2ProjectFileKey</key>
+			<string>1</string>
+			<key>iTM2ProjectRelativePath</key>
+			<string>knots/dfsmain.texp</string>
+			<key>iTM2ShouldCascadeWindows</key>
+			<false/>
+			<key>iTM2StringEncodingOpen</key>
+			<integer>30</integer>
+			<key>iTM2TextKeyWindow</key>
+			<false/>
+			<key>iTM2TextScaleFactor</key>
+			<real>1.2599210739135742</real>
+			<key>iTM2TextSelectedRange</key>
+			<string>{0, 0}</string>
+			<key>iTM2TextStyle</key>
+			<string>LaTeX</string>
+			<key>iTM2TextSyntaxParserVariant</key>
+			<string>default</string>
+			<key>iTM2TextVisibleRange</key>
+			<string>{0, 0}</string>
+		</dict>
+		<key>pdf</key>
+		<dict>
+			<key>Inspector Variants</key>
+			<dict>
+				<key>Default</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Default Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>Files</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>LaTeX</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Project Subdocuments Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>TeX</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Terminal</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Terminal Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>Tiger</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>pdf</key>
+				<dict>
+					<key>mode</key>
+					<string>Tiger</string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+				<key>texp</key>
+				<dict>
+					<key>mode</key>
+					<string>Default Mode</string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+			</dict>
+			<key>NSToolbar Configuration iTM2PDFKit For Tiger</key>
+			<dict>
+				<key>TB Display Mode</key>
+				<integer>1</integer>
+				<key>TB Icon Size Mode</key>
+				<integer>1</integer>
+				<key>TB Is Shown</key>
+				<integer>1</integer>
+				<key>TB Item Identifiers</key>
+				<array>
+					<string>toggleDrawer</string>
+					<string>NSToolbarSeparatorItem</string>
+					<string>goToPreviousPage</string>
+					<string>goToNextPage</string>
+					<string>takePageFrom</string>
+					<string>goBackForward</string>
+					<string>NSToolbarSpaceItem</string>
+					<string>zoomIn</string>
+					<string>zoomOut</string>
+					<string>takeScaleFrom</string>
+					<string>NSToolbarFlexibleSpaceItem</string>
+					<string>rotateLeft</string>
+					<string>rotateRight</string>
+					<string>takeToolModeFromSegment</string>
+				</array>
+				<key>TB Size Mode</key>
+				<integer>1</integer>
+				<key>TB Visibility Priority Values</key>
+				<dict/>
+			</dict>
+			<key>Open Inspectors</key>
+			<array/>
+			<key>Window Frame Current PDF Graphics.Tiger.Default Variant:{1280, 854}</key>
+			<string>410 117 628 704 0 0 1280 832 </string>
+			<key>iTM2PDFKit</key>
+			<dict>
+				<key>AutoScales</key>
+				<false/>
+				<key>BackgroundColor</key>
+				<data>
+				BAt0eXBlZHN0cmVhbYED6IQBQISEhAdOU0NvbG9yAISE
+				CE5TT2JqZWN0AIWEAWMChARmZmZmgz8AAACDPwAAAIM/
+				AAAAAYY=
+				</data>
+				<key>DisplayBox</key>
+				<integer>1</integer>
+				<key>DisplayMode</key>
+				<integer>1</integer>
+				<key>DisplaysAsBook</key>
+				<false/>
+				<key>DocumentViewVisiblePageNumber</key>
+				<integer>0</integer>
+				<key>DocumentViewVisibleRect</key>
+				<string>{{0, 12081}, {613, 682}}</string>
+				<key>GreekingThreshold</key>
+				<real>3</real>
+				<key>ScaleFactor</key>
+				<real>1</real>
+				<key>ShouldAntiAlias</key>
+				<true/>
+			</dict>
+			<key>iTM2ProjectAbsolutePath</key>
+			<string>/Users/ds08/knots/knots/dfsmain.texp</string>
+			<key>iTM2ProjectFileKey</key>
+			<string>2</string>
+			<key>iTM2ProjectRelativePath</key>
+			<string>dfsmain.texp</string>
+			<key>iTM2ShouldCascadeWindows</key>
+			<false/>
+		</dict>
+		<key>tex</key>
+		<dict>
+			<key>Inspector Variants</key>
+			<dict>
+				<key>Default</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Files</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>LaTeX</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>TeX</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>TeX Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>tex</key>
+				<dict>
+					<key>mode</key>
+					<string>TeX Mode</string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+			</dict>
+			<key>Open Inspectors</key>
+			<array>
+				<dict>
+					<key>mode</key>
+					<string>TeX Mode</string>
+					<key>type</key>
+					<string>text</string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+			</array>
+			<key>Window Frame Current Text Window:{1280, 854}</key>
+			<string>440 -43 535 756 0 0 1280 832 </string>
+			<key>iTM2ProjectAbsolutePath</key>
+			<string>/Users/ds08/knots/knots/dfsmain.texp</string>
+			<key>iTM2ProjectFileKey</key>
+			<string>0</string>
+			<key>iTM2ProjectRelativePath</key>
+			<string>dfsmain.texp</string>
+			<key>iTM2ShouldCascadeWindows</key>
+			<false/>
+			<key>iTM2StringEncodingOpen</key>
+			<integer>30</integer>
+			<key>iTM2TextKeyWindow</key>
+			<false/>
+			<key>iTM2TextScaleFactor</key>
+			<real>1.2599210739135742</real>
+			<key>iTM2TextSelectedRange</key>
+			<string>{4249, 11}</string>
+			<key>iTM2TextStyle</key>
+			<string>LaTeX</string>
+			<key>iTM2TextSyntaxParserVariant</key>
+			<string>default</string>
+			<key>iTM2TextVisibleRange</key>
+			<string>{3793, 1187}</string>
+		</dict>
+		<key>texp</key>
+		<dict>
+			<key>Inspector Variants</key>
+			<dict>
+				<key>Default</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Default Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>Files</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>LaTeX</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Project Subdocuments Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>TeX</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Terminal</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Terminal Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>texp</key>
+				<dict>
+					<key>mode</key>
+					<string>Default Mode</string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+			</dict>
+			<key>Open Documents</key>
+			<array>
+				<string>0</string>
+				<string>1</string>
+			</array>
+			<key>Open Inspectors</key>
+			<array>
+				<dict>
+					<key>mode</key>
+					<string>Project Subdocuments Mode</string>
+					<key>type</key>
+					<string>TeX Project Type</string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+				<dict>
+					<key>mode</key>
+					<string>Terminal Mode</string>
+					<key>type</key>
+					<string>TeX Project Type</string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+				<dict>
+					<key>mode</key>
+					<string>Default Mode</string>
+					<key>type</key>
+					<string></string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+			</array>
+			<key>Print Info Data</key>
+			<data>
+			BAt0eXBlZHN0cmVhbYED6IQBQISEhBNOU011dGFibGVEaWN0aW9u
+			YXJ5AISEDE5TRGljdGlvbmFyeQCEhAhOU09iamVjdACFhAFpG5KE
+			hIQITlNTdHJpbmcBlYQBKxBOU0pvYkRpc3Bvc2l0aW9uhpKEl5gP
+			TlNQcmludFNwb29sSm9ihpKEl5gLTlNQYXBlclNpemWGkoSEhAdO
+			U1ZhbHVlAJWEASqEhAx7X05TU2l6ZT1mZn2bgQJkgQMYhpKEl5gN
+			TlNNdXN0Q29sbGF0ZYaShISECE5TTnVtYmVyAJuahIQBY50BhpKE
+			l5gUTlNWZXJ0aWNhbFBhZ2luYXRpb26GkoSfmoSWlgCGkoSXmA1O
+			U1ByaW50ZXJOYW1lhpKEl5gKMTAuMTAuMC4yOYaShJeYC05TUHJp
+			bnRUaW1lhpKEhIQGTlNEYXRlAJWEAWSDwi1jwNwAAACGkoSXmA1O
+			U1BhZ2VzQWNyb3NzhpKEn5qjlgGGkoSXmBROU1ZlcnRpY2FsbHlD
+			ZW50ZXJlZIaSnpKEl5gPTlNQcmludEFsbFBhZ2VzhpKekoSXmAtO
+			U1BhcGVyTmFtZYaShJeYBkxldHRlcoaShJeYD05TU2NhbGluZ0Zh
+			Y3RvcoaShJ+ahIQBZqABhpKEl5gITlNDb3BpZXOGkqqShJeYCU5T
+			UHJpbnRlcoaShISECU5TUHJpbnRlcgCVkqWGkoSXmBBOU1ByaW50
+			UHJvdGVjdGVkhpKEn5qgnQCGkoSXmBVOU0hvcml6b25hbFBhZ2lu
+			YXRpb26GkoSfmqOWAoaShJeYFk5TSG9yaXpvbnRhbGx5Q2VudGVy
+			ZWSGkp6ShJeYC05TRmF4TnVtYmVyhpKEl5gAhpKEl5gOTlNCb3R0
+			b21NYXJnaW6GkoSfmrGgWoaShJeYC05TVG9wTWFyZ2luhpKEn5qx
+			oFqGkoSXmAtOU0ZpcnN0UGFnZYaSqpKEl5gKTlNMYXN0UGFnZYaS
+			hJ+ao5aCf////4aShJeYDE5TTGVmdE1hcmdpboaShJ+asaBIhpKE
+			l5gYTlNEZXRhaWxlZEVycm9yUmVwb3J0aW5nhpK3koSXmA1OU1Jp
+			Z2h0TWFyZ2luhpKEn5qxoEiGkoSXmApOU1NhdmVQYXRohpK8koSX
+			mAtOU1BhZ2VzRG93boaSqpKEl5gNTlNPcmllbnRhdGlvboaSooY=
+			</data>
+			<key>Window Frame Current Task Window:{1280, 854}</key>
+			<string>620 103 592 535 0 0 1280 832 </string>
+			<key>Window Frame Current TeX Project Files:{1280, 854}</key>
+			<string>74 359 319 287 0 0 1280 832 </string>
+			<key>iTM2ProjectAbsolutePath</key>
+			<string>/Users/ds08/knots/knots/dfsmain.texp</string>
+			<key>iTM2ProjectFileKey</key>
+			<string>.</string>
+			<key>iTM2ProjectRelativePath</key>
+			<string>dfsmain.texp</string>
+			<key>iTM2ShouldCascadeWindows</key>
+			<false/>
+			<key>iTM2TeXPTaskInspectorSplitViewFactors</key>
+			<string>0.000000:0.525907:0.000000</string>
+			<key>iTM2TeXProjectLastCommandName</key>
+			<string>Bibliography</string>
+		</dict>
+	</dict>
+	<key>iTM2ContextTypes</key>
+	<dict>
+		<key>Apple PDF pasteboard type</key>
+		<dict>
+			<key>Inspector Variants</key>
+			<dict>
+				<key>Default</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Default Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>Files</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>LaTeX</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Project Subdocuments Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>TeX</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Terminal</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Terminal Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>Tiger</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>pdf</key>
+				<dict>
+					<key>mode</key>
+					<string>Tiger</string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+				<key>texp</key>
+				<dict>
+					<key>mode</key>
+					<string>Default Mode</string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+			</dict>
+			<key>NSToolbar Configuration iTM2PDFKit For Tiger</key>
+			<dict>
+				<key>TB Display Mode</key>
+				<integer>1</integer>
+				<key>TB Icon Size Mode</key>
+				<integer>1</integer>
+				<key>TB Is Shown</key>
+				<integer>1</integer>
+				<key>TB Item Identifiers</key>
+				<array>
+					<string>toggleDrawer</string>
+					<string>NSToolbarSeparatorItem</string>
+					<string>goToPreviousPage</string>
+					<string>goToNextPage</string>
+					<string>takePageFrom</string>
+					<string>goBackForward</string>
+					<string>NSToolbarSpaceItem</string>
+					<string>zoomIn</string>
+					<string>zoomOut</string>
+					<string>takeScaleFrom</string>
+					<string>NSToolbarFlexibleSpaceItem</string>
+					<string>rotateLeft</string>
+					<string>rotateRight</string>
+					<string>takeToolModeFromSegment</string>
+				</array>
+				<key>TB Size Mode</key>
+				<integer>1</integer>
+				<key>TB Visibility Priority Values</key>
+				<dict/>
+			</dict>
+			<key>Open Inspectors</key>
+			<array/>
+			<key>Window Frame Current PDF Graphics.Tiger.Default Variant:{1280, 854}</key>
+			<string>410 117 628 704 0 0 1280 832 </string>
+			<key>iTM2PDFKit</key>
+			<dict>
+				<key>AutoScales</key>
+				<false/>
+				<key>BackgroundColor</key>
+				<data>
+				BAt0eXBlZHN0cmVhbYED6IQBQISEhAdOU0NvbG9yAISE
+				CE5TT2JqZWN0AIWEAWMChARmZmZmgz8AAACDPwAAAIM/
+				AAAAAYY=
+				</data>
+				<key>DisplayBox</key>
+				<integer>1</integer>
+				<key>DisplayMode</key>
+				<integer>1</integer>
+				<key>DisplaysAsBook</key>
+				<false/>
+				<key>DocumentViewVisiblePageNumber</key>
+				<integer>0</integer>
+				<key>DocumentViewVisibleRect</key>
+				<string>{{0, 12081}, {613, 682}}</string>
+				<key>GreekingThreshold</key>
+				<real>3</real>
+				<key>ScaleFactor</key>
+				<real>1</real>
+				<key>ShouldAntiAlias</key>
+				<true/>
+			</dict>
+			<key>iTM2ProjectAbsolutePath</key>
+			<string>/Users/ds08/knots/knots/dfsmain.texp</string>
+			<key>iTM2ProjectFileKey</key>
+			<string>2</string>
+			<key>iTM2ProjectRelativePath</key>
+			<string>dfsmain.texp</string>
+			<key>iTM2ShouldCascadeWindows</key>
+			<false/>
+		</dict>
+		<key>TeX Document</key>
+		<dict>
+			<key>Inspector Variants</key>
+			<dict>
+				<key>Default</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Files</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>LaTeX</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>TeX</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>TeX Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>tex</key>
+				<dict>
+					<key>mode</key>
+					<string>TeX Mode</string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+			</dict>
+			<key>Open Inspectors</key>
+			<array>
+				<dict>
+					<key>mode</key>
+					<string>TeX Mode</string>
+					<key>type</key>
+					<string>text</string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+			</array>
+			<key>Window Frame Current Text Window:{1280, 854}</key>
+			<string>440 -43 535 756 0 0 1280 832 </string>
+			<key>iTM2ProjectAbsolutePath</key>
+			<string>/Users/ds08/knots/knots/dfsmain.texp</string>
+			<key>iTM2ProjectFileKey</key>
+			<string>0</string>
+			<key>iTM2ProjectRelativePath</key>
+			<string>dfsmain.texp</string>
+			<key>iTM2ShouldCascadeWindows</key>
+			<false/>
+			<key>iTM2StringEncodingOpen</key>
+			<integer>30</integer>
+			<key>iTM2TextKeyWindow</key>
+			<false/>
+			<key>iTM2TextScaleFactor</key>
+			<real>1.2599210739135742</real>
+			<key>iTM2TextSelectedRange</key>
+			<string>{4249, 11}</string>
+			<key>iTM2TextStyle</key>
+			<string>LaTeX</string>
+			<key>iTM2TextSyntaxParserVariant</key>
+			<string>default</string>
+			<key>iTM2TextVisibleRange</key>
+			<string>{3793, 1187}</string>
+		</dict>
+		<key>TeX Project Document</key>
+		<dict>
+			<key>Inspector Variants</key>
+			<dict>
+				<key>Default</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Default Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>Files</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>LaTeX</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Project Subdocuments Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>TeX</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Terminal</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Terminal Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>texp</key>
+				<dict>
+					<key>mode</key>
+					<string>Default Mode</string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+			</dict>
+			<key>Open Documents</key>
+			<array>
+				<string>0</string>
+				<string>1</string>
+			</array>
+			<key>Open Inspectors</key>
+			<array>
+				<dict>
+					<key>mode</key>
+					<string>Project Subdocuments Mode</string>
+					<key>type</key>
+					<string>TeX Project Type</string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+				<dict>
+					<key>mode</key>
+					<string>Terminal Mode</string>
+					<key>type</key>
+					<string>TeX Project Type</string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+				<dict>
+					<key>mode</key>
+					<string>Default Mode</string>
+					<key>type</key>
+					<string></string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+			</array>
+			<key>Print Info Data</key>
+			<data>
+			BAt0eXBlZHN0cmVhbYED6IQBQISEhBNOU011dGFibGVEaWN0aW9u
+			YXJ5AISEDE5TRGljdGlvbmFyeQCEhAhOU09iamVjdACFhAFpG5KE
+			hIQITlNTdHJpbmcBlYQBKxBOU0pvYkRpc3Bvc2l0aW9uhpKEl5gP
+			TlNQcmludFNwb29sSm9ihpKEl5gLTlNQYXBlclNpemWGkoSEhAdO
+			U1ZhbHVlAJWEASqEhAx7X05TU2l6ZT1mZn2bgQJkgQMYhpKEl5gN
+			TlNNdXN0Q29sbGF0ZYaShISECE5TTnVtYmVyAJuahIQBY50BhpKE
+			l5gUTlNWZXJ0aWNhbFBhZ2luYXRpb26GkoSfmoSWlgCGkoSXmA1O
+			U1ByaW50ZXJOYW1lhpKEl5gKMTAuMTAuMC4yOYaShJeYC05TUHJp
+			bnRUaW1lhpKEhIQGTlNEYXRlAJWEAWSDwi1jwNwAAACGkoSXmA1O
+			U1BhZ2VzQWNyb3NzhpKEn5qjlgGGkoSXmBROU1ZlcnRpY2FsbHlD
+			ZW50ZXJlZIaSnpKEl5gPTlNQcmludEFsbFBhZ2VzhpKekoSXmAtO
+			U1BhcGVyTmFtZYaShJeYBkxldHRlcoaShJeYD05TU2NhbGluZ0Zh
+			Y3RvcoaShJ+ahIQBZqABhpKEl5gITlNDb3BpZXOGkqqShJeYCU5T
+			UHJpbnRlcoaShISECU5TUHJpbnRlcgCVkqWGkoSXmBBOU1ByaW50
+			UHJvdGVjdGVkhpKEn5qgnQCGkoSXmBVOU0hvcml6b25hbFBhZ2lu
+			YXRpb26GkoSfmqOWAoaShJeYFk5TSG9yaXpvbnRhbGx5Q2VudGVy
+			ZWSGkp6ShJeYC05TRmF4TnVtYmVyhpKEl5gAhpKEl5gOTlNCb3R0
+			b21NYXJnaW6GkoSfmrGgWoaShJeYC05TVG9wTWFyZ2luhpKEn5qx
+			oFqGkoSXmAtOU0ZpcnN0UGFnZYaSqpKEl5gKTlNMYXN0UGFnZYaS
+			hJ+ao5aCf////4aShJeYDE5TTGVmdE1hcmdpboaShJ+asaBIhpKE
+			l5gYTlNEZXRhaWxlZEVycm9yUmVwb3J0aW5nhpK3koSXmA1OU1Jp
+			Z2h0TWFyZ2luhpKEn5qxoEiGkoSXmApOU1NhdmVQYXRohpK8koSX
+			mAtOU1BhZ2VzRG93boaSqpKEl5gNTlNPcmllbnRhdGlvboaSooY=
+			</data>
+			<key>Window Frame Current Task Window:{1280, 854}</key>
+			<string>620 103 592 535 0 0 1280 832 </string>
+			<key>Window Frame Current TeX Project Files:{1280, 854}</key>
+			<string>74 359 319 287 0 0 1280 832 </string>
+			<key>iTM2ProjectAbsolutePath</key>
+			<string>/Users/ds08/knots/knots/dfsmain.texp</string>
+			<key>iTM2ProjectFileKey</key>
+			<string>.</string>
+			<key>iTM2ProjectRelativePath</key>
+			<string>dfsmain.texp</string>
+			<key>iTM2ShouldCascadeWindows</key>
+			<false/>
+			<key>iTM2TeXPTaskInspectorSplitViewFactors</key>
+			<string>0.000000:0.525907:0.000000</string>
+			<key>iTM2TeXProjectLastCommandName</key>
+			<string>Bibliography</string>
+		</dict>
+		<key>Wildcard Document</key>
+		<dict>
+			<key>Inspector Variants</key>
+			<dict>
+				<key>Default</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Default Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>Files</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>LaTeX</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Project Subdocuments Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>TeX</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>TeX Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>Terminal</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>Terminal Mode</key>
+				<array>
+					<string>Default Variant</string>
+				</array>
+				<key>Wildcard Document</key>
+				<dict>
+					<key>mode</key>
+					<string>TeX Mode</string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+				<key>texp</key>
+				<dict>
+					<key>mode</key>
+					<string>Default Mode</string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+			</dict>
+			<key>Open Inspectors</key>
+			<array>
+				<dict>
+					<key>mode</key>
+					<string>TeX Mode</string>
+					<key>type</key>
+					<string>text</string>
+					<key>variant</key>
+					<string>Default Variant</string>
+				</dict>
+			</array>
+			<key>Window Frame Current Text Window:{1280, 854}</key>
+			<string>440 -43 535 756 0 0 1280 832 </string>
+			<key>iTM2ProjectAbsolutePath</key>
+			<string>/Users/ds08/knots/knots/dfsmain.texp</string>
+			<key>iTM2ProjectFileKey</key>
+			<string>1</string>
+			<key>iTM2ProjectRelativePath</key>
+			<string>knots/dfsmain.texp</string>
+			<key>iTM2ShouldCascadeWindows</key>
+			<false/>
+			<key>iTM2StringEncodingOpen</key>
+			<integer>30</integer>
+			<key>iTM2TextKeyWindow</key>
+			<false/>
+			<key>iTM2TextScaleFactor</key>
+			<real>1.2599210739135742</real>
+			<key>iTM2TextSelectedRange</key>
+			<string>{0, 0}</string>
+			<key>iTM2TextStyle</key>
+			<string>LaTeX</string>
+			<key>iTM2TextSyntaxParserVariant</key>
+			<string>default</string>
+			<key>iTM2TextVisibleRange</key>
+			<string>{0, 0}</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

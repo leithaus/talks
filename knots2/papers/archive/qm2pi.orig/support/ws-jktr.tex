@@ -1,0 +1,280 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Trim Size: 9.75in x 6.5in
+%% Text Area: 8in (include Runningheads) x 5in
+%% ws-jktr.tex   :   10-4-06
+%% Tex file to use with ws-jktr.cls written in Latex2E. 
+%% The content, structure, format and layout of this style file is the 
+%% property of World Scientific Publishing Co. Pte. Ltd. 
+%% Copyright 1995, 2002 by World Scientific Publishing Co. 
+%% All rights are reserved.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+
+\documentclass{ws-jktr}
+
+\begin{document}
+
+\markboth{Authors' Names}
+{Instructions for Typesetting Camera-Ready Manuscripts}
+
+%%%%%%%%%%%%%%%%%%%%% Publisher's Area please ignore %%%%%%%%%%%%%%
+\catchline{}{}{}{}{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{INSTRUCTIONS FOR TYPESETTING CAMERA-READY\\
+MANUSCRIPTS USING COMPUTER SOFTWARE\footnote{Typeset title in 
+10~pt Times Roman uppercase and boldface. Please write
+down in pencil a short title to be used as the running head.}}
+
+\author{FIRST A. AUTHOR, SECOND B. AUTHOR and THIRD
+C. AUTHOR\footnote{Typeset names in 8~pt Times Roman, uppercase
+and lightface.  Use footnotes only to indicate if permanent and
+present addresses are different. Funding information should go
+in the Acknowledgement section.}}
+
+\address{Full affiliations\footnote{Typeset 
+affiliation and mailing addresses in 8pt Times italic.} \\
+and mailing addresses}
+
+\author{OTHER D. AUTHOR}
+
+\address{Full affiliations \\
+and mailing addresses}
+
+\maketitle
+
+\begin{abstract}
+The abstract should summarize the context, content and
+conclusions of the paper in less than 200 words. It should not
+contain any references or displayed equations. Typeset the
+abstract in 8 pt Times Roman with baselineskip of 10 pt, making
+an indentation of $\frac14$ inch on the left and right margins.
+Typeset similarly for keywords below.
+\end{abstract}
+
+\keywords{List four to six; Should characterize article.}
+
+\ccode{Mathematics Subject Classification 2000: 57M25, 57M27}
+
+\section{General Appearance}	%) A SECTION HEADING
+Contributions to the {\it Journal of Knot Theory and Its 
+Ramifications} will be reproduced by photographing the author's
+submitted typeset manuscript.  It is therefore essential that
+the manuscript be in its final form, and is an original computer
+printout because it will be printed directly without any
+editing. The manuscript should also be clean and unfolded. The
+copy should be evenly printed on a high resolution printer (300 
+dots/inch or higher). If typographical errors cannot be avoided,
+use cut and paste methods to correct them. Smudged copy, pencil
+or ink text corrections will not be accepted. Do not use 
+cellophane or transparent tape on the surface as this interferes
+with the picture taken by the publisher's camera.
+
+\section{The Main Text}
+Contributions are to be in English. Authors are 
+encouraged to have their contribution checked for grammar. 
+Abbreviations are allowed but should be spelt out in full when first
+used.  Integers ten and below are to be spelt out. Italicize foreign
+language phrases (e.g.~Latin, French).
+
+The text should be in 10 pt Times Roman, single spaced with
+baselineskip of 13~pt. Text area (excluding copyright block and folio)
+is 6.9 inches high and 5 inches wide for the first page.  Text area
+(excluding running title) is 7.7 inches high and 5 inches wide for
+subsequent pages.  Final pagination and insertion of running titles
+will be done by the publisher.
+
+\section{Major Headings}
+Major headings should be typeset in boldface with the first
+letter of important words capitalized.
+
+\subsection{Sub-headings}
+Sub-headings should be typeset in boldface italics. 
+
+\subsubsection{Sub-subheadings}
+Sub-subheadings should be typeset in italics.
+
+\subsection{Numbering and spacing}
+Sections, sub-sections and sub-subsections are to be numbered in
+Arabic.
+
+\subsection{Lists of items}
+Lists may be laid out with each item marked by a dot:
+
+\begin{itemlist}
+ \item item one,
+ \item item two.
+\end{itemlist}
+
+\begin{romanlist}[(ii)]
+\item item one
+\item item two 
+	\begin{romanlist}[(b)]
+	\item Lists within lists can be numbered with lowercase 
+              Roman letters,
+	\item second item. 
+	\end{romanlist}
+\end{romanlist}
+
+\section{Equations}
+Displayed equations should be numbered consecutively in each
+section, with the number set flush right and enclosed in
+parentheses, 
+\eject
+
+\noindent
+\begin{equation}
+\mu(n, t) = \frac{\sum^\infty_{i=1} 1(d_i < t, 
+N(d_i) = n)}{\int^t_{\sigma=0} 1(N(\sigma) = n)d\sigma}\,.
+\label{this}
+\end{equation}
+
+Equations should be referred to in abbreviated form,
+e.g.~``Eq.~(\ref{this})'' or ``(4.1)''. In multiple-line
+equations, the number should be given on the last line.
+
+Displayed equations are to be centered on the page width.
+Standard English letters like x are to appear as $x$
+(italicized) in the text if they are used as mathematical
+symbols. Punctuation marks are used at the end of equations as
+if they appeared directly in the text.
+
+\begin{theorem}
+Theorems$,$ lemmas$,$ etc. are to be numbered consecutively in the paper.
+\end{theorem}
+
+\begin{proof}
+Proofs should end with a square.
+\end{proof}
+
+\section{Illustrations and Photographs}
+Figures are to be inserted in the text nearest their first
+reference. Original India ink drawings of glossy prints are
+preferred. Please send one set of originals with copies. If the
+author requires the publisher to reduce the figures, ensure that
+the figures (including letterings and numbers) are large enough
+to be clearly seen after reduction. If photographs are to be
+used, only black and white ones are\break
+acceptable.
+
+\begin{figure}[th]
+\centerline{\psfig{file=jktrf1.eps,width=2.2in}}
+\vspace*{8pt}
+\caption{Labeled tree {\it T}.\label{fig1}}
+\end{figure}
+
+Figures are to be sequentially numbered in Arabic numerals. The
+caption must be placed below the figure. Typeset in 8~pt Times
+Roman with baselineskip of 10~pt. Use double spacing between a
+caption and the text that follows immediately.
+
+Previously published material must be accompanied by written
+permission from the author and publisher.
+
+Figures should be referred to in the abbreviated form, 
+e.g.~``$\ldots$ in Fig.~\ref{fig1}'' or ``$\ldots$ in   
+Figs.~\ref{fig1} and 2''. Where the word ``Figure'' begins a 
+sentence, it should be spelt\break
+in full.
+
+\section{Tables}
+Tables should be inserted in the text as close to the point of
+reference as possible. Some space should be left above and below
+the table.
+
+\begin{table}[ht]
+\tbl{Comparison of acoustic for frequencies for piston-cylinder problem.}
+{\begin{tabular}{@{}cccc@{}} \toprule
+Piston mass & Analytical frequency & TRIA6-$S_1$ model &
+\% Error \\
+& (Rad/s) & (Rad/s) \\ \colrule
+1.0\hphantom{00} & \hphantom{0}281.0 & \hphantom{0}280.81 & 0.07 \\
+0.1\hphantom{00} & \hphantom{0}876.0 & \hphantom{0}875.74 & 0.03 \\
+0.01\hphantom{0} & 2441.0 & 2441.0\hphantom{0} & 0.0\hphantom{0} \\
+0.001 & 4130.0 & 4129.3\hphantom{0} & 0.16\\ \botrule
+\end{tabular}}
+\end{table}
+
+Tables should be numbered sequentially in the text in Arabic
+numerals. Captions are to be centralized above the tables.
+Typeset tables and captions in 8~pt Times Roman with
+baselineskip of 10~pt.
+
+If tables need to extend over to a second page, the continuation
+of the table should be preceded by a caption, 
+e.g.~``Table~2. Cont'd.''
+
+\section{References}
+The format for references should be strictly followed.
+References in the text are to be numbered in Arabic numerals.
+They are to be cited in square brackets, \cite{2} before punctuation
+marks. Standard journal abbreviations are preferred.
+
+\section{Footnotes}
+Footnotes should be numbered sequentially in superscript Arabic
+numerals.\footnote{Footnotes should be typeset in 8~pt Times Roman 
+at the bottom of the page.}
+
+\appendix
+
+\section{Appendices}
+
+Appendices should be used only when absolutely necessary. They 
+should come\break
+before Acknowledgments. \forcebreak If there is more than one 
+appendix, number them\break 
+alphabetically.  Number displayed equations occurring in the Appendix
+in this way, e.g.~(\ref{appeqn}), (A.2), etc.
+\begin{equation}
+f(j\delta, i\delta) \cong \frac{\pi}{M} \sum^M_{n-1}
+Q_{\theta_n} (j\cos \theta_n + i\sin \theta_n)\, .\label{appeqn}
+\end{equation}
+
+\section*{Acknowledgments}
+This section should come before the References. Funding 
+information may also be included here.
+
+\begin{thebibliography}{0}
+\bibitem{1} R. Lorentz and D. B. Benson, Deterministic 
+and nondeterministic flow-chart interpretations, 
+{\it J. Comput. System Sci}.  {\bf 27} (1983) 400--433.
+
+\bibitem{2} M. J. Beeson, {\it Foundations of Constructive 
+Mathematics} (Springer, Berlin, 1985).
+
+\bibitem{3} K. L. Clark, Negations as failure, in 
+{\it Logic and Data Bases}, eds. H. Gallaire and\break 
+J. Winker (Plenum Press, New York, 1973), pp.~293--306.
+
+\bibitem{4} M. Joliat, A simple technique for partial 
+elimination of unit productions from LR(k) parsers, 
+{\it IEEE Trans. Comput}. {\bf C-27} (1976) 753--764.
+
+\bibitem{5} D. Dolve, Unanimity in an unknown and 
+unreliable environment, in {\it Proc. 22nd Annual Symposium on 
+Foundations of Computer Science}, Nashville, TN (Oct. 1981),\break 
+pp.~159--168.
+
+\bibitem{6} R. Tamassia, C. Batini and M. Talamo, An  
+algorithm for automatic layout of entity relationship diagrams, 
+in {\it Entity-Relationship Approach to Software  
+Engineering}, {\it Proc.  3rd Int. Conf. on Entity-Relationship 
+Approach}, eds. C. G. Davis, S.  Jajodia, P. A. Ng and R. T. Yeh 
+(North-Holland, Amsterdam, 1983), pp.~421--439.
+
+\bibitem{7} W. L. Gewirtz, Investigations in the theory
+of descriptive complexity, Ph. D. Thesis, New York University
+(1974).
+\end{thebibliography}
+
+\end{document}
+
+%%Can work for this too:-
+\begin{lemma}[the name of the lemma]
+Testing for lemma text only.
+\end{lemma}
+
+\begin{proposition}[the name of the proposition]
+Testing for proposition text only.
+\end{proposition}
+

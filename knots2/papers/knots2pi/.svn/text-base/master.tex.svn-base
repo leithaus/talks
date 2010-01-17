@@ -1,0 +1,29 @@
+%
+%  master
+%
+%  Created by David  F. Snyder on 2006-10-11.
+%  Copyright (c) 2006 Texas State University–San Marcos. All rights reserved.
+%%%%%%%%%%%%%%
+\documentclass[]{amsart}
+
+\input{../../LaTeXHeaders/packages.tex}
+\input{../../LaTeXHeaders/thmstyles.tex}
+\input{../../LaTeXHeaders/commands.tex} 
+
+\input{lgmHeader.tex} 
+    
+
+
+
+\begin{document}
+
+\input{topmatter}     
+
+\maketitle
+
+
+\input{intro}
+\input{4plathistory}
+\bibliographystyle{plain}   
+\bibliography{../../biblios/main.bib}
+\end{document}

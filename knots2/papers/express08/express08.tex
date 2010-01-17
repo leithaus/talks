@@ -1,0 +1,104 @@
+%\documentclass[12pt]{llncs}
+\documentclass{ws-jktr}
+                   
+
+\usepackage {mathpartir}
+\usepackage{bcprules}
+%\usepackage{listings}
+                       
+\usepackage{graphicx} 
+%\usepackage[margins=2.5cm,nohead,nofoot]{geometry}
+%\usepackage{geometry}
+\usepackage{amsfonts}
+\usepackage{amstext}
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{color}
+
+
+%\include{myPreamble}
+\include{express08.local} 
+
+%\ifpdf
+%\usepackage[pdftex]{graphicx}
+%\else
+%\usepackage{graphicx}
+%\fi
+
+ % \ifpdf
+%  \usepackage{pdfsync}
+%  \if
+
+
+%\title{Brief Article}
+%\author{David F. Snyder}
+%\author{L.G. Meredith}
+
+%\address{Dept. of Math., Texas State University--San Marcos, San Marcos, TX 78666}
+       
+\pagestyle{empty}
+
+
+\begin{document}
+
+\input{express08.front}
+
+% section front matter (end)
+
+\input{express08.intro} 
+ 
+% section introduction (end)
+
+\input{express08.graphs}
+
+% section notation (end)
+
+\input{express08.process.calculi} 
+
+\input{express08.graphs.encoding} 
+
+% section concurrent_process_calculi_and_spatial_logics_ (end)
+
+\input{express08.knotations} 
+    
+\input{express08.knots2pi} 
+
+\input{express08.trefoil} 
+
+\input{express08.mainthm} 
+
+% subsection basic_interpretation (end)
+
+\input{express08.pi.presentation} 
+
+% section concurrent_process_calculi (end)
+
+\input{express08.proofsketch}
+
+% section proof sketch (end)
+
+\input{express08.slviaknots} 
+
+% section spatial logic via knots (end)
+
+\input{express08.conclusion}
+
+% section conclusion (end)
+
+\input{express08.dtcodes} 
+
+% section wiring algorithm (end)
+
+\input{express08.ack} 
+
+% section acknowledgments (end)
+
+\newpage
+
+
+\bibliographystyle{plain}   
+\bibliography{../../biblios/main.bib}
+
+
+ \end{document}
+

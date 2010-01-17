@@ -1,0 +1,301 @@
+\section{Interpretation of QM}
+\subsection{Supporting definitions}
+\subsubsection{Multiplication}
+\begin{mathpar}
+  \quotep{Q} \cdot \quotep{R} := \quotep{Q|R}
+  \and \\
+  \quotep{Q} \cdot P := P\{ \quotep{Q|R} / \quotep{R} : \quotep{R} \in \freenames{P} \}
+\end{mathpar}
+
+\paragraph{Discussion}
+The first line needs little explanation. The second line says that
+each free name of the process is replaced with the multiplication of
+that name by the scalar. Multiplication of a scalar (name) by a state
+(process) results in a process all the names of which have been `moved
+over' by parallel composition with the process the scalar
+quotes. There is a subtlety that the bound names have to be
+manipulated so that multiplied names aren't accidentally
+captured. There are many ways to achieve this.
+
+\begin{remark}\label{rem:multiplication_identities}
+  The reader is invited to verify that for all $x,y,z \in \QProc$ and $P \in \Proc$
+  \begin{mathpar}
+    x \cdot \quotep{0} \equiv x 
+    \and
+    x \cdot y \equiv y \cdot x
+    \and
+    x \cdot (y \cdot z) \equiv (x \cdot y) \cdot z
+    \and \\
+    \quotep{0} \cdot P \equiv P
+    \and \\
+    x \cdot (y \cdot P) \equiv (x \cdot y) \cdot P
+    \and \\
+    x \cdot (P|Q) \equiv (x \cdot P) | (x \cdot Q)
+    \and \\    
+  \end{mathpar}
+\end{remark}
+
+\subsubsection{Tensor product}
+
+We define a tensor product on processes by structural induction.
+
+\paragraph{Tensor of sums} First note that all summations, including
+$\pzero$ and sequence, can be written $\Sigma_{i} x_{i}.A_{i} +
+\Sigma_{j} x_{j}.C_{j}$, where we have grouped input-guarded processes
+together and output-guarded processes together.
+
+Thus, we can define the tensor product of two summations, $N_{1}\otimes N_{2}$, where
+
+\begin{mathpar}
+  N_{1} := \Sigma_{i} x_{i}.A_{i} + \Sigma_{j} x_{j}.C_{j}
+  \and
+  N_{2} := \Sigma_{i'} y_{i'}.B_{i'} + \Sigma_{j'} y_{j'}.D_{j'} 
+\end{mathpar}
+
+as follows.
+
+\begin{mathpar}
+  \Sigma_{i} x_{i}.A_{i} + \Sigma_{j} x_{j}.C_{j} \otimes \Sigma_{i'}
+  y_{i'}.B_{i'} + \Sigma_{j'} y_{j'}.D_{j'} 
+  \and \\
+  := \; \Sigma_{i} \Sigma_{i'} \quotep{\stackrel{\vee}{x_{i}}| \stackrel{\vee}{y_{i'}}}.(A_{i}\otimes B_{i'}) \; | \; \Sigma_{i'} \Sigma_{i} \quotep{\stackrel{\vee}{y_{i'}}|\stackrel{\vee}{x_{i}}}.(B_{i'}\otimes A_{i})
+  \and
+  \;\; | \;\; \Sigma_{j} \Sigma_{j'} \quotep{\stackrel{\vee}{x_{j}}|\stackrel{\vee}{y_{j'}}}.(A_{j}\otimes B_{j'}) \; | \; \Sigma_{j'} \Sigma_{j} \quotep{\stackrel{\vee}{y_{j'}}|\stackrel{\vee}{x_{j}}}.(B_{j'}\otimes A_{j})
+\end{mathpar}
+
+\begin{remark}
+  Do we need to $x^{L}$ and $y^{R}$ for this construction as well?
+\end{remark}
+
+\paragraph{Tensor of parallel compositions} Next, we distribute tensor
+over par.
+
+\begin{mathpar}
+  P_{1}|P_{2} \otimes Q_{1}|Q_{2} := (P_{1} \otimes Q_{1}) | (P_{1}
+  \otimes Q_{2}) | (P_{2} \otimes Q_{1}) | (P_{2} \otimes Q_{2})
+\end{mathpar}
+
+\paragraph{Tensor with dropped names} We treat tensor of a
+process with a dropped name as parallel composition.
+
+\begin{mathpar}
+  P \otimes \dropn{x} := P | \dropn{x}
+\end{mathpar}
+
+\paragraph{Tensor of agents}
+
+Finally, we need to define tensor on agents. Note that the definition
+of tensor on normal products only tensors inputs with inputs and
+outputs with outputs. Thus, we only have to define the operation on
+``homogeneous'' pairings.
+
+\begin{mathpar}
+  (\vec{x})P \otimes (\vec{y})Q
+  \and \\
+  := (x_{0}^{L}|y_{0}^{R},\ldots,x_{0}^{L}|y_{n}^{R},\ldots,x_{m}^{L}|y_{0}^{R},\ldots,x_{m}^{L}|y_{n}^R)(P\{ \vec{x}^{L}/\vec{x}\} \otimes Q \{ \vec{y}^{R}/\vec{y}\})
+  \and \\
+  \clift{\vec{P}} \otimes \clift{\vec{Q}}
+  \and \\
+  := \clift{P_{0}\otimes Q_{0},\ldots,P_{0}\otimes Q_{n},\ldots,P_{m}\otimes Q_{0},\ldots,P_{m}\otimes Q_{n}}
+\end{mathpar}
+
+\begin{remark}
+  Observe that arities of tensored abstractions matches arities of
+  tensored concretions if the original arities matched. Note also that
+  the length of the arities corresponds to the increase in dimension
+  we see in ordinary vector space tensor product.
+\end{remark}
+
+\begin{remark}
+  Operationally, this definition distributes the tensor down to
+  components ``linked'' by summation. Tensor over summation is
+  intriguing in that it mixes names. Moreover, as a consequence of the
+  way it mixes names we have the identities for all $x \in \QProc$ and
+  $P,Q \in \Proc$
+
+  \begin{mathpar}
+    (x \cdot P) \otimes Q \equiv x \cdot (P \otimes Q) \equiv P \otimes (x \cdot Q)
+    \and
+    P \otimes \pzero \equiv P
+  \end{mathpar}
+
+  that the reader is invited to verify.
+\end{remark}
+
+\subsubsection{Annihilation}
+\begin{mathpar}
+  P^{\perp} := \{ Q | \forall R. P|Q \red^{*} R \Rightarrow R \red^{*} \pzero \}
+  \and \\
+  P^{\underline{\perp}} := \Sigma_{Q \in P^{\perp}} \quotep{Q}?(y).(\dropn{y}|Q) | \Sigma_{Q \in P^{\perp}} \quotep{Q}\clift{\Box}
+\end{mathpar}
+
+\paragraph{Discussion} The reader will note that $P^{\perp}$ is a
+\emph{set} of processes, while $P^{\underline{\perp}}$ is a
+\emph{context}. We call the set $P^{\perp}$ the \emph{annihilators} of
+$P$. The parallel composition of a process in the annihilators of $P$
+with $P$ will result in a process, the state space of which has all
+paths eventually leading to $\pzero$. Execution may endure loops; but
+under reasonable conditions of fairness (naturally guaranteed under
+most notions of bisimulation) such a composite process cannot get
+stuck in such a loop and will, eventually pop out and terminate.
+
+The context $P^{\underline{\perp}}$ is ready and willing to ``take the
+$P$ out of'' the process to which it is applied. It will effectively
+transmit the code of the process to which it is applied to one of the
+annihilators and run the process against it.
+
+\subsubsection{Evaluation}
+We fix $M$ a domain of fully abstract interpretation with an equality
+coincident with bisimulation. We take $\meaningof{\cdot} : \Proc \to
+M$ to be the map interpreting processes and $\nmeaningof{\cdot} : \M
+\to Proc$ to be the map running the other way. Then we define
+
+\begin{mathpar}
+  \int P := \nmeaningof{\meaningof{P}}
+\end{mathpar}
+
+\paragraph{Discussion}
+There are many fully abstract interpretations of Milner's
+$\pi$-calculus. Any of them can be used as a basis for interpreting
+the reflective calculus here. Equipped with such a domain it is
+largely a matter of grinding through to check that the Yoneda
+construction for the normalization-by-evaluation program can be
+extended to this setting.
+
+\begin{remark}
+  The reader is invited to verify that $\int (P^{\underline{\perp}}[P]) = 0$.
+\end{remark}
+
+\subsection{Quantum mechanics}
+
+Table \ref{tbl:core_qm_op_defns} gives the core operational definitions
+
+\begin{table}[htp]\label{tbl:core_qm_op_defns}
+  \center{
+    \fbox{
+      \begin{tabular}{c|c}
+        quantum mechanics & process calculus \\
+        \hline
+        scalar & $x := \quotep{P}$ \\
+        state vector & $\state{P} := P$ \\
+        dual & $\state{P}^{*} := \event{P^{\underline{\perp}}} := \quotep{P^{\underline{\perp}}}[-]$ \\
+        matrix & $ \Sigma_{\alpha} \state{P_{\alpha}}x_{\alpha}\event{Q_{\alpha}}$ \\
+        vector addition & $\state{P} + \state{Q} := \state{P | Q}$ \\
+        tensor product & $\state{P} \otimes \state{Q} := \state{P \otimes Q}$ \\
+        inner product & $\innerprod{P}{Q} := \quotep{\int P^{\underline{\perp}}[Q]}$ \\
+      \end{tabular}
+    }
+  }
+  \caption{QM - operational definitions}
+\end{table}
+
+where
+
+\begin{mathpar}
+  \prmatrix{P}{Q} := \fprmatrix{P}{\quotep{\pzero}}{Q}
+  \and
+  \fprmatrix{P}{x}{Q} := (\state{P},x,\event{Q})
+  \and
+  (\fprmatrix{P}{x}{Q})(\state{R}) := x \cdot \innerprod{Q}{R} \cdot \state{P}
+  \and
+  (\fprmatrix{P}{x}{Q})(\event{R}) := x \cdot \innerprod{R}{P} \cdot \event{Q}
+\end{mathpar}
+
+\paragraph{Discussion}
+As promised: vectors (aka states) are represented as processes; duals
+as contextual duals; inner product definition should be compared with
+standard inner product definition for ....
+
+\begin{remark}
+  Assuming $\int (P^{\underline{\perp}}[P]) = 0$, the reader is
+  invited to verify that $(\fprmatrix{P}{x}{P})(\state{P}) = x \cdot \state{P}$.
+\end{remark}
+
+\begin{remark}
+  The reader is invited to verify that $\innerprod{P}{Q}$ could
+  equally well have been written $\quotep{\int \stackrel{\vee}{x}}$
+  where $x = \event{P^{\underline{\perp}}}(Q)$.
+
+  One of the motivations for this remark is that there is another way
+  to factor these operations. We could package up evaluation in the dual:
+
+  \begin{mathpar}
+    \state{P}^{*} := \event{\int P^{\underline{\perp}}} := \quotep{\int P^{\underline{\perp}}}[-]
+  \end{mathpar}
+
+  and then have inner product defined by
+  
+  \begin{mathpar}
+    \innerprod{P}{Q} := \event{P}(Q)
+  \end{mathpar}
+
+  Hopefully, experience with the calculations will provide guidance on
+  the best factoring.
+\end{remark}
+
+\begin{remark}
+  Assuming $\int (P^{\underline{\perp}}[P]) = 0$, the reader is
+  invited to verify that $\forall P,Q. (\prmatrix{0}{Q})(\state{0}) =
+  \state{0}$ and dually $(\prmatrix{P}{0})(\event{0}) = \event{0}$.
+\end{remark}
+
+\begin{remark}
+  i'm a little worried that i don't (yet) have proper support for
+  complex conjugacy. But, the observation above may give us a
+  clue. According to Abramsky, it must be the case that the scalars
+  are iso to the homset of the identity for the tensor -- which the
+  observation above characterizes. 
+
+  For now, we will simply bookmark the notion with $\overline{x}$.
+\end{remark}
+
+\subsubsection{Adjointness}
+
+We need to give a definition of $(\cdot)^{\dagger}$ for matrices. The
+obvious candidate definition is
+\begin{mathpar}
+(\Sigma_{\alpha}\fprmatrix{P_{\alpha}}{x_{\alpha}}{Q_{\alpha}})^{\dagger}
+= \Sigma_{\alpha}\fprmatrix{(Q_{\alpha}^{\underline{\perp}})^{*}}{\overline{x}_{\alpha}}{P_{\alpha}^{\underline{\perp}}} 
+\end{mathpar}
+
+But, $(Q_{\alpha}^{\underline{\perp}})^{*}$ requires a name along
+which to communicate the process to achieve the context application.
+
+\subsubsection{Basis for a basis}
+If processes label states and ``addition'' of states (a.k.a. vector
+addition) is interpreted as parallel composition, what corresponds to
+notions of linear independence and basis? Here, we recall that Yoshida
+has developed a set of \emph{combinators} for an asynchronous verison
+of Milner's $\pi$-calculus. These are a finite set of processes such
+any process can be expressed as parallel composition of these
+combinators together with liberal uses of the new operator and
+replication. We can simply give a translation of these into the
+present calculus and have reasonable expectation that the property
+carries over. That is, that the resultant set allows to express all
+processes via parallel composition. Note, however, that there is no
+new operator or replication in this calculus. As a result, we expect
+that the corresponding set is actually infinite. That is, we expect
+that the space is actually infinite dimensional.
+
+\begin{remark}
+  The attentive reader may be a bit concerned. Certainly, the
+  collection $S$, $K$ and $I$ is a finite set of
+  combinators. Shouldn't we expect to see a finite set of combinators
+  for an effectively equivalent system? i am very sympathetic to this
+  critique and feel it warrants full attention. On the other hand, i
+  also have in mind the following analogy. The natural numbers, as a
+  monoid under addition, has exactly $1$ generator, while the natural
+  numbers, as a monoid under multiplication, has countably many
+  generators (the primes). We observe that the application of the
+  lambda calculus is much less resource sensitive than the parallel
+  composition of the $\pi$-calculus. Could it be the case that we have
+  an analogy of the form
+  
+  \begin{mathpar}
+    m + n : MN :: m*n : M|N
+  \end{mathpar}
+
+  giving a similar blow up in the set of ``primes''?  This is such a
+  wonderful thought that, even if it's not true, i think it's worth
+  writing down.
+\end{remark}

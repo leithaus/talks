@@ -1,0 +1,321 @@
+\subsection{Re-presenting the $\pi$-calculus}
+The modern presentation of a mobile process calculus is heavily
+influenced by the developments of Milner in
+\cite{FunctionsAsProcesses}. This, in turn follows a modern style of
+giving algebraic structures in terms of generators and relations on
+them. The grammar, below, describing term constructors, freely
+generates the set of process (expressions), $\mathcal{P(N)}$ over a
+set of names $\mathcal{N}$. This set is then quotiented by a relation
+known as structural congruence.
+
+What marks these algebras as distinct from other more traditionally
+studied algebraic structures, e.g. vector spaces or polynomial rings,
+is the manner in which dynamics is captured. In traditional
+structures, dynamics is typically expressed through morphisms between
+such structures, as in linear maps between vector spaces or morphisms
+between rings. In algebras associated with the semantics of
+computation, the dynamics is expressed as part of the algebraic
+structure itself, through a reduction reduction relation typically
+denoted by $\red$. Below, we give a recursive presentation of this
+relation for the calculus studied here.
+
+We note that this particular design choice regarding the
+representation of dynamics has had huge impact on the development of
+both families of theories. Ironically, the standard category theoretic
+machinery -- oft employed in programming language semantics -- is more
+readily applied to the traditional division of labor where dynamics is
+in the morphisms. This choice affords the standard combinators, such
+as Cartesian or tensor product, to be applied to algebras and extended
+meaningfully to the dynamics.
+
+Despite advances in Milner's bigraphical theories
+\cite{DBLP:conf/popl/JensenM03}, a proper categorical framework for
+composing (resp. decomposing) entire process calculi, elucidating the
+natural combinators is still missing. This is due to the fact that
+reifying dynamics as a part of algebraic structure itself places a
+much greater demand on the notion of morphism. To wit, the notion of
+morphism describes what should be preserved. This leaves any
+categorical theory in the position of having to address what in the
+dynamics needs to be preserved in maps from one process calculus to
+another -- essentially before it can get off the ground. Thus, the
+extremely elegant structure-function relationships embodied in the
+process calculi also turn out to be a bit of an Achilles' heel in
+addressing higher-level notions of composition.
+
+\subsubsection{Process grammar}\label{subsub:process_grammar}
+
+The presentation here follows \cite{milner91polyadicpi}. This
+presentation is a departure from the one found in
+\cite{ParrowWalker} or even in
+\cite{FunctionsAsProcesses}. Foreshadowing a little of what is
+to come, the essential difference lies in the typing of the sequencing
+term constructor. Is the type of the operator, $action \times process
+\to process$, or does it demand some other decomposition? The question
+can be traced back to Milner's CCS \cite{MilnerCCS80}. In CCS an action
+is essentially \emph{atomic} (even value-passing was interpreted as a
+summation over atomic actions) in the sense of having no internal
+structure (as opposed to having any transactional connotation). So,
+the essential design question is, as actions are developed to have
+internal structure, how does this relate to process structure? As we
+will see below, the introdction of binding operators makes a clear
+commitment to a natural set of relationships amongst these
+operators. Finally, lest this seem much ado about minutiae, if not
+nothing, it is important to observe that similar issues about the
+decomposition of operators -- right at the crux where syntax meets
+semantics -- have been pivotal in extremely important developments in
+the history of logic and computation. All the substructural logics,
+and the author counts intuitionistic logic among them, enjoy this
+heritage; and, of course linear logic with its explosive
+revitalization of logic in computation is regularly sloganized in
+terms of the decomposition of implication into replication and linear
+implication.
+
+In this context we present the generators.
+
+\begin{mathpar}
+  \inferrule* [lab=summation] {} {{M,N} \bc \pzero \;|\; x.A \;|\; M+N}
+  \and
+  \inferrule* [lab=agent] {} {{A} \bc (\vec{x})P \;| \; [\vec{x}]P}
+  \and \\
+  \inferrule* [lab=process] {} {{P,Q} \bc N \;| \;P|Q \;| \; (\nu \; \vec{x})P \;| \;X\langle \vec{y} \rangle \;| \; (\textsf{rec} \; X(\vec{x}).P)\langle \vec{y} \rangle }
+\end{mathpar} 
+
+In English, this says that processes are either
+
+\begin{description}
+\item [summation] $n$-ary sums of sequenced agents, where a $0$-ary
+  sum, $0$ is the $nil$ or stopped process, and a $1$-ary sum is just a
+  sequence
+\item [agents] where agents are either
+  \begin{itemize}
+  \item abstractions, i.e. maps from (tuples of) names
+    to processes, or
+  \item concretions, i.e. pairs of (tuples of) names and process
+  \end{itemize}
+\item [composite processes] and composite processes, built by
+  \begin{itemize}
+    \item putting processes in parallel composition, or
+    \item placing them under the scope of a restriction, or
+    \item made from recursive definitions 
+  \end{itemize}
+\end{description}
+
+Note that $\vec{x}$ denotes a vector of names of length
+$|\vec{x}|$. We adopt the following standard abbreviations.
+
+\begin{mathpar}
+   x?(\vec{y}).P := x.(\vec{y})P \and  x!(\vec{y}).P := x.[\vec{y}]P
+   \and
+   X(\vec{y}) \plogp P := (\vec{y})(\textsf{rec} \; X(\vec{x}).P)\langle \vec{y} \rangle
+   \and \Pi_{i=0}^{n-1}P_i := P_0 | \ldots | P_{n-1}
+\end{mathpar}
+
+These abbreviations recover the appearance of the usual decomposition
+of sequence as typed $action \times process \to process$.
+
+\subsubsection{Structural congruence}
+
+The linear syntax makes too many distinctions. For example, if the
+intent of the expression $P|Q$ is to model parallel composition, it
+seems necessary to find a way to identify it with $Q|P$. The
+equivalence defined below can be seen as a set of relations that cut
+down the freely generated structure given above, and in the process
+erase these distinctions.
+
+\paragraph{Free and bound names and alpha-equivalence.} At the core of
+structural equivalence is alpha-equivalence which identifies process
+that are the same up to a change of variable. Formally, we recognize
+the distinction between free and bound (occurrences of) names. The
+free names of a process, $\freenames{P}$, may be calculated
+recursively as follows:
+
+\begin{mathpar}
+  \freenames{\pzero} := \emptyset
+  \and \\
+  \freenames{x?(\vec{y}).P} := \{ x \} \cup (\freenames{P} \setminus \{ \vec{y} \})
+  \and 
+  \freenames{x!(\vec{y}).P} := \{ x \} \cup \{ \vec{y} \} \cup \freenames{P} 
+  \and \\
+  \freenames{P|Q} := \freenames{P} \cup \freenames{Q}
+  \and
+  \freenames{P + Q} := \freenames{P} \cup \freenames{Q}
+  \and \\
+  \freenames{(\nu \; \vec{y})P} := \freenames{P} \setminus \{ \vec{y} \}
+  \and  \\
+  \freenames{(\textsf{rec} \; X(\vec{x}).P)\langle \vec{y} \rangle}
+  := \{ \vec{y} \} \cup \freenames{P} \setminus \{ \vec{x} \}
+\end{mathpar}
+
+The bound names of a process, $\boundnames{P}$, are those names occurring in $P$
+that are not free. For example, in $x?(y).0$, the name $x$ is free, while $y$ is bound.
+
+\begin{definition}
+Then two processes, $P,Q$, are alpha-equivalent if $P = Q\{\vec{y}/\vec{x}\}$ for
+some $\vec{x} \in \boundnames{Q},\vec{y} \in \boundnames{P}$, where $Q\{\vec{y}/\vec{x}\}$
+denotes the capture-avoiding substitution of $\vec{y}$ for $\vec{x}$ in $Q$.
+\end{definition}
+
+\begin{definition}
+  The {\em structural congruence} \cite{SangiorgiWalker} , $\equiv$, between processes is the
+  least congruence containing alpha-equivalence, satisfying the
+  abelian monoid laws (associativity, commutativity and $\pzero$ as
+  identity) for parallel composition $|$ and for summation $+$, in addition to the
+  following axioms:
+\begin{mathpar}
+ (\nu \; x)\pzero \equiv \pzero 
+ \and
+ (\nu \; x)(\nu \; x)P \equiv (\nu \; x)P \and (\nu \; x)(\nu \; y)P \equiv (\nu \; y)(\nu \; x)P 
+ \and \\
+ P | (\nu \; x)Q \equiv (\nu \; x)(P|Q), \; \mbox{\textit{if} }x \not\in \freenames{P}
+ \and
+ (\textsf{rec} \; X(\vec{x}).P)\langle \vec{y} \rangle \equiv P\{\vec{y}/\vec{x}\}\{(\textsf{rec} \; X(\vec{x}).P)/X\}
+\end{mathpar}
+\end{definition}
+
+\subsubsection{Operational semantics} 
+
+Finally, we introduce the computational dynamics. This, too, is in
+modern accounts a highly structured specification. It may be viewed
+alternately as composed of a core rule, the comm rule, for the
+computing the reduction relation, specifying the dynamics of
+interaction, together with a set of rules saying how the reduction
+relation may be applied \emph{in context}. Or, it may be viewed as a
+recursive specification of the reduction relation with the comm rule
+as the base case of the recursion. Naturally, these views are not
+mutually exclusive.
+
+\begin{mathpar}
+  \inferrule* [lab=Comm] {\vec{y} \cap \vec{v} = \emptyset \\ |\vec{y}| = |\vec{z}|} { x.(\vec{y})P \juxtap x.(\nu \vec{v})[\vec{z}]P \red (\nu \vec{v})(P\{\vec{z}/\vec{y}\} | Q) }
+  \and \\
+  \inferrule* [lab=Par] {{P} \red {P}'} {{{P} | {Q}} \red {{P}' | {Q}}}
+  \and
+  \inferrule* [lab=Equiv]{{{P} \scong {P}'} \andalso {{P}' \red {Q}'} \andalso {{Q}' \scong {Q}}}{{P} \red {Q}}
+  \and
+  \inferrule* [lab=New] {{P} \red {P}'} {{\newp{{x}}{{P}}} \red {\newp{{x}}{{P}'}}}  
+\end{mathpar}
+
+We write $\wred$ for $\red^*$, and $P\red$ if $\exists Q $ such that $ P \red Q$.
+
+Our contributions lie in a careful analysis of the structure of the
+comm rule. Before we present these, however, we complete the
+presentation of the standard theory, especially the notions of
+bisimulation and context.
+
+\subsubsection{Bisimulation}
+
+The computational dynamics described above gives rise to another kind
+of equivalence, the equivalence of computational behavior. As
+previously mentioned this is typically captured \emph{via} some form
+of bisimulation. The notion we use in this paper is derived from weak
+barbed bisimulation \cite{milner91polyadicpi}. We must introduce an
+``up to'' \cite{DBLP:conf/concur/SangiorgiM92}
+\cite{DBLP:conf/concur/Pous06} strategy to deal with the fact that
+Reidemeister moves can not only introduce or eliminate crossings (see
+$R_1$ $R_2$), but ``reorder'' them (see $R_3$).
+
+\begin{definition}
+  An agent $B$ occurs \emph{unguarded} in $A$ if it has an occurence
+  in $A$ not guarded by a prefix $x$. A process $P$ is observable at
+  $x$, written here $P \downarrow x$, if some agent $x.A$ occurs
+  unguarded in $P$. We write $P \Downarrow x$ if there is $Q$ such
+  that $P \wred Q$ and $Q \downarrow x$.
+\end{definition}
+
+\begin{definition}
+%\label{def.bbisim}
+A \emph{barbed bisimulation} is a symmetric binary relation 
+${\mathcal S}$ between agents such that $P\rel{S}Q$ implies:
+\begin{enumerate}
+\item If $P \red P'$ then $Q \wred Q'$ and $P'\rel{S} Q'$, for some $Q'$.
+\item If $P\downarrow x$, then $Q\Downarrow x$.
+\end{enumerate}
+$P$ is barbed bisimilar to $Q$, written
+$P \simeq Q$, if $P \rel{S} Q$ for a barbed bisimulation ${\mathcal S}$.
+\end{definition}
+
+One of the principal advantages of this framework is the co-algebraic
+proof method for proving bisimilarity between two processes: exhibit a
+bisimulation \cite{DBLP:conf/lics/Sangiorgi04}.
+
+Again, to put into perspective the issues at the core of this paper,
+it is useful to ask how this account of dynamics compares with the
+Newtonian account of dynamics. Is there even a standard, well-defined
+theory of the equivalence of dynamical systems in the Newtonian
+account? What are the methods and procedures, for example, to
+determine when two different sets of ODEs describe essentially the
+same dynamics? We submit that these artifacts are not described or
+collected in a well-defined theory with effective definitions and
+algorithmic procedures.
+
+Further, we submit that there is something fundamental underlying the
+basic outlook of computing as a discipline that is not present in the
+other physical sciences that has given rise to this difference in
+understanding of what counts as a theory of dynamics. Computing, while
+still being -- if not an experimental discipline, then -- a discipline
+that admits experimental investigation and refutation of theories, is
+situated closer to pure mathematics and logic than the physical
+sciences and thus quite naturally makes a notion of equivalence an
+object of investigation, in its own right. The physical sciences
+\emph{rely} on a notion of equivalence, without making such a notion
+an object of study as a physical theory. Remarkably, the de facto
+notion of equivalence in operation in every physical science is almost
+identical in formulation to the notion of bisimulation: two systems
+are the same if there is no distinguishing experiment/observation that
+separates them.
+
+In terms of the questions posed above, we may ask in a candidly
+pointed fashion, where is the theory of equivalence of dynamical
+systems in the Newtonian account of dynamics that reifies and
+operationalizes this principle of equivalence? Why has an order of
+magnitude difference in the time taken to develop the different
+accounts of dynamics not given rise to a similar set of concerns?
+Whatever the answer may be, the fact that there has been no serious
+competitor to the Newtonian account of the dynamics of physical
+systems must certainly be a contributor to the current situation. In
+the language of the times, the Newtonian monopoly on the
+conceptualization of the dynamics of physical systems has stiffled
+innovation. It is in the this context that we see this program of
+investigation to be of real import and significance.
+
+\subsubsection{Contexts}
+
+One of the principle advantages of computational calculi like the
+$\pi$-calculus is a well-defined notion of context,
+contextual-equivalence and a correlation between
+contextual-equivalence and notions of bisimulation. The notion of
+context allows the decomposition of a process into (sub-)process and
+its syntactic environment, its context. Thus, a context may be
+thought of as a process with a ``hole'' (written $\Box$) in it. The
+application of a context $M$ to a process $P$, written $M[P]$, is
+tantamount to filling the hole in $M$ with $P$. 
+
+\begin{mathpar}
+  \inferrule* [lab=summation] {} {{M_{M},M_{N}} \bc \Box \;|\; x.M_{A} \;|\; M_{M}+M_{N}}
+  \and
+  \inferrule* [lab=agent] {} {{M_{A}} \bc (\vec{x})M_{P} \;| \; [\vec{x}]M_{P}}
+  \and \\
+  \inferrule* [lab=process] {} {{M_{P}} \bc M_{N} \;| \;P|M_{P} \;| (\textsf{rec} \; X(\vec{x}).M_{P})\langle \vec{y} \rangle \;| \; (\nu \; \vec{x})M_{P}}
+\end{mathpar} 
+
+\begin{definition}[contextual application] Given a context $M$, and
+  process $P$, we define the \emph{contextual application}, $M[P] :=
+  M\{P/\Box\}$. That is, the contextual application of M to P is the
+  substitution of $P$ for $\Box$ in $M$.
+\end{definition}
+
+Again, in terms of the theme of this paper, contexts provide a natural
+way to reify and calculate concerning questions of the divide between
+system and environment. This apparatus falls out of the compositional
+specification of the system. It is a key distinguishing feature that
+the notion of contextual equivalence, i.e. two systems are equivalent
+if they may be interchangeably substituted into any given context
+without a change of behavior of the resulting composite system, has a
+well-established relation with bisimulation (namely, the two notions
+conicide).
+
+Where in the Newtonian account of dynamics is the reification of
+context? How does the description of a specific local system extend to
+exercise that system in a given environment? How does the algebra of
+environments, a.k.a. contexts, relate to the algebra of dynamics?
+Again, we submit that there is no corpus of theory and/or machinery
+providing this set of services in the Newtonian account.

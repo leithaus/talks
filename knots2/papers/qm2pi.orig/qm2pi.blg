@@ -1,0 +1,77 @@
+This is BibTeX, Version 0.99c (Web2C 7.5.5)
+The top-level auxiliary file: qm2pi.aux
+The style file: plain.bst
+Database file #1: ../../biblios/main.bib.bib
+A bad cross reference---entry "Caires04"
+refers to entry "DBLP:conf/fossacs/2004", which doesn't exist
+A bad cross reference---entry "LaneveZ05"
+refers to entry "DBLP:conf/fossacs/2005", which doesn't exist
+A bad cross reference---entry "JoCaml"
+refers to entry "DBLP:conf/afp/2002", which doesn't exist
+A bad cross reference---entry "WojciechowskiS99"
+refers to entry "DBLP:conf/ma/1999", which doesn't exist
+A bad cross reference---entry "Cardelli04"
+refers to entry "DBLP:conf/cmsb/2004", which doesn't exist
+A bad cross reference---entry "DanosL03"
+refers to entry "DBLP:conf/esop/2003", which doesn't exist
+A bad cross reference---entry "RegevS03"
+refers to entry "DBLP:conf/cmsb/2003", which doesn't exist
+A bad cross reference---entry "MilnerS92"
+refers to entry "DBLP:conf/icalp/1992", which doesn't exist
+A bad cross reference---entry "Sangiorgi95"
+refers to entry "DBLP:conf/mfcs/1995", which doesn't exist
+A bad cross reference---entry "Abramsky2005Algorithmic-Gam"
+refers to entry "DBLP:conf/sas/2005", which doesn't exist
+Warning--I didn't find a database entry for "DBLP:conf/sas/2005"
+Warning--I didn't find a database entry for "DBLP:conf/ma/1999"
+Warning--I didn't find a database entry for "DBLP:conf/afp/2002"
+Warning--I didn't find a database entry for "DBLP:conf/fossacs/2005"
+Warning--I didn't find a database entry for "DBLP:conf/fossacs/2004"
+Warning--I didn't find a database entry for "DBLP:conf/cmsb/2003"
+Warning--I didn't find a database entry for "DBLP:conf/esop/2003"
+Warning--I didn't find a database entry for "DBLP:conf/icalp/1992"
+Warning--I didn't find a database entry for "DBLP:conf/mfcs/1995"
+Warning--I didn't find a database entry for "DBLP:conf/cmsb/2004"
+Warning--to sort, need editor, organization, or key in DBLP:conf/lics/2004
+You've used 52 entries,
+            2118 wiz_defined-function locations,
+            873 strings with 13089 characters,
+and the built_in function-call counts, 18807 in all, are:
+= -- 1856
+> -- 688
+< -- 38
++ -- 280
+- -- 211
+* -- 1177
+:= -- 2897
+add.period$ -- 170
+call.type$ -- 52
+change.case$ -- 241
+chr.to.int$ -- 0
+cite$ -- 53
+duplicate$ -- 869
+empty$ -- 1643
+format.name$ -- 211
+if$ -- 4235
+int.to.chr$ -- 0
+int.to.str$ -- 52
+missing$ -- 58
+newline$ -- 261
+num.names$ -- 122
+pop$ -- 314
+preamble$ -- 1
+purify$ -- 199
+quote$ -- 0
+skip$ -- 658
+stack$ -- 0
+substring$ -- 1159
+swap$ -- 302
+text.length$ -- 38
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 189
+warning$ -- 1
+while$ -- 185
+width$ -- 54
+write$ -- 593
+(There were 10 error messages)

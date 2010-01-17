@@ -1,0 +1,96 @@
+\subsection{The general encoding}
+
+Given a graph, $G$, a pair of injective maps,
+$\widehat{\cdot},\cdot^{\circ}:V(G) \hookrightarrow \mathcal{N}$, satisfying
+$\widehat{V(G)} \cap V(G)^{\circ} = \emptyset$, we encode $G$ by %$\meaningof{G}_{\pi}^H(V(G),\emptyset)$ where
+
+% \begin{eqnarray}  
+%   %\lefteqn{\meaningof{G}_{\pi}^H(V,E) \triangleq} % \nonumber \\
+%   \meaningof{G}_{\pi}^H(V,E) \triangleq
+%   % & & \mbox{}
+%   \textsf{let} \; v \uplus V' \; \textsf{=} \; V \; \textsf{in} %\nonumber \\
+%   % & & \mbox{}
+%   \meaningof{v}_{\pi}(E) | \meaningof{G}_{\pi}^H(V',E \cup cone(v))
+% \end{eqnarray}
+
+% and
+
+\begin{eqnarray}
+  \meaningof{G}_{\pi} & \triangleq & \Pi_{v \in V(G)}\meaningof{v}_{\pi} \\
+  \meaningof{v}_{\pi} & \triangleq & \Sigma_{e \in \textsf{slice(v)}} \hat{v}(s).\widehat{\textsf{trgt}(e)}[s].\meaningof{v}_{\pi} + (\nu \; t)v^{\circ}(s).s[t]
+\end{eqnarray}
+
+\begin{remark}
+  An intuitively appealing encoding would, for each vertex, record its
+  participation as the endpoint of an edge as potential
+  interaction. Discrete graphs, however, have vertices that are
+  distinguishable \emph{despite} the absence of any edge
+  structure. Thus, the encoding must also accomodate this additional
+  capacity for distinguishing vertices as additional possible behavior
+  at each process representing a vertex. This fact is methodologically
+  noteworthy: if the mathematical data makes exploitable distinctions
+  a faithful process representation must reflect these distinctions as
+  distinguishable behavior. Put another way, the world-view operative
+  in process calculi dictates that any difference that makes a
+  difference must show up as a distinct way of kicking or prodding
+  some process.   
+\end{remark}
+
+On the other hand, it is easy to see that
+
+\begin{lemma}
+  If $G$ is such that for all $v \in V(G), \textsf{e}(v) \neq
+  \emptyset$, then for any distinct $v_0, v_1 \in V(G)$ $(\nu \;
+  v_0^{\circ})\meaningof{v_0}_{\pi} \not\simeq (\nu \;
+  v_1^{\circ})\meaningof{v_1}_{\pi}$.
+\end{lemma}
+
+%\begin{proof}
+That is, in every graph in which every vertex participates as the
+endpoint of at least one edge, then even if we hide behavior at
+$v_i^{\circ}$, the processes $(\nu \;
+v_i^{\circ})\meaningof{v_i}_{\pi}$ are distinct for distinct nodes,
+$v_0, v_1$. For, in the worst case, when the cone of $v_0$ equals the
+cone of $v_1$ there can never be an edge in which they are
+simultaneously the source or simultaneously the target. Hence, there
+is always some distinguishing behavior. In fact, the adventurous
+reader is encouraged to write down the distinguishing Hennessy-Milner
+formula.
+%\end{proof}
+
+This fact allows us to employ a simpler encoding for graphs of this type, i.e.
+
+\begin{eqnarray}\label{vcode}
+  \meaningof{v}_{\pi} & \triangleq & \Sigma_{e \in \textsf{slice(v)}} \hat{v}(s).\widehat{\textsf{trgt}(e)}(s).\meaningof{v}_{\pi}
+\end{eqnarray}
+
+In a similar vein we have
+
+\begin{theorem}\label{grapheqthm}
+  $\meaningof{G}_{\pi} \simeq \meaningof{H}_{\pi} \iff  G \sim H$.
+\end{theorem}
+
+\begin{proof}
+  By construction.
+\end{proof}
+
+\begin{remark}
+  We observe that there is an dual encoding given by
+  \begin{eqnarray}
+  \meaningof{G}_{\pi}^{\bullet} & \triangleq & \Pi_{v \in V(G)}\meaningof{v}_{\pi}^{\bullet} \\
+  \meaningof{v}_{\pi}^{\bullet} & \triangleq & \Sigma_{e \in \textsf{co-slice(v)}} \widehat{\textsf{src}(e)}(s).\hat{v}[s].\meaningof{v}_{\pi}^{\bullet} + (\nu \; t)v^{\circ}(s).s[t]
+\end{eqnarray}
+\end{remark}
+
+\subsubsection{Examples}
+
+\begin{example}
+  \begin{enumerate}
+    \item $\meaningof{G(n)}_{\pi} = \Pi_{i=0}^{n-1}(\nu \; t)i^{\circ}(s).s[t]$
+
+    \item $\meaningof{C(n)}_{\pi} = \Pi_{i=0}^{n-2}\hat{i}(s).\widehat{i+1}[s]$
+
+    \item $\meaningof{L(n)}_{\pi} = \Pi_{i=0}^{n-1}\hat{i}(s).\widehat{(i+1 \; mod \; n)}[s]$
+  \end{enumerate}
+\end{example}
+

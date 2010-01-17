@@ -1,0 +1,52 @@
+\contentsline {part}{I\hspace {1em}Reflection, data and concurrency}{9}
+\contentsline {section}{\numberline {0.1}Introduction}{11}
+\contentsline {subsection}{\numberline {0.1.1}20-20 hindsight}{13}
+\contentsline {paragraph}{\numberline {0.1.1.0.1}Data-control coherence}{14}
+\contentsline {paragraph}{\numberline {0.1.1.0.2}Reflection}{15}
+\contentsline {subsection}{\numberline {0.1.2}Summary of contributions and overview}{16}
+\contentsline {subsubsection}{\numberline {0.1.2.1}Overview of chapter}{17}
+\contentsline {subsection}{\numberline {0.1.3}A function of history}{17}
+\contentsline {subsection}{\numberline {0.1.4}Data processing}{19}
+\contentsline {chapter}{\numberline {1}Re-introducing the polyadic $\pi $-calculus}{21}
+\contentsline {section}{\numberline {1.1}Concurrent process calculi }{21}
+\contentsline {subsection}{\numberline {1.1.1}Re-presenting the $\pi $-calculus}{22}
+\contentsline {subsubsection}{\numberline {1.1.1.1}Process grammar}{23}
+\contentsline {subsubsection}{\numberline {1.1.1.2}Structural congruence}{24}
+\contentsline {paragraph}{\numberline {1.1.1.2.1}Free and bound names and alpha-equivalence.}{24}
+\contentsline {subsubsection}{\numberline {1.1.1.3}Operational semantics}{25}
+\contentsline {subsubsection}{\numberline {1.1.1.4}Bisimulation}{26}
+\contentsline {subsubsection}{\numberline {1.1.1.5}Contexts}{26}
+\contentsline {section}{\numberline {1.2}Evolution and communication}{27}
+\contentsline {subsubsection}{\numberline {1.2.0.6}Synchronization algebras}{28}
+\contentsline {chapter}{\numberline {2}Reflection}{31}
+\contentsline {section}{\numberline {2.1}A reflective calculus}{31}
+\contentsline {subsubsection}{\numberline {2.1.0.7}Notation}{31}
+\contentsline {paragraph}{\numberline {2.1.0.7.1}Notation}{32}
+\contentsline {subsubsection}{\numberline {2.1.0.8}Quote}{32}
+\contentsline {subsubsection}{\numberline {2.1.0.9}Parallel}{32}
+\contentsline {subsubsection}{\numberline {2.1.0.10}Lift and drop}{32}
+\contentsline {subsubsection}{\numberline {2.1.0.11}Input and output}{33}
+\contentsline {subsubsection}{\numberline {2.1.0.12}The null process}{33}
+\contentsline {subsection}{\numberline {2.1.1}The name game}{34}
+\contentsline {subsection}{\numberline {2.1.2}Free and bound names}{34}
+\contentsline {subsection}{\numberline {2.1.3}Structural congruence}{35}
+\contentsline {subsection}{\numberline {2.1.4}Name equivalence}{35}
+\contentsline {subsection}{\numberline {2.1.5}Syntactic substitution}{35}
+\contentsline {subsection}{\numberline {2.1.6} Dynamic quote: an example }{36}
+\contentsline {subsection}{\numberline {2.1.7}Semantic substitution}{36}
+\contentsline {subsection}{\numberline {2.1.8}Operational Semantics}{37}
+\contentsline {section}{\numberline {2.2}Replication}{38}
+\contentsline {section}{\numberline {2.3}Bisimulation}{38}
+\contentsline {chapter}{\numberline {3}Logic}{41}
+\contentsline {section}{\numberline {3.1}Namespace logic}{41}
+\contentsline {subsubsection}{\numberline {3.1.0.1}Syntactic sugar }{43}
+\contentsline {subsection}{\numberline {3.1.1}Examples}{43}
+\contentsline {subsubsection}{\numberline {3.1.1.1}Controlling access to namespaces}{43}
+\contentsline {subsubsection}{\numberline {3.1.1.2}Validating the structure of data}{43}
+\contentsline {part}{II\hspace {1em}From calculi to language design}{47}
+\contentsline {chapter}{\numberline {4}Data and control}{49}
+\contentsline {section}{\numberline {4.1}Names and messages}{49}
+\contentsline {subsection}{\numberline {4.1.1}Grammar}{49}
+\contentsline {section}{\numberline {4.2}Conclusions and future work}{49}
+\contentsline {paragraph}{\numberline {4.2.0.0.1}Acknowledgments.}{49}
+\contentsline {chapter}{\numberline {References}}{51}

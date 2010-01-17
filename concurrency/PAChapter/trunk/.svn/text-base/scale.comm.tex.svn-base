@@ -1,0 +1,102 @@
+\section{Evolution and communication}
+
+As noted above, the original comm rule for Milner's $\pi$-calculus was
+of the form
+
+\begin{mathpar}
+  \inferrule* [lab=comm] {} {x?(y).P | x!(z).Q \to P\{z/y\} |Q}
+\end{mathpar}
+
+Later, when Milner analyzed the scoping of input binding he realized
+that the sequencing operator was given a more hygenic account as
+synchronization followed by data-exchange. Compare with the
+productions of the grammar: sequence is effectively a function taking
+names and agents, while agents is the disjoint sum of two types:
+abstractions and concretions. In the case of the $\pi$-calculus we
+have abstractions of the form $A \equiv ?(y)P$ (i.e. functions from
+names to processes) and concretions of the form $C \equiv (\nu u)!(z)Q$
+(i.e. pairs of names and processes).
+
+This refactoring leads to a considerably more parsimonious comm rule.
+
+\begin{mathpar}
+  \inferrule* [lab=$comm_{AC}$] {} {x.A | x.C \to A \cdot C}
+\end{mathpar}
+
+where $A \cdot C$, called pseudo-application, is then defined in this context as
+
+\begin{equation}
+  ?(y)P \cdot (\nu u)!(z)Q \triangleq (\nu u)P\{z/y\}|Q \nonumber
+\end{equation}
+
+\subsubsection{Synchronization algebras}
+
+We need to make explicit another piece of information implicit in the
+standard presentation of the $\pi$-calculus. Synchronization
+fundamentally depends on name equality. In the comm rule, the
+sequenced abstraction may be thought of, roughly, as located at the
+`?'-end of a channel, $x$, and the sequenced concretion at the
+`!'-end. It is name equality, i.e. that $x = x$, that determines that
+these agents are located at the opposite ends of the \emph{same}
+channel and thus may communicate. We generalize this notion of
+co-location by adding a predicate, $\perp : name \times name \to
+bool$, explicitly determining when two names enable synchronization
+and data-exchange. Our comm rule then becomes
+
+\begin{mathpar}
+  \inferrule* [lab=$comm_{AC^{\perp}}$] {x_{src} \perp x_{trgt}} {x_{src}.A | x_{trgt}.C \to A \cdot C}
+\end{mathpar}
+
+In this context we note that Milner saw this as an avenue of
+investigation. In SCCS, for example, \cite{Milner83SCCS} he considered
+actions with the additional structure of a group and a communication
+rule that depended on action annihilation (i.e. that the channel and
+co-channel were group inverses of each other). Additionally, other
+investigators have exploited this possibility. Meredith and Radestock,
+for example, use it to derive a reflective, two-level comm rule in
+which co-location is calculated using the process dynamics itself
+\cite{meredith2005rho}.
+
+Intuitively, suppose we had two processes that were written to
+communicate over protocols that were at different levels in a network
+stack, e.g. in the network setting, one might be written to accept and
+emit \texttt{TCP/IP} packets while the other was written to accept and
+emit \texttt{HTTP} over \texttt{TCP/IP}. It is common practice to
+think of the process that communicates at the higher layer as
+essentially `wrapped' by a set of communications behaviors that have
+been factored from the core behavior of the process. If $P$ is the
+process written at the higher layer, we can faithfully represent that
+division of labor by $K[P]$, where $K$ is a context that constitutes
+the communications behaviors of packaging up \texttt{HTTP} requests
+and responses over \texttt{TCP/IP}.
+
+% In the higher-order context, we might effect the communication between
+% the two processes as $\lift{x}{P} | x(y).(K[\dropn{y}]|Q)$. In the
+% context of pseudo-application, however, it is natural to consider a
+% $K$-indexed version of the operator defined as 
+
+% \begin{equation}
+%   (y)Q \cdot_{K} \lift{}{P} \triangleq Q\{\quotep{K[P]}/y\} \nonumber
+% \end{equation}
+
+In terms of our intuitive interpretation, such $K$ represents a
+protocol mediator, mediating between the layer at which $P$ engages
+and the layer at which $Q$ engages. The question then becomes how to
+select these mediators? This is precisely where the expansion of the
+co-location predicate from boolean-valued to taking values in some
+other domain comes into play. We use the pair of names (in terms of
+our networking analogy, the pair of communications port abstractions
+at the different layers in the networking stack) to determine the
+mediating context. So, the co-location ``predicate'' becomes a
+context-valued function. Thus, the general expression of our comm rule
+becomes
+
+\begin{mathpar}
+  \inferrule* [lab=$comm_{AC^{\perp}K}$] {x_{src} \perp x_{trgt} = K} {x_{src}.A | x_{trgt}.C \to A \cdot_{K} C}
+\end{mathpar}
+
+Obviously, the relation $x \perp_{\Box} x \triangleq \Box$ with $x
+\perp_{\Box} y$ undefined if $x \neq y$, recovers the original comm
+rule. In situations other than the trivial case, this rule must be is
+instantiated by an appropriate notion of pseudo-application. 
+

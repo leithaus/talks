@@ -1,0 +1,88 @@
+\begin{symbollist}{000000}
+\symbolentry{$\binpar{P}{Q}$}{Parallel composition}
+\symbolentry{$P+Q$}{summation}
+\symbolentry{$!P$}{replication}
+%\symbolentry{$(\textsf{rec} \; X(\vec{x}).P)\langle \vec{y} \rangle$}{recursion}
+\symbolentry{$\newp{x}{P}$}{restriction}
+\symbolentry{$x.P$}{Sequencing}
+\symbolentry{$(\vec{x})P$}{Abstraction}
+\symbolentry{$[\vec{y}]P$}{Concretion}
+\symbolentry{$x?(\vec{y}).P$}{Blocking input}
+\symbolentry{$x!(\vec{y}).P$}{Blocking output}
+\symbolentry{$x!\clift{\vec{Q}}$}{Lift}
+\symbolentry{$\dropn{x}$}{Drop}
+\symbolentry{$\quotep{P}$}{Quote}
+\end{symbollist}
+
+\tableofcontents
+\listoftables
+\listoffigures
+\part{Reflection, data and concurrency}
+
+\title{Reflection, data and concurrency}
+
+%\def\lastname{Meredith}
+
+%\title{Reflection, data and concurrency}
+%\titlerunning{The road from calculi to language design}
+
+% \author{ L.G. Meredith\inst{1} }
+% \institute{ Partner, Biosimilarity\\ 505 N72nd St, Seattle, WA 98103, USA, \\
+%   \email{ lgreg.meredith@biosimilarity.com } 
+% }
+
+\author{ L.G. Meredith }{ Partner, Biosimilarity\\ 505 N72nd St, Seattle, WA 98103, USA, \\ lgreg.meredith@biosimilarity.com }
+
+%\maketitle              % typeset the title of the contribution
+
+%%% ----------------------------------------------------------------------
+
+%\begin{abstract}
+
+%   Software development is under pressure from above and from
+%   below. From above we have already witnessed the profound change the
+%   commercialization of the Internet has had on the nature of the
+%   commercial software application. With few exceptions, software
+%   applications are now commercially uninteresting unless they are
+%   multiuser and able to interoperate over a wide range of
+%   communications protocols. From below, the end of Moore's law as we
+%   knew it is causing hardware vendors to "go sideways" producing
+%   multicore offerings for both consumer and enterprise markets. This
+%   means that parallelism, concurrency and distribution are the
+%   prevailing paradigms from the hardware up through the end-user's
+%   expectations of availability and responsiveness.
+
+%   Unfortunately, mainstream programming models have not kept up with
+%   the times, offering out-dated and out-moded abstractions for
+%   describing and implementing parallel, concurrent and distributed
+%   programs. Threads and locks, for example, are notoriously difficult
+%   abstractions with which to program because there is no syntactic
+%   support allowing the programmer -- or analysis programs -- to check
+%   syntactically important notions like "how many threads can i expect
+%   to run through this code simultaneously?" or "what are the actual
+%   boundaries of this critical section; what resources are guaranteed
+%   protection from simultaneous access?".
+
+%   However, in the last 30 years a new programming paradigm has emerged
+%   offering a set of abstractions aimed at description, analysis and
+%   execution of parallel, concurrent and distributed programs. The
+%   situation is akin to the development of the lambda calculus which
+%   provides a core set of abstractions (programs as rules) enjoying
+%   simultaneous status as an elegant and powerful mathematical theory
+%   and the basis of modern programming languages like LISP, Scheme,
+%   OCaml, Haskell, ... . Likewise the mobile process algebras, and
+%   especially Milner's $\pi$-calculus and Cardelli and Gordon's ambient
+%   calculus, offer a mathematical theory of computation as
+%   interaction. These notions are starting to make their way into
+%   modern programming languages, like Erlang, with significant
+%   footprint in commercial and industrial applications.
+
+%\end{abstract}
+
+%\keywords{Process calculi, knots, invariants}
+
+% \begin{keyword}
+% concurrency, message-passing, process calculus, reflection, program logic
+% \end{keyword}
+
+%\end{frontmatter}

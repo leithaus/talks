@@ -1,0 +1,730 @@
+This is pdfeTeX, Version 3.141592-1.21a-2.2 (Web2C 7.5.4) (format=pdflatex 2008.11.17)  22 NOV 2008 09:15
+entering extended mode
+**express08.tex
+(./express08.tex
+LaTeX2e <2003/12/01>
+Babel <v3.8d> and hyphenation patterns for american, french, german, ngerman, b
+ahasa, basque, bulgarian, catalan, croatian, czech, danish, dutch, esperanto, e
+stonian, finnish, greek, icelandic, irish, italian, latin, magyar, norsk, polis
+h, portuges, romanian, russian, serbian, slovak, slovene, spanish, swedish, tur
+kish, ukrainian, nohyphenation, loaded.
+(./ws-jktr.cls
+
+LaTeX Warning: You have requested document class `ws-jktr',
+               but the document class provides `jktr'.
+
+Document Class: jktr 1994/07/13 v1.2u Standard LaTeX document class
+\draftrule=\dimen102
+\minute=\count79
+\hour=\count80
+\trimheight=\dimen103
+\trimwidth=\dimen104
+\typeheight=\dimen105
+\typewidth=\dimen106
+\tempdimen=\dimen107
+\tablewidth=\dimen108
+\normaltextheight=\dimen109
+\tempbox=\box26
+\tablewd=\dimen110
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+(/opt/local/share/texmf-dist/tex/generic/epsf/epsf.tex
+This is `epsf.tex' v2.7k <10 July 1997>
+\epsffilein=\read1
+\epsfframemargin=\dimen111
+\epsfframethickness=\dimen112
+\epsfrsize=\dimen113
+\epsftmp=\dimen114
+\epsftsize=\dimen115
+\epsfxsize=\dimen116
+\epsfysize=\dimen117
+\pspoints=\dimen118
+\epsfnoopenhelp=\toks14
+)
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\captionbox=\box27
+\c@figure=\count86
+\c@table=\count87
+\c@theorem=\count88
+\bibindent=\dimen119
+\c@appendix=\count89
+ (/opt/local/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2001/10/25 v2.2f
+\@emptytoks=\toks15
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 132.
+)
+(/opt/local/share/texmf-dist/tex/latex/rotating/rotating.sty
+Package: rotating 1997/09/26 v2.13 Rotation package
+
+(/opt/local/share/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/opt/local/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(/opt/local/share/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2001/07/07 v1.0n Standard LaTeX Graphics (DPC,SPQR)
+
+(/opt/local/share/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/opt/local/share/texmf-dist/tex/latex/graphics/graphics.cfg
+File: graphics.cfg 2005/02/03 v1.3 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 80.
+
+(/opt/local/share/texmf-dist/tex/latex/graphics/pdftex.def
+File: pdftex.def 2002/06/19 v0.03k graphics/color for pdftex
+\Gread@gobject=\count90
+))
+\Gin@req@height=\dimen120
+\Gin@req@width=\dimen121
+)
+(/opt/local/share/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count91
+\rot@float@box=\box28
+)
+(/opt/local/share/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2002/01/22 v2.2d
+)
+(/opt/local/share/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/opt/local/share/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/opt/local/share/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks17
+\ex@=\dimen122
+))
+(/opt/local/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen123
+)
+(/opt/local/share/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count92
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count93
+\leftroot@=\count94
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count95
+\DOTSCASE@=\count96
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box29
+\strutbox@=\box30
+\big@size=\dimen124
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count97
+\c@MaxMatrixCols=\count98
+\dotsspace@=\muskip10
+\c@parentequation=\count99
+\dspbrk@lvl=\count100
+\tag@help=\toks18
+\row@=\count101
+\column@=\count102
+\maxfields@=\count103
+\andhelp@=\toks19
+\eqnshift@=\dimen125
+\alignsep@=\dimen126
+\tagshift@=\dimen127
+\tagwidth@=\dimen128
+\totwidth@=\dimen129
+\lineht@=\dimen130
+\@envbody=\toks20
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)) (./mathpartir.sty
+Package: mathpartir 2003/07/10 version 1.1.1 Math Paragraph for Typesetting Inf
+erence Rules
+\mpr@tmpdim=\dimen131
+\mpr@andskip=\skip46
+\mpr@lista=\toks22
+\mpr@listb=\toks23
+\mpr@hlist=\box31
+\mpr@vlist=\box32
+\mpr@right=\box33
+\rule@dimen=\dimen132
+) (./bcprules.sty
+\afterruleskip=\skip47
+\labelminsep=\skip48
+\labelcolwidth=\dimen133
+\@labelbox=\box34
+\rulebox=\box35
+\ruledim=\dimen134
+\labeldim=\dimen135
+) (/opt/local/share/texmf-dist/tex/latex/base/latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 47.
+)
+(/opt/local/share/texmf-dist/tex/latex/graphics/color.sty
+Package: color 1999/02/16 v1.0i Standard LaTeX Color (DPC)
+
+(/opt/local/share/texmf-dist/tex/latex/graphics/color.cfg
+File: color.cfg 2005/02/03 v1.3 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 125.
+)
+\@input{express08.local.aux}
+\openout2 = `express08.local.aux'.
+
+(./express08.local.tex
+\ltext=\skip49
+\lmath=\skip50
+\cmath=\skip51
+\rmath=\skip52
+\rtext=\skip53
+LaTeX Font Info:    Try loading font information for U+msa on input line 157.
+ (/opt/local/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2002/01/19 v2.2g AMS font definitions
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 157.
+(/opt/local/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2002/01/19 v2.2g AMS font definitions
+)
+LaTeX Font Info:    Try loading font information for U+lasy on input line 157.
+
+(/opt/local/share/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)) (./express08.aux)
+\openout1 = `express08.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+
+(/opt/local/share/texmf-dist/tex/context/base/supp-pdf.tex
+(/opt/local/share/texmf-dist/tex/context/base/supp-mis.tex
+loading : Context Support Macros / Miscellaneous (2004.10.26)
+\protectiondepth=\count104
+\scratchcounter=\count105
+\scratchtoks=\toks24
+\scratchdimen=\dimen136
+\scratchskip=\skip54
+\scratchmuskip=\muskip11
+\scratchbox=\box36
+\scratchread=\read2
+\scratchwrite=\write3
+\zeropoint=\dimen137
+\onepoint=\dimen138
+\onebasepoint=\dimen139
+\minusone=\count106
+\thousandpoint=\dimen140
+\onerealpoint=\dimen141
+\emptytoks=\toks25
+\nextbox=\box37
+\nextdepth=\dimen142
+\everyline=\toks26
+\!!counta=\count107
+\!!countb=\count108
+\recursecounter=\count109
+)
+loading : Context Support Macros / PDF (2004.03.26)
+\nofMPsegments=\count110
+\nofMParguments=\count111
+\MPscratchCnt=\count112
+\MPscratchDim=\dimen143
+\MPnumerator=\count113
+\everyMPtoPDFconversion=\toks27
+) (./express08.front.tex) (./express08.intro.tex
+
+LaTeX Warning: Citation `Quantum1' on page 1 undefined on input line 4.
+
+
+LaTeX Warning: Citation `Quantum2' on page 1 undefined on input line 4.
+
+
+LaTeX Warning: Citation `DNA1' on page 1 undefined on input line 4.
+
+
+LaTeX Warning: Citation `Hoste2005The-enumeration' on page 1 undefined on input
+ line 8.
+
+
+LaTeX Warning: Citation `Rankin2004Enumerating-I' on page 1 undefined on input 
+line 9.
+
+
+LaTeX Warning: Citation `Rankin2004Enumerating-II' on page 1 undefined on input
+ line 9.
+
+
+LaTeX Warning: Citation `KnotsTo16' on page 1 undefined on input line 9.
+
+
+LaTeX Warning: Citation `milner91polyadicpi' on page 1 undefined on input line 
+27.
+
+
+LaTeX Warning: Citation `ParrowWalker' on page 1 undefined on input line 29.
+
+
+LaTeX Warning: Citation `SangiorgiWalker' on page 1 undefined on input line 30.
+
+
+
+LaTeX Warning: Citation `DBLP:conf/lics/Sangiorgi04' on page 1 undefined on inp
+ut line 32.
+
+
+LaTeX Warning: Citation `Sangiorgi95' on page 1 undefined on input line 32.
+
+[1{/opt/local/share/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+
+
+]
+
+LaTeX Warning: Citation `CairesC03' on page 2 undefined on input line 50.
+
+
+LaTeX Warning: Citation `Caires04' on page 2 undefined on input line 53.
+
+) (./express08.graphs.tex [2] [3]) (./express08.process.calculi.tex
+
+LaTeX Warning: Citation `MilnerCCS80' on page 4 undefined on input line 6.
+
+
+LaTeX Warning: Citation `CSP' on page 4 undefined on input line 7.
+
+
+LaTeX Warning: Citation `CSP1' on page 4 undefined on input line 7.
+
+
+LaTeX Warning: Citation `CSP2' on page 4 undefined on input line 7.
+
+
+LaTeX Warning: Citation `CSP3' on page 4 undefined on input line 7.
+
+
+LaTeX Warning: Citation `ParrowWalker' on page 4 undefined on input line 9.
+
+
+LaTeX Warning: Citation `CairesC04' on page 4 undefined on input line 10.
+
+
+LaTeX Warning: Citation `CairesC03' on page 4 undefined on input line 10.
+
+
+LaTeX Warning: Citation `Caires04' on page 4 undefined on input line 11.
+
+
+LaTeX Warning: Citation `MeredithR05' on page 4 undefined on input line 12.
+
+
+LaTeX Warning: Citation `meredith2005rho' on page 4 undefined on input line 12.
+
+
+
+LaTeX Warning: Citation `AbadiB02' on page 4 undefined on input line 19.
+
+
+LaTeX Warning: Citation `AbadiB03' on page 4 undefined on input line 20.
+
+
+LaTeX Warning: Citation `BrownLM05' on page 4 undefined on input line 21.
+
+
+LaTeX Warning: Citation `LaneveZ05' on page 4 undefined on input line 22.
+
+
+LaTeX Warning: Citation `BrownLM05' on page 4 undefined on input line 24.
+
+
+LaTeX Warning: Citation `djoin' on page 4 undefined on input line 25.
+
+
+LaTeX Warning: Citation `JoCaml' on page 4 undefined on input line 26.
+
+
+LaTeX Warning: Citation `WojciechowskiS99' on page 4 undefined on input line 27
+.
+
+
+LaTeX Warning: Citation `BrownLM05' on page 4 undefined on input line 29.
+
+
+LaTeX Warning: Citation `LaneveZ05' on page 4 undefined on input line 30.
+
+
+LaTeX Warning: Citation `MeredithB03' on page 4 undefined on input line 31.
+
+
+LaTeX Warning: Citation `Cardelli04' on page 4 undefined on input line 33.
+
+
+LaTeX Warning: Citation `DanosL03' on page 4 undefined on input line 34.
+
+
+LaTeX Warning: Citation `RegevS03' on page 4 undefined on input line 35.
+
+
+LaTeX Warning: Citation `PriamiRSS01' on page 4 undefined on input line 36.
+
+
+LaTeX Warning: Citation `Milner93' on page 4 undefined on input line 43.
+
+
+LaTeX Warning: Citation `Fokkink' on page 4 undefined on input line 46.
+
+[4]
+
+LaTeX Warning: Citation `MilnerS92' on page 5 undefined on input line 52.
+
+
+LaTeX Warning: Citation `SangiorgiWalker' on page 5 undefined on input line 52.
+
+
+
+LaTeX Warning: Citation `Sangiorgi95' on page 5 undefined on input line 52.
+
+
+LaTeX Warning: Citation `hop' on page 5 undefined on input line 53.
+
+
+LaTeX Warning: Citation `Abramsky2005Algorithmic-Gam' on page 5 undefined on in
+put line 56.
+
+
+LaTeX Warning: Citation `Caires04' on page 5 undefined on input line 57.
+
+
+LaTeX Warning: Citation `milner92techniques' on page 5 undefined on input line 
+67.
+
+
+LaTeX Warning: Citation `SangiorgiWalker' on page 5 undefined on input line 68.
+
+
+
+LaTeX Warning: Citation `Sangiorgi95' on page 5 undefined on input line 68.
+
+
+LaTeX Warning: Citation `hop' on page 5 undefined on input line 68.
+
+) (./express08.graphs.encoding.tex
+
+LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <10> not available
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 42.
+
+[5]) (./express08.knotations.tex
+
+LaTeX Warning: Citation `Read1977On-the-Gauss-cr' on page 6 undefined on input 
+line 4.
+
+
+LaTeX Warning: Citation `DT' on page 6 undefined on input line 5.
+
+
+LaTeX Warning: Citation `Conway1970An-enumeration-' on page 6 undefined on inpu
+t line 5.
+
+
+LaTeX Warning: Citation `Rankin2004Enumerating-I' on page 6 undefined on input 
+line 6.
+
+
+LaTeX Warning: Citation `Rankin2004Enumerating-II' on page 6 undefined on input
+ line 6.
+
+
+LaTeX Warning: Citation `Listing1848Vorstudien-zur-' on page 6 undefined on inp
+ut line 19.
+
+
+LaTeX Warning: Citation `LivingstonText' on page 6 undefined on input line 30.
+
+[6]
+
+LaTeX Warning: Citation `Read1977On-the-Gauss-cr' on page 7 undefined on input 
+line 40.
+
+
+LaTeX Warning: Citation `Tait' on page 7 undefined on input line 42.
+
+
+LaTeX Warning: Citation `Kirkman1885The-enumeration' on page 7 undefined on inp
+ut line 52.
+
+
+LaTeX Warning: Citation `Tait' on page 7 undefined on input line 54.
+
+
+LaTeX Warning: Citation `Little1885On-knots-with-a' on page 7 undefined on inpu
+t line 54.
+
+
+LaTeX Warning: Citation `Little1890Alternate-pm-kn' on page 7 undefined on inpu
+t line 55.
+
+
+LaTeX Warning: Citation `Little1900Non-alternate-p' on page 7 undefined on inpu
+t line 56.
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+
+LaTeX Warning: Citation `ReidemeisterMoves' on page 7 undefined on input line 6
+3.
+
+<../../illustrations/Reidemeister123vert.pdf, id=74, 325.215pt x 365.365pt>
+File: ../../illustrations/Reidemeister123vert.pdf Graphic file (type pdf)
+
+<use ../../illustrations/Reidemeister123vert.pdf>
+
+LaTeX Warning: Citation `LivingstonText' on page 7 undefined on input line 81.
+
+[7]
+
+LaTeX Warning: Citation `Conway1970An-enumeration-' on page 8 undefined on inpu
+t line 87.
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+
+LaTeX Warning: Citation `Conway1970An-enumeration-' on page 8 undefined on inpu
+t line 94.
+
+
+LaTeX Warning: Citation `Caudron1981-Classification' on page 8 undefined on inp
+ut line 95.
+
+
+LaTeX Warning: Citation `Bangert2002Algorithmic-Pro' on page 8 undefined on inp
+ut line 96.
+
+
+LaTeX Warning: Citation `DT' on page 8 undefined on input line 103.
+
+
+LaTeX Warning: Citation `SchareinPhD' on page 8 undefined on input line 106.
+
+
+LaTeX Warning: Citation `DT' on page 8 undefined on input line 112.
+
+[8 <../../illustrations/Reidemeister123vert.pdf>]
+
+LaTeX Warning: Citation `Calvo1997Knot-enumeratio' on page 9 undefined on input
+ line 145.
+
+
+LaTeX Warning: Citation `Rankin2004Enumerating-I' on page 9 undefined on input 
+line 153.
+
+
+LaTeX Warning: Citation `Rankin2004Enumerating-II' on page 9 undefined on input
+ line 154.
+
+
+LaTeX Warning: Citation `Rankin2004EnumeratingLinks' on page 9 undefined on inp
+ut line 154.
+
+[9] [10]) (./express08.knots2pi.tex
+
+LaTeX Warning: Citation `SchareinPhD' on page 11 undefined on input line 28.
+
+
+LaTeX Warning: Citation `SangiorgiWalker' on page 11 undefined on input line 36
+.
+
+<../../illustrations/BasicCrossingCircuit.pdf, id=126, 337.26pt x 391.4625pt>
+File: ../../illustrations/BasicCrossingCircuit.pdf Graphic file (type pdf)
+
+<use ../../illustrations/BasicCrossingCircuit.pdf> [11]
+
+LaTeX Warning: Citation `Conway1970An-enumeration-' on page 12 undefined on inp
+ut line 66.
+
+[12 <../../illustrations/BasicCrossingCircuit.pdf>]) (./express08.trefoil.tex
+<../../illustrations/TrefoilMethodIllustration.pdf, id=249, 533.995pt x 725.711
+24pt>
+File: ../../illustrations/TrefoilMethodIllustration.pdf Graphic file (type pdf)
+
+ <use ../../illustrations/TrefoilMethodIllustration.pdf> [13])
+(./express08.mainthm.tex [14 <../../illustrations/TrefoilMethodIllustration.pdf
+>]
+
+LaTeX Warning: Citation `DBLP:conf/lics/Sangiorgi04' on page 15 undefined on in
+put line 32.
+
+) (./express08.pi.presentation.tex [15]
+
+LaTeX Warning: Citation `SangiorgiWalker' on page 16 undefined on input line 83
+.
+
+[16]
+
+LaTeX Warning: Citation `milner91polyadicpi' on page 17 undefined on input line
+ 146.
+
+
+LaTeX Warning: Citation `DBLP:conf/concur/SangiorgiM92' on page 17 undefined on
+ input line 147.
+
+
+LaTeX Warning: Citation `DBLP:conf/concur/Pous06' on page 17 undefined on input
+ line 147.
+
+[17]) (./express08.proofsketch.tex [18] [19]
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 81.
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <5> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 81.
+
+<../../illustrations/TrefoilContextIllustration.pdf, id=300, 518.93875pt x 789.
+95125pt>
+File: ../../illustrations/TrefoilContextIllustration.pdf Graphic file (type pdf
+)
+ <use ../../illustrations/TrefoilContextIllustration.pdf> [20]
+<../../illustrations/ReidemeisterMovesAsCircuits071115.pdf, id=316, 435.6275pt 
+x 566.115pt>
+File: ../../illustrations/ReidemeisterMovesAsCircuits071115.pdf Graphic file (t
+ype pdf)
+ <use ../../illustrations/ReidemeisterMovesAsCircuits071115.pdf>
+[21 <../../illustrations/TrefoilContextIllustration.pdf>] [22 <../../illustrati
+ons/ReidemeisterMovesAsCircuits071115.pdf>] [23]) (./express08.slviaknots.tex
+
+LaTeX Warning: Citation `CairesC03' on page 24 undefined on input line 9.
+
+
+LaTeX Warning: Citation `CairesC04' on page 24 undefined on input line 10.
+
+
+LaTeX Warning: Citation `Caires04' on page 24 undefined on input line 10.
+
+
+LaTeX Warning: Citation `Caires04' on page 24 undefined on input line 24.
+
+
+LaTeX Warning: Citation `Caires04' on page 24 undefined on input line 32.
+
+
+LaTeX Warning: Citation `Caires04' on page 24 undefined on input line 44.
+
+[24]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 50.
+ (/opt/local/share/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 50.
+
+
+LaTeX Warning: Citation `Caires04' on page 25 undefined on input line 96.
+
+[25]) (./express08.conclusion.tex [26]
+
+LaTeX Warning: Citation `W3C-XQ-2873221' on page 27 undefined on input line 45.
+
+
+
+LaTeX Warning: Citation `W3C-XQ-5631451' on page 27 undefined on input line 45.
+
+
+
+LaTeX Warning: Citation `Fallside:04:XSP' on page 27 undefined on input line 50
+.
+
+
+LaTeX Warning: Citation `Mendelsohn:04:XSP' on page 27 undefined on input line 
+50.
+
+
+LaTeX Warning: Citation `Biron:04:XSP' on page 27 undefined on input line 51.
+
+
+LaTeX Warning: Citation `kauffman-2005-VKNL' on page 27 undefined on input line
+ 66.
+
+[27]
+
+LaTeX Warning: Citation `milner92techniques' on page 28 undefined on input line
+ 106.
+
+
+LaTeX Warning: Citation `baez-2000-543' on page 28 undefined on input line 128.
+
+
+) (./express08.dtcodes.tex [28]) (./express08.ack.tex) [29] [30]
+No file express08.bbl.
+(./express08.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 2739 strings out of 94500
+ 33192 string characters out of 1174972
+ 85640 words of memory out of 1000000
+ 5791 multiletter control sequences out of 10000+50000
+ 17284 words of font info for 67 fonts, out of 500000 for 2000
+ 580 hyphenation exceptions out of 1000
+ 39i,23n,29p,617b,298s stack positions out of 1500i,500n,5000p,200000b,5000s
+PDF statistics:
+ 549 PDF objects out of 300000
+ 0 named destinations out of 131072
+ 26 words of extra memory for PDF output out of 65536
+</opt/local/share/texmf-dist/fonts/type1/bluesky/cm/cmmi5.pfb></opt/local/sha
+re/texmf-dist/fonts/type1/bluesky/cm/cmsy5.pfb></opt/local/share/texmf-dist/fon
+ts/type1/bluesky/cm/cmbsy10.pfb></opt/local/share/texmf-dist/fonts/type1/bluesk
+y/cm/cmbx7.pfb></opt/local/share/texmf-dist/fonts/type1/bluesky/cm/cmmib10.pfb>
+</opt/local/share/texmf-dist/fonts/type1/bluesky/cm/cmr5.pfb></opt/local/share/
+texmf-dist/fonts/type1/bluesky/latex/lasy10.pfb></opt/local/share/texmf-dist/fo
+nts/type1/bluesky/cm/cmtt10.pfb></opt/local/share/texmf-dist/fonts/type1/bluesk
+y/cm/cmcsc10.pfb></opt/local/share/texmf-dist/fonts/type1/bluesky/cm/cmsy6.pfb>
+</opt/local/share/texmf-dist/fonts/type1/bluesky/cm/cmr6.pfb></opt/local/share/
+texmf-dist/fonts/type1/bluesky/cm/cmssi10.pfb></opt/local/share/texmf-dist/font
+s/type1/bluesky/cm/cmss8.pfb></opt/local/share/texmf-dist/fonts/type1/bluesky/c
+m/cmex10.pfb></opt/local/share/texmf-dist/fonts/type1/bluesky/symbols/msam10.pf
+b></opt/local/share/texmf-dist/fonts/type1/bluesky/symbols/msbm10.pfb></opt/loc
+al/share/texmf-dist/fonts/type1/bluesky/cm/cmsy7.pfb></opt/local/share/texmf-di
+st/fonts/type1/bluesky/cm/cmmi7.pfb></opt/local/share/texmf-dist/fonts/type1/bl
+uesky/cm/cmr7.pfb></opt/local/share/texmf-dist/fonts/type1/bluesky/cm/cmsy10.pf
+b></opt/local/share/texmf-dist/fonts/type1/bluesky/cm/cmss10.pfb></opt/local/sh
+are/texmf-dist/fonts/type1/bluesky/cm/cmmi10.pfb></opt/local/share/texmf-dist/f
+onts/type1/bluesky/cm/cmbxti10.pfb></opt/local/share/texmf-dist/fonts/type1/blu
+esky/cm/cmti10.pfb></opt/local/share/texmf-dist/fonts/type1/bluesky/cm/cmmi8.pf
+b></opt/local/share/texmf-dist/fonts/type1/bluesky/cm/cmti8.pfb></opt/local/sha
+re/texmf-dist/fonts/type1/bluesky/cm/cmr8.pfb></opt/local/share/texmf-dist/font
+s/type1/bluesky/cm/cmbx10.pfb></opt/local/share/texmf-dist/fonts/type1/bluesky/
+cm/cmr10.pfb>
+Output written on express08.pdf (30 pages, 509714 bytes).

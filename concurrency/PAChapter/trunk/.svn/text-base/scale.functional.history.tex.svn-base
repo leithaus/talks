@@ -1,0 +1,96 @@
+\subsection{A function of history}
+As mentioned above, there is a notable commonality between the two
+starting points, $\lambda$ and $\pi$-calculi: the total absence of
+rich data types. Both calculi, in their original presentations, lack
+any extrinsic notion of data. Put the other way around, both calculi
+take a strongly operational view of data: \emph{data is as data does},
+to coin a phrase. In neither calculus do we find ``builtin'' notions
+of common data types such as the natural numbers or linked
+lists. Rather, we find encodings of these types as behaviors. For the
+$\lambda$-calculus, the paradigmatic example, of course, is the Church
+numerals \cite{}, and more generally, Church encodings \cite{}, which
+represent data types as certain kinds of lambda terms. In a similar
+manner, in Milner's Polyadic $\pi$-calculus tutorial \cite{}, one
+finds encodings of data structures from the natural numbers to linked
+lists as processes.
+
+To sharpen the point, neither the $\lambda$-calculus nor the
+$\pi$-calculus actually enjoy the ``program-as-data-data-as-program''
+property of even early functional programming languages like
+\texttt{Scheme}. There are no \texttt{S}-expressions in the
+$\lambda$-calculus. There are $\lambda$-terms that can be formally
+recognized as behaving the way \texttt{S}-expressions might be
+expected to behave. Much in the same way that in biology all
+``software'' has to be realized as hardware, all data types in these
+calculi have to be realized as classes of behaviors. Standing
+\emph{outside} of these calculi we can recognize certain behaviors as
+corresponding to what we know as certain types of data, but
+internally, these classes of behaviors are not separated from the
+others.
+
+Given the recent work on genericity, such as Oliveira's reconciliation
+of two generic programming proposals \cite{} -- which relies heavily
+on a deep comparison of Church and Parigot-style encodings -- as well
+as Barry Jay's pattern-matching calculi \cite{}, it is probably
+inadvisable to take a strong stance that a boldly (or even
+exclusively) operational view of data is unrealistic or
+impractical. Rather, the dividing line between program and data has
+always been source of fruitful debate, and as we want to argue in the
+sequel provides an excellent instrument in the current investigation.
+
+In fact, we want to observe that the passage from Church's
+$\lambda$-calculus to something as simple as PCF ($\lambda$-calculus
+with builtin naturals and booleans) \cite{} constituted a signficant
+challenge to the theory at the time. A fully abstract semantics for
+PCF was something like 25 years from the statement of the problem to a
+solution \cite{}. We stress, relatively satisfactory \emph{encodings}
+of data structures as behaviors followed fairly closely on the heels
+of the development the $\lambda$-calculus (respectively, the
+$\pi$-calculus). In the case of the $\lambda$-calculus the obvious
+\emph{embeddings} of the booleans and natural numbers took 25 years to
+give satisfactory semantic accounts of. Moreover, the solution
+involved no less than two \emph{revolutionary} ideas: linear logic and
+games semantics \cite{}.
+
+We submit that this was not an accident, but rather strong evidence
+that the programme of embedding a notion of data in a decidedly
+operational theory is deceptively \emph{radical}, requiring dual --
+but fully reconcilable -- views of
+\begin{itemize}
+  \item data as an ``entity'' upon which to operate
+  \item data as behavior.
+\end{itemize}
+The synergetic connection of linear logic and games semantics
+provided, we submit, just the right mix of logical and operational
+perspectives into a finer-grained, more intensional account of program
+structure that enabled the construction of reconcilable versions of
+these two views of data \cite{}.
+
+Additionally, we note that to be of utility to a broad class of
+developers the operations of the ``entity'' view have to have a clear
+and natural mapping to some traditional view of the data type while
+also observing the operational semantics of the ambient calculus in
+which they have been embedded. In the case of $\lambda$-calculus and
+the natural numbers, to use the standard example, a Peano-like
+presentation provides the mediating view. More generally, a
+generators-and-relations-style presentation of data structures --
+which just happens to align with an algebraic data type
+\texttt{ADT}-like presentation -- provides an acceptable mediating
+view. Fortuitously, the majority of commercial developers have much
+more exposure to treatments of data types that more closely resemble
+something like \texttt{ADT}s. Even the transition between
+object-oriented views of rich data types and \texttt{ADT}s is not
+difficult for a competent commercial developer to make.
+
+\subsection{Data processing}
+
+In the $\pi$-calculus the situation is slightly different. The
+calculus does come equipped with a single, impoverished data type:
+channel (a.k.a. port or name). In fact, as we will see in the
+following sections, the $\pi$-calculus is actually parametric in the
+notion of channel: when provided with a notion of channel it provides
+a notion of processes that synchronize on those channels and pass
+messages consisting of (tuples) of those channels. Further, the
+$\pi$-calculus is crucially dependent on an effective equality of
+channels being supplied. Neither substitution nor synchronization nor
+alpha-equivalence can be effected or decided without it. 

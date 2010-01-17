@@ -1,0 +1,196 @@
+{-- -*- mode: Haskell;-*- 
+    Filename:    rbnf.cf 
+    Authors:     lgm                                                    
+    Creation:    Mon Dec 17 12:30:21 2007 
+    Copyright:   Not supplied 
+
+    Description: 
+    Lift the rho syntax out of a language specific parser.
+    -------------------------------------------------------------------- --}
+
+-- main
+
+Command        . Cmd            ::= Request ";"                      ;
+
+Eval           . Request        ::= [ProcessAtom]                    ;
+CheckValid     . Request        ::= Models Property                  ;
+CheckJudgment  . Request        ::= Judgment                         ;
+Geometry       . Request        ::= Geometry                         ;
+Toplevel       . Request        ::= Shell                            ;
+
+
+-- process:
+
+[]             . [ProcessAtom]  ::=                                  ;
+(:)            . [ProcessAtom]  ::= ProcessAtom "|" [ProcessAtom]    ; 
+
+-- process_atom:
+
+Stop           . ProcessAtom    ::= Zero                             ;
+Input          . ProcessAtom    ::= InputProcess                     ;
+Lift           . ProcessAtom    ::= LiftedProcess                    ;
+Drop           . ProcessAtom    ::= DroppedProcess                   ;
+Group          . ProcessAtom    ::= GroupedProcess                   ;
+
+-- input:
+
+InputWithK     . InputProcess   ::= Guard Continuation               ;
+InputNoK       . InputProcess   ::= Guard                            ;
+
+-- guard: 
+
+GuardIt        . Guard          ::= Name Lparen Name Rparen          ;
+
+-- lift: 
+
+LiftIt         . LiftedProcess  ::= Name Lmset [ProcessAtom] Rmset   ;
+
+-- drop: 
+
+DropIt         . DroppedProcess ::= Rangle Name Langle               ;
+
+-- group: 
+
+GroupIt        . GroupedProcess ::= Lbrack [ProcessAtom] Rbrack      ;
+
+-- name: 
+
+NameIt         . Name           ::= Quote [ProcessAtom] Quote        ;  
+
+-- continuation: 
+
+ContinueIt     . Continuation   ::= Lcurly [ProcessAtom] Rcurly      ;
+
+-- An alternate process syntax based on Milner's Polyadic Pi-calculus
+-- decomposition
+
+[]             . [Molecule]     ::=                                  ;
+(:)            . [Molecule]     ::= Molecule ";" [Molecule]          ;
+
+[]             . [OrderedMole]  ::=                                  ;
+(:)            . [OrderedMole]  ::= OrderedMole "," [OrderedMole]    ;
+
+[]             . [Site]         ::=                                  ;
+(:)            . [Site]         ::= Site "," [Site]                  ;
+
+MixMole        . Mix            ::= Molecule                         ;
+MixMash        . Mix            ::= Lcurly [Molecule] Rcurly         ;
+
+MoleculeZero   . Molecule       ::= Zero                             ;
+MoleculeGuard  . Molecule       ::= Site Reagent                     ;
+MoleculeDrop   . Molecule       ::= At Site                          ;
+
+OrderedMole    . OrderedMole    ::= Molecule                         ;
+
+ReagentInput   . Reagent        ::= Whimper Lparen [Site] Rparen Mix ;
+ReagentOutput  . Reagent        ::= Bang Lbrack [OrderedMole] Rbrack ;
+
+SiteIt         . Site           ::= Lquote Mix Rquote                ;
+
+-- An HML for reflection
+-- property: 
+
+AtomicProp     . Property       ::= Atom                             ;
+NegatedProp    . Property       ::= Negation                         ;
+ConjoinedProp  . Property       ::= Conjunction                      ;
+MixedProp      . Property       ::= Mixture                          ;
+DescentProp    . Property       ::= Descent                          ;
+ElevatedProp   . Property       ::= Elevation                        ;
+ActiveProp     . Property       ::= Activity                         ;
+GroupProp      . Property       ::= GroupForm                        ;
+  
+-- atomic_form:
+
+Verity         . Atom           ::= True                             ;
+Absuridty      . Atom           ::= False                            ;
+Nullity        . Atom           ::= Zero                             ;
+
+-- negation: 
+
+NegateIt       . Negation       ::= Tilde Property                   ;
+  
+-- conjunction: 
+
+ConjoinIt       . Conjunction   ::= Property Ampersand Property      ;
+
+-- mixture:
+
+MixIt           . Mixture       ::= Property Par Property            ;
+
+-- descent: 
+
+DescendIt       . Descent       ::= Rangle Name Langle               ;
+  
+-- elevation: 
+
+ElevateIt       . Elevation     ::= Indication Langle Property Rangle;
+  
+-- activity: 
+
+ActIt           . Activity      ::= Langle Indication Whimper Name Rangle Lcurly Property Rcurly ;
+
+-- group_form: 
+
+GroupFormIt     . GroupForm     ::= Lbrack Property Rbrack           ;
+
+-- indication: 
+
+IndicateIt      . Indication    ::= Quote Property Quote             ;
+
+-- judgment: 
+
+JudgeIt         . Judgment      ::= [ProcessAtom] Models Property    ;
+
+-- geometry:
+
+GeometrizeIt    . Geometry      ::= Geometrize [ProcessAtom]         ;
+Geometrize2File . Geometry      ::= Geometrize [ProcessAtom] Filename;
+
+-- toplevel: 
+
+QuitIt          . Shell         ::= Quit                             ;
+ShellIt         . Shell         ::= QBang [String]                   ;
+Chdir           . Shell         ::= Cd String                        ;
+LoadIt          . Shell         ::= Load String                      ;
+HelpIt          . Shell         ::= Help                             ;
+
+-- Usual suspects
+
+FilenameIt      . Filename      ::= String                           ;
+[]              . [String]      ::=                                  ;
+(:)             . [String]      ::= String [String]                  ;
+
+-- Terminals
+
+ModelIt         . Models        ::= "|="                             ;
+ParIt           . Par           ::= "|"                              ;
+ZeroIt          . Zero          ::= "0"                              ;
+LparenIt        . Lparen        ::= "("                              ;
+RparenIt        . Rparen        ::= ")"                              ;
+LmsetIt         . Lmset         ::= "{|"                             ;
+RmsetIt         . Rmset         ::= "|}"                             ;
+LangleIt        . Langle        ::= "<"                              ;
+RangleIt        . Rangle        ::= ">"                              ;
+LbrackIt        . Lbrack        ::= "["                              ;
+RbrackIt        . Rbrack        ::= "]"                              ;
+LcurlyIt        . Lcurly        ::= "{"                              ;
+RcurlyIt        . Rcurly        ::= "}"                              ;
+QuoteIt         . Quote         ::= "'"                              ;
+BangIt          . Bang          ::= "!"                              ;
+WhimperIt       . Whimper       ::= "?"                              ;
+AmpersandIt     . Ampersand     ::= "&"                              ;
+TildeIt         . Tilde         ::= "~"                              ;
+AtIt            . At            ::= "@"                              ;
+LquoteIt        . Lquote        ::= "<<"                             ;
+RquoteIt        . Rquote        ::= ">>"                             ;
+
+-- Keywords
+
+TrueIt          . True          ::= "true"                           ;
+FalseIt         . False         ::= "false"                          ;
+GeometrizeThis  . Geometrize    ::= "geometry"                       ;
+QuitThis        . Quit          ::= ":q"                             ;
+QBangIt         . QBang         ::= ":!"                             ;
+CdIt            . Cd            ::= ":cd"                            ;
+LoadThis        . Load          ::= ":l"                             ;
+HelpThis        . Help          ::= ":?"                             ;

@@ -1,0 +1,65 @@
+\section{Brief history of knot tabulation}\label{sec:brief_history_of_knot_tabulation}
+ 
+
+Here we give a brief outline of those parts of the history of knot theory that are particularly relevant to this paper. It's fair to say that there are two intertwining branches in the history of knot enumeration: a geometric-combinatoric branch inspired by the work of Kirkman; and a branch inspired by Gauss' approach via codes [cite Gauss 1883] and Tait's combinatorics. The former branch contains the work of Conway and Caudron, and, more recently, Rankin et al. The latter branch contains the of Dowker-Thistlethwaite. Knot projections, a la Listing [citation], are basic to both branches.
+
+\subsection{Gauss, Listing, and knot projections}
+
+Listing [citation] had the first publication containing a mathematical approach to knot theory, extending some previous work in notes by Gauss. Listing was the first to consider the minimal crossing number of a knot and clarified the idea of a knot projection. Gauss had devised a way to read a code from a knot's projection. 
+
+A mathematical knot is a simple closed curve (for us, piecewise linear) embedded in $3$-dimensional Euclidean space (in particular, there are no loose ends). If place a light at some point in space away from the knot and on the other side of the knot place a plane (so that the light source is not in the plane), then there is a shadow cast by the knot upon the plane. We will call this shadow a knot projection. If in addition we adjust the position of the light source and plane so as to achieve general position, there will be at most two points on the knot projecting to the same point on the shadow. We shall call such a knot projection a \emph{regular knot projection}. Since we will be dealing only with regular knot projections, we drop the adjective ``regular'' at this point. Given a double-point in the plane, of the two points on the knot projecting to it the furthest away will be called the \emph{overcrossing} and the other point the \emph{undercrossing}. It is traditional when portraying a knot shadow to elide at each double point a portion of the shadow corresponding to a small arc of the knot containing the undercrossing, creating the illusion of undercrossing.
+
+One modern version of Gauss' code is to initially label each crossing in a knot projection of \( n \) crossings with the natural numbers $1$ through $n$ (Gauss originally used alphabetical characters). Then one begins circulating at the crossing labeled $1$. As one progresses around the knot projection, write the number of each crossing as it is encountered if crossing over or write the negative number of the crossing if encountered when crossing under. This leads to an integer sequence of length $2n$, the Gauss code.  In general, and of significance to us, is that one cannot in general reconstruct an equivalent knot projection from the resulting code. However, there is a  minor revision of the code that corrects this by choosing the sign at the second encounter of a crossing based on its handedness.                             
+
+\subsection{Kirkman, Tait, and Little}\label{sub:kirkman_and_tait}
+
+Lord Kelvin's ill-fated theory of atoms based vortices gave rise to some interest in knots. Kirkman enumerated polyhedral diagrams of a certain type \cite{Kirkman1885The-enumeration}, which Tait used to give his table of alternating knots of at most 10 crossings (there was one error caught before publication, by collating his results with Little's) \cite{Tait}. Little \cite{Little1885On-knots-with-a} \cite{Little1890Alternate-pm-kn}, \cite{Little1900Non-alternate-p} tabulated nonalternating knots up to 10 crossings and alternating knots of 10 and 11 crossings. Conway \cite{Conway1970An-enumeration-},  using his superior notation, later found that Little's tables contained one duplication and 11 omissions. 
+
+Tait explains his original approach: 
+\begin{quotation}
+	I was led to the consideration of the form of knots by Sir W. Thomson's Theory of Vortex Atoms, and consequently the point of view which, at least at first, I adopted was that of classifying knots by the number of their crossings; or, what comes to the same thing, \emph{the investigation of the essentially different modes of joining points in a plane, so as to form single closed plane curves with a give number of double points.} \cite{Tait}
+\end{quotation}
+The italics are as in the original. In Kirkman, we find the importance of \emph{tesserace}. In any event, in these works the importance of the knot shadow as a 4-valent graph is recognized and exploited as a computational device. 
+
+In addition, Tait noticed (and named) flype equivalence of knots. 
+
+\subsection{Reidemeister}\label{sub:reidemeister} K. Reidemeister found three simple, invertible operations that could be applied to a knot via its shadow that would, first, not change the ambient isotopy type of the knot and, second, were sufficient in the sense that given two ambiently isotopic knots a finite sequence of these operations would realize an ambient isotopy between them.
+
+\subsection{Conway}\label{sub:conway}
+
+J. Conway \cite{Conway1970An-enumeration-} in a seminal paper introduced his knot notation (which we'll refer to as \emph{knotation}) and the tangle calculus, providing a reinvigoration of the field of knot enumeration. In particular, Conway was able to do in a single afternoon (by hand!) what took Little over 6 years, an enumeration of 54 knots in \cite{Little1900Non-alternate-p}. Conway shows that any knot diagram can be obtained by substituting algebraic tangles into (vertices of) ``basic polyhedra'' and establishes his knotation. He then develops a set of rewrite rules based upon some happy facts regarding tangles: 
+\begin{itemize}
+	\item there is a bijective correspondence between rational tangles and continued fractions, revealing some easy equivalences for rational tangles, including a type of ``concealed'' flyping; 
+	\item Tait flyping equivalence is absorbed by the knotation; 
+	\item and signs can be ``garbage collected'' at the end of the knotation string. 
+\end{itemize}
+
+Moreover Conway describes three ways to profitably rewrite the the entire knot diagram (as opposed to its constituent tangles), though these each occur within a restricted context. The first is modeled on the third Reidemeister move and reduces the number of vertices in the basic polyhedron. The second, applicable to only actually increases the number of vertices by two, though continued fractions may apply to reduce it by 2 again. The third move, when applicable, applies 
+
+Conway's tabulations depended upon the finding of certain ``basic polyhedra,'' 4-valent graphs upon which tangle surgery is conducted. In a way, we can view this as a discovery of (speaking roughly) ``basis for a vector space of knot polyhedra,'' and from this a gain in efficiency of representation based in the work of Kirkman and Tait.       
+
+Conway's approach was generalized by Caudron \cite{Caudron1981-Classification}. And Bangert \cite{Bangert2002Algorithmic-Pro} developed a matrix notation based on a ``universal polygon'' type that is based upon the Conway method.
+
+\subsection{Dowker and Thistlethwaite}\label{sub:dowker_and_thistlethwaite} In the early 1980's, C. Dowker and M. Thistlethwaite \cite{DT} introduced an improved enumeration scheme based on coding of a knot projection by a finite integer sequence. This code is obviously similar in some ways to Gauss' code but took Tait's coding \cite{Tait} and made it more computer-friendly and efficient. Not every possible such integer sequence specifies a not diagram, so Dowker and Thistlethwaite spend some time on determining which of their codes are realizable as knots. The detection and verification of duplicates is described elsewhere.  It is possible to convert between the Dowker-Thistlethwaite (DT) code and the Gauss code (hence they carry the same information), though the DT code is more amenable to computation and for proof construction. In particular, we can get the following theorem (see \cite{SchareinPhD}, pp. 102-105):
+     
+\begin{theorem}\label{thm:DT_prime}
+	A valid DT code of a prime knot specifies a unique prime knot.
+\end{theorem}
+
+\subsection{Calvo's algorithm}\label{sub:calvo_s_algorithm} 
+
+J.A. Calvo \cite{Calvo1997Knot-enumeratio} devised an inductive procedure which allows one to sidestep the expensive step of checking validity of Dowker-Thistlethwaite codes. The trade-off is that there is considerable redundancy in the tables produced. But then Calvo also  determines the 
+general flype structure of reduced prime alternating diagrams, and thus reduces the complexity of redundancy checking. This appears to be a recognition on the part of Calvo that one of the powers of the Conway notation was its easy incorporation of flype equivalence. The key fact to improve efficiency of Calvo's algorithm is that for a nonsplit, prime, 
+alternating link $L$ a graph can be constructed using flype minimal diagrams 
+of $L$ as vertices and connecting two vertices if they are related by a 
+minimal flype (a flype that cannot be composed of two smaller flypes), and this graph is always an $\phi$-dimensional torus lattice, where $\phi$ is the number of flype cycles in the link. 
+
+We refer the reader to Hoste's excellent review of classification and enumeration of knots and links \cite{Hoste2005The-enumeration} for a more detailed summary of Calvo's article.    
+
+
+
+\subsection{Rankin, Flint and Schermann's algorithm}\label{sub:rankin_flint_and_schermann_s_algorithm}
+
+Rankin, Flint and Schermann \cite{Rankin2004Enumerating-I} \cite{Rankin2004Enumerating-II} refined Calvo's algorithm to reduce redundancy even farther. A very careful analysis of flype structure is given and then a rather sophisticated data structure is built up (group code, master code, and finally a master array). Two knot diagrams are flype equivalent if and only if they have the same master array. Again, the Hoste article \cite{Hoste2005The-enumeration} serves as a good guide to the original articles.
+                                              
+

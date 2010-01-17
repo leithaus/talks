@@ -1,0 +1,116 @@
+This is TeX, Version 3.141592 (Web2C 7.5.5) (format=tex 2006.9.13)  23 MAY 2007 11:23
+**listings.ins
+(./listings.ins (/usr/local/teTeX/share/texmf.tetex/tex/latex/base/docstrip.tex
+\blockLevel=\count26
+\emptyLines=\count27
+\processedLines=\count28
+\commentsRemoved=\count29
+\commentsPassed=\count30
+\codeLinesPassed=\count31
+\TotalprocessedLines=\count32
+\TotalcommentsRemoved=\count33
+\TotalcommentsPassed=\count34
+\TotalcodeLinesPassed=\count35
+\NumberOfFiles=\count36
+\inFile=\read0
+\inputcheck=\read1
+\@tempcnta=\count37
+\off@0=\count38
+\off@1=\count39
+\off@2=\count40
+\off@3=\count41
+\off@4=\count42
+\off@5=\count43
+\off@6=\count44
+\off@7=\count45
+\off@8=\count46
+\off@9=\count47
+\off@10=\count48
+\off@11=\count49
+\off@12=\count50
+\off@13=\count51
+\off@14=\count52
+\off@15=\count53
+\@temptokena=\toks12
+\@maxfiles=\count54
+\@maxoutfiles=\count55
+Utility: `docstrip' 2.5c <2003/09/18>
+English documentation    <1999/03/31>
+
+**********************************************************
+* This program converts documented macro-files into fast *
+* loadable files by stripping off (nearly) all comments! *
+**********************************************************
+
+********************************************************
+* No Configuration file found, using default settings. *
+********************************************************
+
+)
+
+Generating file(s) listings.sty lstmisc.sty lstdoc.sty lstdrvrs.ins listings.cf
+g 
+\openout0 = `listings.sty'.
+
+\openout1 = `lstmisc.sty'.
+
+\openout2 = `lstdoc.sty'.
+
+
+Processing file listings.dtx (kernel) -> listings.sty
+                             (misc,0.21) -> lstmisc.sty
+                             (doc) -> lstdoc.sty
+File listings.dtx ended by \endinput.
+Lines  processed: 16515
+Comments removed: 11670
+Comments  passed: 11
+Codelines passed: 4737
+
+\openout0 = `lstdrvrs.ins'.
+
+\openout1 = `listings.cfg'.
+
+
+Processing file lstdrvrs.dtx (install) -> lstdrvrs.ins
+                             (config) -> listings.cfg
+File lstdrvrs.dtx ended by \endinput.
+Lines  processed: 6377
+Comments removed: 1553
+Comments  passed: 271
+Codelines passed: 4371
+
+(./lstdrvrs.ins
+
+Generating file(s) lstlang1.sty lstlang2.sty lstlang3.sty 
+\openout0 = `lstlang1.sty'.
+
+\openout1 = `lstlang2.sty'.
+
+\openout2 = `lstlang3.sty'.
+
+
+Processing file lstdrvrs.dtx (lang1) -> lstlang1.sty
+                             (lang2) -> lstlang2.sty
+                             (lang3) -> lstlang3.sty
+File lstdrvrs.dtx ended by \endinput.
+Lines  processed: 6377
+Comments removed: 1553
+Comments  passed: 271
+Codelines passed: 4371
+
+)
+*
+* You probably need to move all created `.sty' and `.cfg'
+* files into a directory searched by TeX.
+*
+* And don't forget to refresh your filename database
+* if your TeX distribution uses such a database.
+*
+Overall statistics:
+Files  processed: 3
+Lines  processed: 29269
+Comments removed: 14776
+Comments  passed: 553
+Codelines passed: 13479
+ )
+No pages of output.

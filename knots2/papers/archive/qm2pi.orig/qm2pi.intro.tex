@@ -1,0 +1,130 @@
+\section{Introduction}\label{sec:introduction} % (fold)
+In this draft of the material i am going to have to dispense with the
+usual writing conventions adopted in papers on these topics. i'm going
+to have adopt whatever tone i need at the time i'm writing up the
+calculations. Sometimes this may be very conversational; others it may
+be the barest mathematical grunts; others still it may be that i have
+lifted text from one of my other papers because the exposition of some
+point was better said there. i hope that my readers are not unduly put
+out by this decision. i'm not doing this to flout convention or be
+rebellious. i find these calculations very technically challenging. To
+keep everything going technically, something has to give; i have to
+let go of some cognitive burden. So, the academic writing style --
+with all of its trade-offs in terms of facilitating technical
+communication -- is what i'm letting go of. Perhaps subsequent drafts
+can be tightened and polished, but for now, i'm going to speak as if
+we were sitting together in a coffee shop with a laptop, wifi and a
+pad of paper and a pencil.
+
+So, here's what i have to say. We -- you and i, comfortably ensconced
+in our coffee shop and well-equipped with our tools -- can realize and
+carry out the calculations of quantum mechanics over a very different
+formal theory of dynamics, a formal theory of dynamics that
+corresponds to a theory of concurrent computation with
+\emph{reflection}. It has the advantage that the underlying theory is
+already `quantized', but supports analogues all of the continuuous
+operations. Strikingly, this underlying theory has recently been
+connected with a notion of metric that we can show, by calculating
+together, coincides with the metric induced by the inner product.
+
+There are a lot of reasons why you might be interested in seeing
+calculations of this form. Here's why i'm interested. For the past
+several centuries there has been no competitor to the ``Newtonian''
+account of dynamics. As a result the predominant share of accounts of
+dynamical systems and situations have had to be formulated in terms of
+the Newtonian machinery. i view this as an intellectually dangerous
+position to occupy. Everything, despite it's intrinsic shape, turns
+into a nail to be hit with this hammer. Recently, however, the theory
+of computation has matured to the point where we have candidates for
+theories of dynamics that offer very different perspective on
+reasoning about dynamical systems and situations. Testing these
+candidates against very successful accounts of dynamical situations,
+like quantum mechanics, is going to give us some sense of how mature
+they are and some measure of the quality of these accounts of
+dynamics.
+
+\subsection{Summary of contributions and outline of paper}
+
+So, we're going to develop an interpretation of the operations of
+quantum mechanics normally interpreted by Hilbert spaces and
+operators. We're going to do this over a theory of computation. Note
+that this is very different than the usual quantum computation program
+which develops notions of computation over quantum mechanics. Rather,
+we are developing a story that aligns with Wheeler's slogan: It from
+Bit. To do this we will first provide an account of the theory of
+computation at play here. Then we will dive into a calculation-driven
+interpretation of the operations of quantum mechanics.
+
+The reason we take this approach is that -- until very recently --
+there hasn't been an axiomatic account of quantum mechanics. As a
+result there has been no sharp delineation of the mathematical theory
+supporting interpretation of the physical theory and the physical
+theory, itself. So, ambient features of the maths are free to be
+exploited (or supressed) without a real accounting of their physical
+relevance. There is no sharp statement ``here's the physical theory''
+qua \emph{theory} and ``here's the mathematical interpretation''
+enabling a judgment of how faithful the interpretation is -- apart
+from experimental observation. When there is an axiomatic account we
+can judge how well a given mathematical formalism supports an
+interpretation of the axioms, independent of
+experimentation. Likewise, we can judge how well we have captured our
+physical evidence and experience with our axiomatics, independent of
+any specific mathematical implementation, with accidental detail that
+may or may not have physical significance. 
+
+In lieu of a fully fleshed out and vetted axiomatic account of quantum
+mechanics, interpreting the operational notions in service of modeling
+physical systems will have to suffice. In other words, we are not in
+the business of providing a model of Hilbert spaces and operators. We
+are in the business of providing a model of quantum mechanics because
+we are motivated by testing our notions of dynamics against physical
+theory; and, the predictive calculations of the physical theory must
+serve as the best formulation -- shy of a fully fleshed out axiomatic
+account -- of the physical theory itself (as they have for scientific
+theories since time immemorial). Put another way, despite a
+whole-hearted commitment to an It-from-Bit ontology, we are firmly
+aligned with the shut-up-and-calculate camp as the best way to obtain
+results either from the physical perspective or as a quality assurance
+measure of our fledgling theory of dynamics.
+
+In detail, we present a reflective process calculus. Then we develop
+intuitive correspondences between the notions available in this
+calculus and the usual physical notions supporting quantum mechanical
+calculations. Thus, 
+
+\begin{table}[htp]
+  \center{
+    \fbox{
+      \begin{tabular}{c|c}
+        quantum mechanics & process calculus \\
+        \hline
+        scalar & name \\
+        state vector & process \\
+        dual & contextual duals \\
+        matrix & formal sums of process-context-dual pairs \\
+        orthogonality & process annihilation \\
+        inner product & execution-formula + quoting
+      \end{tabular}
+    }
+  }
+  \caption{QM - process calculi correspondences}
+\end{table}
+
+Then we tighten up these intuitions to operational definitions. We
+employ the Dirac notation as the best proxy we can find for an
+abstract syntax of the quantum mechanical notions. The definitions we
+develop put us in contact with equational constraints coming from the
+theory that we demonstrate the definitions and calculations satisfy.
+
+This puts us in a position to shut up and calculate for the
+Stern-Gerlach experimental set up, showing how these predictive
+calculations become calculations on processes in our theory of a
+reflective process calculus.
+
+Penultimately, we demonstrate that the notion of metric coming from
+the inner product coincides with the notion of metric available from
+the theory of bisimulation. This demonstration gives us the right to
+think of space as arising from behavior. Finally, we consider where we
+might go from the new vantage point we have obtained.
+
+% section introduction (end)

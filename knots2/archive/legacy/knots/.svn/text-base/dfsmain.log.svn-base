@@ -1,0 +1,662 @@
+This is pdfeTeXk, Version 3.141592-1.30.4-2.2 (Web2C 7.5.5) (format=pdflatex 2006.10.14)  16 OCT 2006 00:33
+entering extended mode
+ file:line:error style messages enabled.
+**dfsmain.tex
+(./dfsmain.tex
+LaTeX2e <2003/12/01>
+Babel <v3.8d> and hyphenation patterns for american, french, german, ngerman, d
+utch, italian, norsk, portuges, spanish, swedish, nohyphenation, loaded.
+(/Users/ds08/Library/texmf/tex/latex/common/llncs.cls
+Document Class: llncs 2000/05/16 v2.8 
+LaTeX document class for Lecture Notes in Computer Science
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/base/article.cls
+Document Class: article 2004/02/16 v1.4f Standard LaTeX document class
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/base/size10.clo
+File: size10.clo 2004/02/16 v1.4f Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/tools/multicol.sty
+Package: multicol 2004/02/14 v1.6e multicolumn formatting (FMi)
+\c@tracingmulticols=\count87
+\mult@box=\box26
+\multicol@leftmargin=\dimen103
+\c@unbalance=\count88
+\c@collectmore=\count89
+\doublecol@number=\count90
+\multicoltolerance=\count91
+\multicolpretolerance=\count92
+\full@width=\dimen104
+\page@free=\dimen105
+\premulticols=\dimen106
+\postmulticols=\dimen107
+\multicolsep=\skip43
+\multicolbaselineskip=\skip44
+\partial@page=\box27
+\last@line=\box28
+\mult@rightbox=\box29
+\mult@grightbox=\box30
+\mult@gfirstbox=\box31
+\mult@firstbox=\box32
+\@tempa=\box33
+\@tempa=\box34
+\@tempa=\box35
+\@tempa=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\c@columnbadness=\count93
+\c@finalcolumnbadness=\count94
+\last@try=\dimen108
+\multicolovershoot=\dimen109
+\multicolundershoot=\dimen110
+\mult@nat@firstbox=\box50
+\colbreak@box=\box51
+)
+\c@chapter=\count95
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 199.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 200.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 201.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 202.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 203.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 204.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 205.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 206.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 207.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 208.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 209.
+\tocchpnum=\dimen111
+\tocsecnum=\dimen112
+\tocsectotal=\dimen113
+\tocsubsecnum=\dimen114
+\tocsubsectotal=\dimen115
+\tocsubsubsecnum=\dimen116
+\tocsubsubsectotal=\dimen117
+\tocparanum=\dimen118
+\tocparatotal=\dimen119
+\tocsubparanum=\dimen120
+\@tempcntc=\count96
+\fnindent=\dimen121
+\c@@inst=\count97
+\c@@auth=\count98
+\c@auco=\count99
+\instindent=\dimen122
+\authrun=\box52
+\authorrunning=\toks14
+\tocauthor=\toks15
+\titrun=\box53
+\titlerunning=\toks16
+\toctitle=\toks17
+\c@theorem=\count100
+\c@case=\count101
+\c@conjecture=\count102
+\c@corollary=\count103
+\c@definition=\count104
+\c@example=\count105
+\c@exercise=\count106
+\c@lemma=\count107
+\c@note=\count108
+\c@problem=\count109
+\c@property=\count110
+\c@proposition=\count111
+\c@question=\count112
+\c@solution=\count113
+\c@remark=\count114
+\headlineindent=\dimen123
+)
+(/Users/ds08/Library/texmf/tex/latex/xypic/xy-3.7/src/xy.sty
+(/Users/ds08/Library/texmf/tex/latex/xypic/xy-3.7/texinputs/xy.tex
+Bootstrap'ing: catcodes, docmode,
+(/Users/ds08/Library/texmf/tex/latex/xypic/xy-3.7/texinputs/xyrecat.tex)
+(/Users/ds08/Library/texmf/tex/latex/xypic/xy-3.7/texinputs/xyidioms.tex)
+
+ Xy-pic version 3.7 <1999/02/16>
+ Copyright (c) 1991-1998 by Kristoffer H. Rose <krisrose@ens-lyon.fr>
+ Xy-pic is free software: see the User's Guide for details.
+
+Loading kernel: messages; fonts; allocations: state,
+\X@c=\dimen124
+\Y@c=\dimen125
+\U@c=\dimen126
+\D@c=\dimen127
+\L@c=\dimen128
+\R@c=\dimen129
+\Edge@c=\toks18
+\X@p=\dimen130
+\Y@p=\dimen131
+\U@p=\dimen132
+\D@p=\dimen133
+\L@p=\dimen134
+\R@p=\dimen135
+\Edge@p=\toks19
+\X@origin=\dimen136
+\Y@origin=\dimen137
+\X@xbase=\dimen138
+\Y@xbase=\dimen139
+\X@ybase=\dimen140
+\Y@ybase=\dimen141
+\X@min=\dimen142
+\Y@min=\dimen143
+\X@max=\dimen144
+\Y@max=\dimen145
+\lastobjectbox@=\box54
+\zerodotbox@=\box55
+\almostz@=\dimen146
+ direction,
+\d@X=\dimen147
+\d@Y=\dimen148
+\K@=\count115
+\KK@=\count116
+\Direction=\count117
+\K@dXdY=\dimen149
+\K@dYdX=\dimen150
+\xyread@=\read1
+\xywrite@=\write3
+\csp@=\count118
+\quotPTK@=\dimen151
+
+utility macros; pictures: \xy, positions,
+\swaptoks@@=\toks20
+\connectobjectbox@@=\box56
+ objects,
+\styletoks@=\toks21
+ decorations;
+kernel objects: directionals, circles, text; options; algorithms: directions,
+edges, connections;  Xy-pic loaded)
+Package: xy 1999/02/16 Xy-pic version 3.7
+
+(/Users/ds08/Library/texmf/tex/latex/xypic/xy-3.7/texinputs/xyall.tex
+ Xy-pic option: All features v.3.3
+(/Users/ds08/Library/texmf/tex/latex/xypic/xy-3.7/texinputs/xycurve.tex
+ Xy-pic option: Curve and Spline extension v.3.7 curve,
+\crv@cnt@=\count119
+\crvpts@=\toks22
+\splinebox@=\box57
+\splineval@=\dimen152
+\splinedepth@=\dimen153
+\splinetol@=\dimen154
+\splinelength@=\dimen155
+ circles,
+\L@=\dimen156
+ loaded)
+(/Users/ds08/Library/texmf/tex/latex/xypic/xy-3.7/texinputs/xyframe.tex
+ Xy-pic option: Frame and Bracket extension v.3.7 loaded)
+(/Users/ds08/Library/texmf/tex/latex/xypic/xy-3.7/texinputs/xycmtip.tex
+ Xy-pic option: Computer Modern tip extension v.3.3
+(/Users/ds08/Library/texmf/tex/latex/xypic/xy-3.7/texinputs/xytips.tex
+ Xy-pic option: More Tips extension v.3.3 loaded) loaded)
+(/Users/ds08/Library/texmf/tex/latex/xypic/xy-3.7/texinputs/xyline.tex
+ Xy-pic option: Line styles extension v.3.6
+\xylinethick@=\dimen157
+ loaded)
+(/Users/ds08/Library/texmf/tex/latex/xypic/xy-3.7/texinputs/xyrotate.tex
+ Xy-pic option: Rotate and Scale extension v.3.3 loaded)
+(/Users/ds08/Library/texmf/tex/latex/xypic/xy-3.7/texinputs/xycolor.tex
+ Xy-pic option: Colour extension v.3.3 loaded)
+(/Users/ds08/Library/texmf/tex/latex/xypic/xy-3.7/texinputs/xymatrix.tex
+ Xy-pic option: Matrix feature v.3.4
+\Row=\count120
+\Col=\count121
+\queue@=\toks23
+\queue@@=\toks24
+\qcount@=\count122
+\qcount@@=\count123
+\matrixsize@=\count124
+ loaded)
+(/Users/ds08/Library/texmf/tex/latex/xypic/xy-3.7/texinputs/xyarrow.tex
+ Xy-pic option: Arrow and Path feature v.3.5 path, \ar, loaded)
+(/Users/ds08/Library/texmf/tex/latex/xypic/xy-3.7/texinputs/xygraph.tex
+ Xy-pic option: Graph feature v.3.7 loaded) loaded)
+(/Users/ds08/Library/texmf/tex/latex/xypic/xy-3.7/texinputs/xyknot.tex
+ Xy-pic option: Knots and Links feature v.3.4 knots and links, loaded))
+(/Users/ds08/Library/texmf/tex/latex/pdfsync.sty
+Package: pdfsync 2004/01/31 v0.6
+\PDFPOS=\write4
+\PDFSYNC@folio=\count125
+\PDFSYNC@rder=\count126
+)
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks25
+)
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/graphics/graphics.sty
+Package: graphics 2001/07/07 v1.0n Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/graphics/graphics.cfg
+File: graphics.cfg 2005/02/03 v1.3 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 80.
+
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/graphics/pdftex.def
+File: pdftex.def 2002/06/19 v0.03k graphics/color for pdftex
+\Gread@gobject=\count127
+))
+\Gin@req@height=\dimen158
+\Gin@req@width=\dimen159
+)
+(/Users/ds08/Library/texmf/tex/latex/common/mathpartir.sty
+Package: mathpartir 2003/07/10 version 1.1.1 Math Paragraph for Typesetting Inf
+erence Rules
+\mpr@tmpdim=\dimen160
+\mpr@andskip=\skip45
+\mpr@lista=\toks26
+\mpr@listb=\toks27
+\mpr@hlist=\box58
+\mpr@vlist=\box59
+\mpr@right=\box60
+\rule@dimen=\dimen161
+)
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2004/03/15  ver 3.1  Verb mode for urls, etc.
+)
+(/Users/ds08/Library/texmf/tex/latex/common/bcprules.sty
+\afterruleskip=\skip46
+\labelminsep=\skip47
+\labelcolwidth=\dimen162
+\@labelbox=\box61
+\rulebox=\box62
+\ruledim=\dimen163
+\labeldim=\dimen164
+)
+(/Users/ds08/Library/texmf/tex/latex/common/code.sty)
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2001/10/25 v2.2f
+\@emptytoks=\toks28
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 132.
+)
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks29
+\ex@=\dimen165
+))
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/base/latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 47.
+)
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2002/01/22 v2.2d
+)
+(./lgmHeader.tex
+\ltext=\skip48
+\lmath=\skip49
+\cmath=\skip50
+\rmath=\skip51
+\rtext=\skip52
+LaTeX Font Info:    Try loading font information for U+msa on input line 154.
+ (/usr/local/teTeX/share/texmf.tetex/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2002/01/19 v2.2g AMS font definitions
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 154.
+ (/usr/local/teTeX/share/texmf.tetex/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2002/01/19 v2.2g AMS font definitions
+)
+LaTeX Font Info:    Try loading font information for U+lasy on input line 154.
+
+(/usr/local/teTeX/share/texmf.tetex/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+))
+\c@thm=\count128
+ (./dfsmain.aux)
+\openout1 = `dfsmain.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+**** pdfsync.sty: Synchronization is enabled.
+\openout4 = `dfsmain.pdfsync'.
+
+**** pdfsync.sty: Synchronizing par
+**** pdfsync.sty: Synchronizing math
+**** pdfsync.sty: Synchronizing hbox
+**** pdfsync.sty: Synchronizing extra
+
+(/usr/local/teTeX/share/texmf.local/tex/context/base/supp-pdf.tex
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count129
+\scratchdimen=\dimen166
+\scratchbox=\box63
+\nofMPsegments=\count130
+\nofMParguments=\count131
+\MPscratchCnt=\count132
+\MPscratchDim=\dimen167
+\MPnumerator=\count133
+\everyMPtoPDFconversion=\toks30
+)
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 98.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+[1
+
+{/usr/local/teTeX/share/texmf.local/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <8> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 183.
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 183.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+[2]
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <5> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 242.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 249.
+
+ (/usr/local/teTeX/share/texmf.tetex/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 249.
+
+Overfull \hbox (150.02386pt too wide) detected at line 260
+[]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+[3]
+
+LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <10> not available
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 316.
+
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+[4]
+Overfull \hbox (2.44313pt too wide) in paragraph at lines 406--410
+[]\OT1/cmr/m/n/10 Additionally, for an ab-strac-tion of the form, $[][]\OML/cmm
+/m/it/10 F \OT1/cmr/m/n/10 = ([])\OML/cmm/m/it/10 ^^E[]P[]\OMS/cmsy/m/n/10 h\OM
+L/cmm/m/it/10 z[]; :::; z[]\OMS/cmsy/m/n/10 i$
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+[5] (./4plathistory.tex
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+[6]
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+[7]
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+[8]) <Reidemeister123.pdf, id=93, 316.18124pt x 277.035pt>
+File: Reidemeister123.pdf Graphic file (type pdf)
+
+<use Reidemeister123.pdf> (./lemma1.tex
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+[9])
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+[10 <./Reidemeister123.pdf>]
+<dfsTrefoilMethodIllustration.pdf, id=120, 316.18124pt x 393.47pt>
+File: dfsTrefoilMethodIllustration.pdf Graphic file (type pdf)
+
+<use dfsTrefoilMethodIllustration.pdf>
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+[11]
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+[12 <./dfsTrefoilMethodIllustration.pdf>]
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+[13]
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+[14]
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+[15]
+Overfull \hbox (36.77582pt too wide) in alignment at lines 853--860
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+[16]
+Overfull \hbox (3.37712pt too wide) in paragraph at lines 910--918
+[]\OT1/cmr/m/n/10 This con-struc-tion not only il-lus-trates, as pre-vi-ously p
+romised, that the method
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+[17]
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+[18] (./dfsmain.bbl
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+[19])
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+[20] (./dfsmain.aux) ) 
+Here is how much of TeX's memory you used:
+ 4645 strings out of 95137
+ 55807 string characters out of 1183015
+ 2157405 words of memory out of 4612240
+ 7675 multiletter control sequences out of 10000+50000
+ 24125 words of font info for 98 fonts, out of 2000000 for 2000
+ 58 hyphenation exceptions out of 5000
+ 38i,11n,30p,1238b,947s stack positions out of 5000i,500n,6000p,200000b,40000s
+PDF statistics:
+ 276 PDF objects out of 300000
+ 0 named destinations out of 131072
+ 11 words of extra memory for PDF output out of 10000
+</usr/local/teTeX/share/texmf.tetex/fonts/type1/bluesky/c
+m/cmti9.pfb></usr/local/teTeX/share/texmf.tetex/fonts/type1/bluesky/cm/cmex10.p
+fb></usr/local/teTeX/share/texmf.tetex/fonts/type1/bluesky/cm/cmr5.pfb></usr/lo
+cal/teTeX/share/texmf.tetex/fonts/type1/bluesky/cm/cmsy9.pfb></usr/local/teTeX/
+share/texmf.tetex/fonts/type1/bluesky/symbols/msbm10.pfb></usr/local/teTeX/shar
+e/texmf.tetex/fonts/type1/bluesky/cm/cmmi5.pfb></usr/local/teTeX/share/texmf.te
+tex/fonts/type1/bluesky/cm/cmsy5.pfb></usr/local/teTeX/share/texmf.tetex/fonts/
+type1/bluesky/cm/cmtt10.pfb></usr/local/teTeX/share/texmf.tetex/fonts/type1/blu
+esky/cm/cmssi10.pfb></usr/local/teTeX/share/texmf.tetex/fonts/type1/bluesky/sym
+bols/msam10.pfb></usr/local/teTeX/share/texmf.tetex/fonts/type1/bluesky/cm/cmcs
+c10.pfb></usr/local/teTeX/share/texmf.tetex/fonts/type1/bluesky/cm/cmss10.pfb><
+/usr/local/teTeX/share/texmf.tetex/fonts/type1/bluesky/cm/cmsy7.pfb></usr/local
+/teTeX/share/texmf.tetex/fonts/type1/bluesky/cm/cmsy10.pfb></usr/local/teTeX/sh
+are/texmf.tetex/fonts/type1/bluesky/cm/cmti10.pfb></usr/local/teTeX/share/texmf
+.tetex/fonts/type1/bluesky/cm/cmbx10.pfb></usr/local/teTeX/share/texmf.tetex/fo
+nts/type1/bluesky/cm/cmmi7.pfb></usr/local/teTeX/share/texmf.tetex/fonts/type1/
+bluesky/cm/cmmi10.pfb></usr/local/teTeX/share/texmf.tetex/fonts/type1/bluesky/c
+m/cmmi9.pfb></usr/local/teTeX/share/texmf.tetex/fonts/type1/bluesky/cm/cmbx9.pf
+b></usr/local/teTeX/share/texmf.tetex/fonts/type1/bluesky/cm/cmtt9.pfb></usr/lo
+cal/teTeX/share/texmf.tetex/fonts/type1/bluesky/cm/cmr9.pfb></usr/local/teTeX/s
+hare/texmf.tetex/fonts/type1/bluesky/cm/cmr6.pfb></usr/local/teTeX/share/texmf.
+tetex/fonts/type1/bluesky/cm/cmr7.pfb></usr/local/teTeX/share/texmf.tetex/fonts
+/type1/bluesky/cm/cmr10.pfb></usr/local/teTeX/share/texmf.tetex/fonts/type1/blu
+esky/cm/cmmib10.pfb></usr/local/teTeX/share/texmf.tetex/fonts/type1/bluesky/cm/
+cmbx12.pfb>
+Output written on dfsmain.pdf (20 pages, 299907 bytes).
