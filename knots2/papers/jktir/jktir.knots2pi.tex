@@ -53,11 +53,26 @@ as shown in the defining encoding below.
     \scalebox{0.27}[0.270]{\includegraphics[viewport=0 0 390 360]{../../illustrations/BasicCrossingCircuit.pdf}}
     \caption{ Crossing process }
 \end{figure}
+%\begin{eqnarray*}
+%   C(x_0,x_1,y_0,y_1,u) & \plogp   & x_1?(s).y_0!(s).(C(x_0,x_1,y_0,y_1,u)|u!) \nonumber \\
+%  & & + y_0?(s).x_1!(s).(C(x_0,x_1,y_0,y_1,u)|u!) \nonumber \\
+%  & & + x_0?(s).u?.y_1!(s).(C(x_0,x_1,y_0,y_1,u)) \nonumber \\
+%  & & + y_1?(s).u?.x_0!(s).(C(x_0,x_1,y_0,y_1,u)) \nonumber
+%\end{eqnarray*}
+
 \begin{eqnarray*}
    C(x_0,x_1,y_0,y_1,u) & \plogp   & x_1?(s).y_0!(s).(C(x_0,x_1,y_0,y_1,u)|u!) \nonumber \\
   & & + y_0?(s).x_1!(s).(C(x_0,x_1,y_0,y_1,u)|u!) \nonumber \\
-  & & + x_0?(s).u?.y_1!(s).(C(x_0,x_1,y_0,y_1,u)) \nonumber \\
-  & & + y_1?(s).u?.x_0!(s).(C(x_0,x_1,y_0,y_1,u)) \nonumber
+  & & + x_0?(s).u?.y_1!(s).(C'(x_0,x_1,y_0,y_1,u,x_0)) \nonumber \\
+  & & + y_1?(s).u?.x_0!(s).(C'(x_0,x_1,y_0,y_1,u,y_1)) \nonumber
+\end{eqnarray*}
+
+where
+
+\begin{eqnarray*}
+   C'(x_0,x_1,y_0,y_1,u,v) & \plogp   & x_1?(s).y_0!(s).(C'(x_0,x_1,y_0,y_1,u,v)|u!) \nonumber \\
+  & & + y_0?(s).x_1!(s).(C'(x_0,x_1,y_0,y_1,u,v)|u!) \nonumber \\
+  & & + u?.v!(s).(C(x_0, x_1, y_0, y_1, u)) \nonumber
 \end{eqnarray*}
 
 A crossing process has four ports $x_0,x_1,y_0,y_1$ and a hidden
