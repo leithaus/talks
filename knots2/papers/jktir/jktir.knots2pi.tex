@@ -63,8 +63,8 @@ as shown in the defining encoding below.
 \begin{eqnarray*}
    C(x_0,x_1,y_0,y_1,u) & \plogp   & x_1?(s).y_0!(s).(C(x_0,x_1,y_0,y_1,u)|u!) \nonumber \\
   & & + y_0?(s).x_1!(s).(C(x_0,x_1,y_0,y_1,u)|u!) \nonumber \\
-  & & + x_0?(s).u?.y_1!(s).(C'(x_0,x_1,y_0,y_1,u,x_0)) \nonumber \\
-  & & + y_1?(s).u?.x_0!(s).(C'(x_0,x_1,y_0,y_1,u,y_1)) \nonumber
+  & & + x_0?(s).(C'(x_0,x_1,y_0,y_1,u,y_1)) \nonumber \\
+  & & + y_1?(s).(C'(x_0,x_1,y_0,y_1,u,x_0)) \nonumber
 \end{eqnarray*}
 
 where
@@ -90,7 +90,7 @@ passing along the same strand in the opposite direction. The third and
 fourth summands are similar to the first two, except that before
 passing any received signal to its partner port, the process waits for
 a signal from the synchronizer $u$ before allowing the signal to
-pass. So the role of $u$ is that of a traffic controller who gives
+pass, while still allowing a signal to pass between $x_1$ and $y_0$ if the synchronizer has not yet been alerted. So the role of $u$ is that of a traffic controller who gives
 priority to traffic over the route between $x_1$ and $y_0$, mimicking
 an over-crossing.
 
