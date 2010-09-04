@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>jktir.tex</string>
+	<string>Addendum.tex</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -32,9 +32,17 @@
 		</dict>
 		<dict>
 			<key>filename</key>
+			<string>Addendum.tex</string>
+			<key>lastUsed</key>
+			<date>2010-09-03T02:59:02Z</date>
+			<key>selected</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>filename</key>
 			<string>jktir.knots2pi.tex</string>
 			<key>lastUsed</key>
-			<date>2010-09-01T04:10:19Z</date>
+			<date>2010-09-03T02:59:02Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -68,9 +76,7 @@
 			<key>filename</key>
 			<string>jktir.tex</string>
 			<key>lastUsed</key>
-			<date>2010-09-01T04:10:19Z</date>
-			<key>selected</key>
-			<true/>
+			<date>2010-09-03T02:58:23Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -97,28 +103,42 @@
 	<integer>200</integer>
 	<key>metaData</key>
 	<dict>
+		<key>Addendum.tex</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>17</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
 		<key>jktir.knots2pi.tex</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>43</integer>
+				<integer>112</integer>
 				<key>line</key>
-				<integer>74</integer>
+				<integer>92</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>63</integer>
+			<integer>106</integer>
 		</dict>
 		<key>jktir.tex</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>0</integer>
+				<integer>21</integer>
 				<key>line</key>
-				<integer>0</integer>
+				<integer>13</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -129,11 +149,12 @@
 	<key>openDocuments</key>
 	<array>
 		<string>jktir.knots2pi.tex</string>
+		<string>Addendum.tex</string>
 		<string>jktir.tex</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{777, 120}, {591, 729}}</string>
+	<string>{{444, 142}, {823, 687}}</string>
 </dict>
 </plist>
